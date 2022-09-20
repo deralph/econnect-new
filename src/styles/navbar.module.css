@@ -1,0 +1,22 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 5%;
+}
+.sign {
+  display: flex;
+}
+.sign li {
+  padding: 10px 30px;
+  font-size: 1em;
+  text-transform: capitalize;
+  color: #fff;
+  /* font-weight: 400; */
+}
+.signCta {
+  background: #9e1c33;
+  effect: Drop shadow;
+  border-radius: 5px;
+  box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+}
