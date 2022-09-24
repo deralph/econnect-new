@@ -3,20 +3,65 @@
   justify-content: space-between;
   align-items: center;
   padding: 1% 5%;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  background: #fff;
 }
-.sign {
+.nav img {
+  height: 2em;
+}
+.sign,
+.signapp {
   display: flex;
+  align-items: center;
 }
 .sign li {
-  padding: 10px 30px;
+  padding: 10px 2em;
   font-size: 1em;
   text-transform: capitalize;
   color: #fff;
-  /* font-weight: 400; */
 }
 .signCta {
   background: #9e1c33;
-  effect: Drop shadow;
   border-radius: 5px;
   box-shadow: 4px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* app nav */
+
+.navtext {
+  color: #07174b;
+  font-style: italic;
+  font-weight: 700;
+}
+.signapp li img {
+  height: 1.7em;
+  margin-left: 20px;
+}
+
+/* side nav */
+
+.sidenav {
+  /* position: fixed; */
+  /* top: 0; */
+  left: 0;
+  width: auto;
+  background: #07174b;
+  list-style: none;
+  padding: 10% 2em;
+  height: 100vh;
+  flex-basis: 25%;
+  /* z-index: 1; */
+}
+.sidenav li {
+  border-bottom: 0.6px solid rgba(225, 225, 225, 0.5);
+  color: #fff;
+  font-size: 1em;
+  padding: 20px 10px;
+}
+
+.icon {
+  margin-right: 1em;
 }

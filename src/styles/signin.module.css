@@ -1,0 +1,121 @@
+.section {
+  width: 100vw;
+  min-height: 100vh;
+  height: auto;
+  background: url(../../public/Register\ Page_cleanup.png);
+  background-size: 100% 100%;
+  position: relative;
+}
+.section1 {
+  background: url(../../public/Forgot\ Password_cleanup.png);
+  background-size: 100% 100%;
+}
+.admin {
+  background: url(../../public/Admin\ Login\ Page_cleanup.png);
+  background-size: 100% 100%;
+}
+.icon {
+  position: absolute;
+  left: 2em;
+  font-size: 1.6em;
+  font-weight: 900;
+  color: #4063d6;
+}
+.admin form,
+.section1 form {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.section form {
+  padding: 8% 0 5% 7%;
+  width: 30%;
+}
+.section input {
+  display: block;
+  outline: none;
+  width: 100%;
+  border: 0.53px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  outline: none;
+}
+.section h1 {
+  color: #07174b;
+  font-size: 1.3em;
+  margin-bottom: 15px;
+}
+.section div p,
+.section label {
+  padding-top: 20px;
+  color: #4063d6;
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+.section input[type="button"] {
+  background: #4063d6;
+  width: auto;
+  border: none;
+  font-size: 0.8em;
+  font-weight: 450;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.section span {
+  font-weight: 700;
+  color: #4063d6;
+  text-transform: capitalize;
+}
+.foot {
+  font-size: 0.9em;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.action .forgot {
+  color: #9e1c33 !important;
+  font-weight: 600;
+}
+.action .login {
+  font-weight: 700;
+  font-size: 0.8em;
+  color: black;
+  text-transform: lowercase;
+}
+.forget {
+  font-size: 0.8em;
+  color: #323232;
+  padding: 12px 0;
+}
+.section img {
+  position: absolute;
+  top: 20px;
+  left: 5%;
+}
+.section div label {
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: center;
+  /* outline: none; */
+  width: auto !important;
+  color: black !important;
+  margin-right: 10px;
+  padding: 0 !important;
+  /* margin-right: 10px !important; */
+}
+.section div p {
+  padding: 0;
+}
+/* .section input */
+/* .section div input {
+  background: black !important;
+  /* padding: 0; *
+  padding-right: 10px;
+} */
