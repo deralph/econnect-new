@@ -8,7 +8,7 @@ import Center from "./Center";
 const newsFeed = () => {
   return (
     <section className={styles.section}>
-      <AppNav />
+      <AppNav style={{ background: "#fff" }} />
       <div className="" style={{ display: "flex", paddingTop: "55px" }}>
         <SideNav />
         <Center />

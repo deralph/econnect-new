@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  background: #fff;
+  /* background: #fff; */
 }
 .nav img {
   height: 2em;
