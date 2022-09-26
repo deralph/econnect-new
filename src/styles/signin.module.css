@@ -2,18 +2,18 @@
   width: 100vw;
   min-height: 100vh;
   height: auto;
-  background: url(../../public/Register\ Page_cleanup.png);
+  background: url(../../public/Background_cleanup.jpg);
   background-size: 100% 100%;
   position: relative;
 }
 .section1 {
-  background: url(../../public/Forgot\ Password_cleanup.png);
+  background: url(../../public/Background.jpg);
   background-size: 100% 100%;
 }
-.admin {
-  background: url(../../public/Admin\ Login\ Page_cleanup.png);
-  background-size: 100% 100%;
-}
+/* .admin { */
+/* background: url(../../public/Admin\ Login\ Page_cleanup.png); */
+/* background-size: 100% 100%; */
+/* } */
 .icon {
   position: absolute;
   left: 2em;
@@ -21,15 +21,28 @@
   font-weight: 900;
   color: #4063d6;
 }
-.admin form,
+/* .admin form, */
 .section1 form {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+}
+.container {
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8% 5% 5% 7%;
+}
+.phone {
+  height: 90vh;
+  flex-basis: 60%;
+  /* background: blue; */
 }
 .section form {
-  padding: 8% 0 5% 7%;
-  width: 30%;
+  /* padding: 8% 0 5% 7%; */
+  flex-basis: 26%;
+  /* background: yellow; */
 }
 .section input {
   display: block;
@@ -94,7 +107,7 @@
   color: #323232;
   padding: 12px 0;
 }
-.section img {
+.logo {
   position: absolute;
   top: 20px;
   left: 5%;

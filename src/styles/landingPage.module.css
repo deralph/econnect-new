@@ -4,13 +4,24 @@
   width: 100vw;
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-image: url("../../public/Landing\ Page_cleanup.png");
+  background-image: url("../../public/Background.jpg");
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10% 0;
+}
+.phone {
+  /* height: 90vh; */
+  width: 30vw;
+  /* margin-right: 5%; */
 }
 .article {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 7%;
+  /* position: absolute; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  /* left: 7%; */
 }
 .article p {
   color: #07174b;

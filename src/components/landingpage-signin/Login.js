@@ -14,68 +14,77 @@ const Login = ({ forget, admin }) => {
     });
   };
   return (
-    <section
-      className={
-        admin
-          ? `${styles.section} ${styles.admin}`
-          : `${styles.section} ${styles.section1}`
-      }
-    >
+    <section className={`${styles.section} ${styles.section1}`}>
       {" "}
-      <img src="/econnectLogo.png" alt="econnect logo" />
-      <form action="">
-        {admin && <AiOutlineArrowLeft className={styles.icon} />}
-        <h1>{forget ? "Forgot password" : admin ? "Admin Login" : "Login"}</h1>
-        {forget && (
-          <p className={styles.forget}>
-            Enter your registered email address to get a password reset link
-          </p>
-        )}
-        <label htmlFor="email">
-          {" "}
-          E-mail
-          <input
-            type="text"
-            onChange={handleInputs}
-            value={form.email}
-            name="email"
-          />
-        </label>
-        {!forget && (
+      <img
+        src="/econnectLogo.png"
+        alt="econnect logo"
+        className={styles.logo}
+      />
+      <article className={styles.container}>
+        <form action="">
+          {admin && <AiOutlineArrowLeft className={styles.icon} />}
+          <h1>
+            {forget ? "Forgot password" : admin ? "Admin Login" : "Login"}
+          </h1>
+          {forget && (
+            <p className={styles.forget}>
+              Enter your registered email address to get a password reset link
+            </p>
+          )}
           <label htmlFor="email">
             {" "}
-            Password
+            E-mail
             <input
               type="text"
               onChange={handleInputs}
-              value={form.password}
-              name="password"
+              value={form.email}
+              name="email"
             />
           </label>
-        )}
-        <div className={styles.action}>
-          <input type="button" value={forget ? "Reset Password" : "Login"} />{" "}
-          <>
-            {admin ? (
-              <p className={styles.login}>
-                <span>login</span> as a user{" "}
-              </p>
-            ) : forget ? (
-              ""
-            ) : (
-              <p className={styles.forgot}>Forgot Password</p>
-            )}
-          </>
-        </div>
-        <p className={styles.foot}>
-          Do you have an account? <span>REGISTER</span>
-        </p>
-        {!forget && (
+          {!forget && (
+            <label htmlFor="email">
+              {" "}
+              Password
+              <input
+                type="text"
+                onChange={handleInputs}
+                value={form.password}
+                name="password"
+              />
+            </label>
+          )}
+          <div className={styles.action}>
+            <input type="button" value={forget ? "Reset Password" : "Login"} />{" "}
+            <>
+              {admin ? (
+                <p className={styles.login}>
+                  <span>login</span> as a user{" "}
+                </p>
+              ) : forget ? (
+                ""
+              ) : (
+                <p className={styles.forgot}>Forgot Password</p>
+              )}
+            </>
+          </div>
           <p className={styles.foot}>
-            <span>Login</span> as the admin
+            Do you have an account? <span>REGISTER</span>
           </p>
-        )}
-      </form>
+          {!forget && (
+            <p className={styles.foot}>
+              <span>Login</span> as the admin
+            </p>
+          )}
+        </form>
+        <img
+          src={
+            admin ? "/admin login lock.png" : "/login & register page phone.png"
+          }
+          alt="admin login lock"
+          className={styles.phone}
+        />
+      </article>
     </section>
   );
 };
