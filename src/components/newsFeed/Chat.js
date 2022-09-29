@@ -1,8 +1,8 @@
 import React from "react";
 import { BsFillChatLeftTextFill } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
-import styles from "../../styles/newsFeed.module.css";
-import { chatArray } from "./Notification";
+import styles from "../../styles/newsFeed/chat.module.css";
+import { chatArray } from "./database";
 
 const Chat = () => {
   return (

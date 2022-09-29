@@ -1,6 +1,6 @@
 import React from "react";
 import { FaSearch } from "react-icons/fa";
-import styles from "../../styles/newsFeed.module.css";
+import styles from "../../styles/newsFeed/index.module.css";
 
 const Search = () => {
   return (

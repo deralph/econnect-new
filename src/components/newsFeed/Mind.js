@@ -1,12 +1,12 @@
 import React from "react";
-import styles from "../../styles/newsFeed.module.css";
+import styles from "../../styles/newsFeed/index.module.css";
 import { BsFillPlayCircleFill, BsCameraFill } from "react-icons/bs";
 
 const Mind = () => {
   return (
     <div className={styles.mind}>
       <img src="/Ellipse 21.png" alt="" />
-      <div className="post">
+      <div className={styles.post}>
         <textarea type="text" placeholder="What is on your mind" />
         <div className={styles.photo}>
           <p>

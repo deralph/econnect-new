@@ -2,6 +2,7 @@
   height: 100vh;
   position: relative;
   background: #eee;
+  /* overflow: auto; */
 }
 .right {
   flex-basis: 25%;
@@ -9,20 +10,20 @@
   right: 0;
   /* position: fixed; */
   height: 100vh;
+  /* margin-top: -56px; */
+  padding-top: 56px;
   display: flex;
   flex-direction: column;
+  /* padding-top: 56px; */
   padding: 5px;
   /* margin-bottom: 10px; */
 }
-.search,
-.notification {
+.search {
   background: #fff;
   border-radius: 5px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
   position: relative;
   margin: 5px 0px;
-}
-.search {
   padding: 20px;
 }
 .search input {
@@ -42,99 +43,40 @@
   right: 30px;
   color: #4063d6;
 }
-.bell {
-  color: red;
-  rotate: -24.16deg;
-  margin-right: 10px;
-  /* font-size: 1.3em; */
-}
 .chat {
   color: green;
   /* font-size: 20px; */
   margin-right: 10px;
 }
-.top {
-  display: flex;
-  color: #4063d6;
-  justify-content: space-between;
-  font-weight: 550;
-  align-items: center;
-  border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  font-size: 0.8em;
-}
-.notification {
-  overflow: scroll;
-}
 ::-webkit-scrollbar {
   display: none;
-}
-.container {
-  padding: 0 15px;
-}
-.box {
-  display: flex;
-  padding: 12px 0;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
-}
-.box img {
-  border-radius: 50%;
-  height: 3em;
-  width: 3em;
-  margin-right: 0.7em;
-}
-.box button {
-  font-size: 0.6em;
-  border: none;
-  background: #4063d6;
-  color: #fff;
-  padding: 5px;
-  border-radius: 3px;
-}
-.part div {
-  flex-direction: column;
-  justify-content: space-between;
-}
-.part {
-  display: flex;
-}
-.name {
-  font-weight: 600;
-  font-style: italic;
-  color: #07174b;
-  font-size: 12px;
-  text-transform: capitalize;
-  text-align: left;
-}
-.message {
-  margin-top: 5px;
-  font-style: italic;
-  font-size: 10px;
-  text-align: left;
 }
 .tick {
   color: rgba(0, 0, 0, 0.2);
 }
 .center {
   flex-basis: 50%;
-  background: blue;
   width: 100%;
-  margin-top: 20px;
+  /* height: 100%; */
+  margin: 12px 2px 7px 7px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* overflow: auto; */
+  /* background: #fff; */
 }
 .mind {
   background: #fff;
-  /* display: flex; */
-  justify-content: stretch;
-  padding: 20px;
+  display: flex;
+  padding: 1.4em;
 }
 .mind img {
   height: 5em;
   width: 5em;
   border-radius: 50%;
+  margin-right: 20px;
 }
 .post {
+  width: 100%;
 }
 .mind textarea {
   background: rgba(0, 0, 0, 0.1);
@@ -166,3 +108,5 @@
   margin-right: 10px;
   font-size: 1.2em;
 }
+
+/* feed post */

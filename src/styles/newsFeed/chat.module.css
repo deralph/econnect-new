@@ -1,0 +1,73 @@
+.notification {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 5px 0px;
+  overflow: scroll;
+}
+.top {
+  display: flex;
+  color: #4063d6;
+  justify-content: space-between;
+  font-weight: 550;
+  align-items: center;
+  border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-size: 0.8em;
+}
+
+.chat {
+  color: green;
+  /* font-size: 20px; */
+  margin-right: 10px;
+}
+.container {
+  padding: 0 15px;
+}
+
+.box {
+  display: flex;
+  padding: 12px 0;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
+}
+.box img {
+  border-radius: 50%;
+  height: 3em;
+  width: 3em;
+  margin-right: 0.7em;
+}
+.box button {
+  font-size: 0.6em;
+  border: none;
+  background: #4063d6;
+  color: #fff;
+  padding: 5px;
+  border-radius: 3px;
+}
+.part div {
+  flex-direction: column;
+  justify-content: space-between;
+}
+.part {
+  display: flex;
+}
+.name {
+  font-weight: 600;
+  font-style: italic;
+  color: #07174b;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: left;
+}
+.message {
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 10px;
+  text-align: left;
+}
+.tick {
+  color: rgba(0, 0, 0, 0.2);
+}
