@@ -1,0 +1,18 @@
+.section h2 {
+  padding: 2em 0 1em;
+  font-size: 2em;
+  color: #07174b;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.section {
+  padding: 1.5em;
+}
+.article {
+  background: #071f71;
+  color: #ffffff;
+  display: grid;
+  place-content: center;
+  height: 90%;
+}

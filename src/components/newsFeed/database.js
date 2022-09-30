@@ -189,3 +189,29 @@ export const newsFeed = [
     totalComment: "50",
   },
 ];
+export const comments = [
+  {
+    img: "/ellipse 21.png",
+    name: "adetunji oluwadamilola",
+    course: "education, computer education",
+    comment:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+    time: "11:30am",
+  },
+  {
+    img: "/ellipse 21.png",
+    name: "adetunji oluwadamilola",
+    course: "education, computer education",
+    comment:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+    time: "11:30am",
+  },
+  {
+    img: "/ellipse 21.png",
+    name: "adetunji oluwadamilola",
+    course: "education, computer education",
+    comment:
+      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+    time: "11:30am",
+  },
+];

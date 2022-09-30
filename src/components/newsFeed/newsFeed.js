@@ -2,16 +2,32 @@ import React from "react";
 import AppNav from "../navbars/AppNav";
 import SideNav from "../navbars/SideNav";
 import styles from "../../styles/newsFeed/index.module.css";
-import RightSide from "./RightSide";
-import Center from "./Center";
+import RightSide from "./right/RightSide";
+import FeedCenter from "../newsFeed/middle/feed/FeedCenter";
+import PostCenter from "./middle/post/PostCenter";
+import Container from "./middle/academicAssistance/Container";
+import Eportal from "./middle/eportal/Eportal";
+import TeachPrac from "./middle/teachPractice/TeachPrac";
 
-const newsFeed = () => {
+const newsFeed = ({ post, teachprac, results, assistance, portal }) => {
   return (
     <section className={styles.section}>
       <AppNav />
       <div className="" style={{ display: "flex", paddingTop: "55px" }}>
         <SideNav />
-        <Center />
+        {post ? (
+          <PostCenter />
+        ) : assistance ? (
+          <Container />
+        ) : portal ? (
+          <Eportal />
+        ) : results ? (
+          <Eportal results />
+        ) : teachprac ? (
+          <TeachPrac />
+        ) : (
+          <FeedCenter />
+        )}
         <RightSide />
       </div>
     </section>

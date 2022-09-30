@@ -16,13 +16,15 @@ function App() {
           <Route path="/admin-login" element={<Login admin />} />
           <Route path="/forget-password" element={<Login forget />} />
           <Route path="/news-feed" element={<NewsFeed />} />
+          <Route path="/post" element={<NewsFeed post />} />
+          <Route path="/e-portal" element={<NewsFeed portal />} />
+          <Route path="/results" element={<NewsFeed results />} />
+          <Route path="/teaching-practice" element={<NewsFeed teachprac />} />
+          <Route
+            path="/academic-assistance"
+            element={<NewsFeed assistance />}
+          />
         </Routes>
-        {/* <Landingpage /> */}
-        {/* <Register /> */}
-        {/* <Login /> */}
-        {/* <Login admin /> */}
-        {/* <Login forget />  */}
-        {/* <NewsFeed /> */}
       </div>
     </BrowserRouter>
   );

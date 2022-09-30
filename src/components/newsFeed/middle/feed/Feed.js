@@ -3,8 +3,8 @@ import { AiFillLike } from "react-icons/ai";
 import { BsClock } from "react-icons/bs";
 import { BiCommentDetail } from "react-icons/bi";
 import { GoCommentDiscussion } from "react-icons/go";
-import styles from "../../styles/newsFeed/feed.module.css";
-import { newsFeed } from "./database";
+import styles from "../../../../styles/newsFeed/feed.module.css";
+import { newsFeed } from "../../database";
 
 const Feed = () => {
   return (
@@ -13,8 +13,8 @@ const Feed = () => {
       style={{ background: "#fff", marginTop: "10px", overflow: "hidden" }}
     >
       <div className={styles.top1}>
+        <p>Latest Updates</p>
         <p>Trending</p>
-        <p>Posts</p>
       </div>
       <section className={styles.container}>
         {newsFeed.map(

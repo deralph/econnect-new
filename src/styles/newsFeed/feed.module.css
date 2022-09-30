@@ -4,7 +4,7 @@
 .top1 {
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.1); */
   padding: 10px;
   background: #fff;
 }
@@ -13,10 +13,23 @@
   width: 100%;
   text-align: center;
   color: rgba(50, 50, 50, 0.45);
+  font-weight: 700;
+  padding: 10px 10px 15px;
 }
 .top1 p:nth-child(1) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: #4063d6;
+  position: relative;
+}
+.top1 p:nth-child(1)::after {
+  position: absolute;
+  width: 30%;
+  background: #4063d6;
+  height: 2px;
+  bottom: 0;
+  content: "";
+  left: 50%;
+  transform: translateX(-50%);
 }
 .posts {
   display: flex;

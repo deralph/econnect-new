@@ -1,6 +1,6 @@
 import React from "react";
 import Search from "./Search";
-import styles from "../../styles/newsFeed/index.module.css";
+import styles from "../../../styles/newsFeed/index.module.css";
 import Notification from "./Notification";
 import Chat from "./Chat";
 
