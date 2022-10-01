@@ -1,0 +1,74 @@
+.info {
+  min-height: 40vh;
+  display: grid;
+  place-content: center;
+  background: url("../../../public//Rectangle\ 63.png");
+  color: #fff;
+  width: 100%;
+  position: relative;
+}
+.info::before {
+  background-color: rgba(0, 0, 0, 0.37);
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.info div {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 10;
+}
+.info h3 {
+  font-size: 1.7em;
+}
+.info p {
+  font-size: 1em;
+  font-style: italic;
+}
+.posting {
+  background: #fff;
+  padding: 1.3em;
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  box-shadow: 0px 4.217096328735352px 21.085481643676758px 0px #00000021;
+}
+.posting p {
+  color: #4063d6;
+  font-weight: 600;
+  display: block;
+}
+.posting form {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+.posting form input {
+  padding: 10px;
+  width: 45%;
+  margin-right: 5px;
+  background: rgba(217, 217, 217, 0.16);
+  border: 0.704923px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2.43077px;
+}
+.posting form button {
+  background: #4063d6;
+  color: #fff;
+  padding: 10px;
+  border: none;
+}
+.box {
+  font-weight: 600;
+  min-height: 20vh;
+  width: 100%;
+  color: #07174bcf;
+
+  background: #4063d61a;
+
+  padding: 2em;
+  font-size: 1.1em;
+  margin-top: 1.3em;
+}
