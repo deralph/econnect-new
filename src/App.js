@@ -20,6 +20,7 @@ function App() {
           <Route path="/e-portal" element={<NewsFeed portal />} />
           <Route path="/results" element={<NewsFeed results />} />
           <Route path="/teaching-practice" element={<NewsFeed teachprac />} />
+          <Route path="/nysc-list" element={<NewsFeed nysc />} />
           <Route
             path="/academic-assistance"
             element={<NewsFeed assistance />}

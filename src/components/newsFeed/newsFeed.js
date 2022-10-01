@@ -9,7 +9,7 @@ import Container from "./middle/academicAssistance/Container";
 import Eportal from "./middle/eportal/Eportal";
 import TeachPrac from "./middle/teachPractice/TeachPrac";
 
-const newsFeed = ({ post, teachprac, results, assistance, portal }) => {
+const newsFeed = ({ post, nysc, teachprac, results, assistance, portal }) => {
   return (
     <section className={styles.section}>
       <AppNav />
@@ -25,6 +25,8 @@ const newsFeed = ({ post, teachprac, results, assistance, portal }) => {
           <Eportal results />
         ) : teachprac ? (
           <TeachPrac />
+        ) : nysc ? (
+          <TeachPrac nysc />
         ) : (
           <FeedCenter />
         )}

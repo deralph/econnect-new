@@ -16,7 +16,7 @@
   width: 100%;
 }
 .info div {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   z-index: 10;
@@ -65,9 +65,7 @@
   min-height: 20vh;
   width: 100%;
   color: #07174bcf;
-
   background: #4063d61a;
-
   padding: 2em;
   font-size: 1.1em;
   margin-top: 1.3em;
