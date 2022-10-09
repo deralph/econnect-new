@@ -78,9 +78,7 @@ const Login = ({ forget, admin }) => {
           )}
         </form>
         <img
-          src={
-            admin ? "/admin login lock.png" : "/login & register page phone.png"
-          }
+          src={admin ? "/adminloginlock.png" : "/login&registerpagephone.png"}
           alt="admin login lock"
           className={styles.phone}
         />

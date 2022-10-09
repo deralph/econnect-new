@@ -2,10 +2,13 @@
   min-height: 40vh;
   display: grid;
   place-content: center;
-  background: url("../../../public//Rectangle\ 63.png");
   color: #fff;
   width: 100%;
   position: relative;
+  background: url("../../../public/teachingPractice.png");
+}
+.nysc {
+  background: url("../../../public/nysc.png");
 }
 .info::before {
   background-color: rgba(0, 0, 0, 0.37);

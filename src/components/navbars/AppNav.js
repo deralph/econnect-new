@@ -8,10 +8,10 @@ const AppNav = () => {
       <ul className={styles.signapp}>
         <li className={styles.navtext}>Download Now</li>
         <li>
-          <img src="Google Play Store.png" alt="google play" />
+          <img src="/GooglePlayStore.png" alt="google play" />
         </li>
         <li>
-          <img src="/App store.png" alt="app store" />
+          <img src="/Appstore.png" alt="app store" />
         </li>
       </ul>
     </nav>

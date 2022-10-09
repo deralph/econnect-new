@@ -1,0 +1,80 @@
+.ques {
+  padding: 1.3em;
+}
+.question {
+  background: #fff;
+  height: calc(100% - 2.5em);
+  padding: 1.4em;
+  overflow: scroll;
+}
+.question .p {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 0.9em;
+  color: #4063d6;
+  padding: 1em 0;
+}
+.question textarea {
+  background: rgba(217, 217, 217, 0.16);
+  border: 0.58px solid rgba(0, 0, 0, 0.1);
+  width: 90%;
+  height: 30vh;
+}
+.question button {
+  background: #4063d6;
+  border-radius: 5px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 0.8em;
+  color: #ffffff;
+  padding: 0.7em;
+  border: none;
+  margin-top: 1.5em;
+}
+.quesChat {
+  background: #fff;
+  height: 100%;
+}
+.quest {
+  background: rgba(64, 99, 214, 0.05);
+  border-radius: 5px;
+  margin: 1em 0;
+  position: relative;
+}
+.quest p {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #000000;
+  padding: 1.4em;
+  width: 95%;
+}
+.icon {
+  background: #ffffff;
+  box-shadow: 0px 3.21739px 28.1522px rgba(0, 0, 0, 0.13);
+  border-radius: 4.02174px;
+  color: #f00;
+  font-size: 1.5em;
+  padding: 0.1em;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+}
+.ans {
+  border: 0.5px solid rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  width: 60%;
+  padding: 1em;
+}
+.ans p {
+  font-family: "Poppins";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 0.9em;
+  color: #000000;
+}
+.ans p:first-child {
+  font-weight: 500;
+  color: #4063d6;
+}

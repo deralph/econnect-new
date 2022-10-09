@@ -2,19 +2,14 @@
   height: auto;
   position: relative;
   background: #eee;
-  /* overflow: auto; */
 }
 .right {
   flex-basis: 25%;
-  /* top: 5%; */
   right: 0;
-  /* position: fixed; */
   height: 100vh;
-  /* margin-top: -56px; */
   padding-top: 56px;
   display: flex;
   flex-direction: column;
-  /* padding-top: 56px; */
   padding: 5px;
   /* margin-bottom: 10px; */
 }

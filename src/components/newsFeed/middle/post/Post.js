@@ -13,7 +13,7 @@ const Post = () => {
         Admission into the Pre-Degree Programmes for the 2022/2023 Academic
         Session{" "}
       </h2>
-      <img src="rectangle 136.png" alt="post pics" />
+      <img src="/largePostPics.png" alt="post pics" />
       <div className={styles.postDetails}>
         <p className={style.date}>
           <BsClock style={{ marginRight: "5px" }} />1 day ago

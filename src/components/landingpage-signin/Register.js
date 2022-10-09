@@ -122,7 +122,7 @@ const Register = () => {
           <p>{form.idNo}</p>
         </form>
         <img
-          src="/login & register page phone.png"
+          src="/login&registerpagephone.png"
           alt="login & register page phone"
           className={styles.phone}
         />

@@ -1,48 +1,48 @@
 export const notificationArray = [
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "pablo josh",
     message: "started following you",
     follow: "follow back",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "kemi adesewa",
     message: "started following you",
     follow: "follow back",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "bolaji james",
     message: "liked your post",
     follow: "",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "kemi adetiba",
     message: "commented on your post",
     follow: "",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "florence esther",
     message: "started following you",
     follow: "follow back",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "james samson",
     message: "started following you",
     follow: "follow back",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "james john",
     message: "started following you",
     follow: "follow back",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "onu blessing",
     message: "started following you",
     follow: "follow back",
@@ -50,49 +50,49 @@ export const notificationArray = [
 ];
 export const chatArray = [
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "folade josh",
     message: "where are you?",
     time: "11:42am",
     seen: "true",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "george george",
     message: "alright",
     time: "9:40am",
     seen: "",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "joke veronica",
     message: "hello sir",
     time: "8:12am",
     seen: "",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "bummi grace",
     message: "good morning",
     time: "11:30am",
     seen: "true",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "name",
     message: "thanks sir",
     time: "12:11am",
     seen: "true",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "adetunji oluwadailola",
     message: "seen the money bro",
     time: "7:20am",
     seen: "",
   },
   {
-    img: "/Ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "michael jackson",
     message: "i've heard you",
     time: "8:08am",
@@ -101,7 +101,7 @@ export const chatArray = [
 ];
 export const newsFeed = [
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -112,7 +112,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -123,7 +123,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -134,7 +134,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -145,7 +145,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -156,7 +156,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -167,7 +167,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -178,7 +178,7 @@ export const newsFeed = [
     totalComment: "50",
   },
   {
-    src: "/postPics.png",
+    src: "/iconicpostPics.png",
     save: true,
     heading:
       "Admission into the Pre-Degree Programmes for the 2022/2023 Academic Session",
@@ -191,7 +191,7 @@ export const newsFeed = [
 ];
 export const comments = [
   {
-    img: "/ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
@@ -199,7 +199,7 @@ export const comments = [
     time: "11:30am",
   },
   {
-    img: "/ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
@@ -207,11 +207,204 @@ export const comments = [
     time: "11:30am",
   },
   {
-    img: "/ellipse 21.png",
+    img: "/iconicUserPics.png",
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
     time: "11:30am",
+  },
+];
+
+export const direction = [
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+  {
+    heading: "Main gate to Student’s Affairs Division",
+    direction:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula...",
+    image: "/direction.png",
+  },
+];
+
+export const faq = [
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question: "Name of the Faculties in AAUA",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+];
+
+export const myQuestion = [
+  {
+    question:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+    answer:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+  },
+  {
+    question:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturi",
+    answer: "",
+  },
+];
+
+export const business = [
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 1,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 2,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 5,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 4,
+  },
+  {
+    image: "/businessImage.png",
+    name: "voltage services",
+    type: "Gift Cards & BTC",
+    phone: "08000000001",
+    rating: 3,
   },
 ];

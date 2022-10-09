@@ -21,6 +21,12 @@ function App() {
           <Route path="/results" element={<NewsFeed results />} />
           <Route path="/teaching-practice" element={<NewsFeed teachprac />} />
           <Route path="/nysc-list" element={<NewsFeed nysc />} />
+          <Route path="/school-map" element={<NewsFeed schoolMap />} />
+          <Route path="/direction" element={<NewsFeed direction />} />
+          <Route path="/faq" element={<NewsFeed faq />} />
+          <Route path="/addques" element={<NewsFeed addques />} />
+          <Route path="/myquestion" element={<NewsFeed myquestion />} />
+          <Route path="/business" element={<NewsFeed business />} />
           <Route
             path="/academic-assistance"
             element={<NewsFeed assistance />}

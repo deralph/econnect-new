@@ -5,7 +5,7 @@ import { BsFillPlayCircleFill, BsCameraFill } from "react-icons/bs";
 const Mind = () => {
   return (
     <div className={styles.mind}>
-      <img src="/Ellipse 21.png" alt="" />
+      <img src="/iconicUserPics.png" alt="" />
       <div className={styles.post}>
         <textarea type="text" placeholder="What is on your mind" />
         <div className={styles.photo}>

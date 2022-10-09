@@ -14,13 +14,13 @@ const Landingpage = () => {
           <div className={styles.download}>
             <p>download now</p>
             <div className={styles["download-images"]}>
-              <img src="Google Play Store.png" alt="google play" />
-              <img src="/App store.png" alt="app store" />
+              <img src="GooglePlayStore.png" alt="google play" />
+              <img src="/Appstore.png" alt="app store" />
             </div>
           </div>
         </article>
         <img
-          src="/landing page phone.png"
+          src="/landingpagephone.png"
           alt="landing page phone"
           className={styles.phone}
         />

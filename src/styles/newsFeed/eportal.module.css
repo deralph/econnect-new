@@ -4,6 +4,8 @@
   color: #07174b;
   font-weight: 500;
   display: flex;
+  font-size: poppins;
+
   align-items: center;
 }
 .section {
