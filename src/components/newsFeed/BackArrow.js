@@ -1,17 +1,32 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import styles from "../../styles/newsFeed/teachprac.module.css";
-import styles1 from "../../styles/newsFeed/schoolmap.module.css";
+import styles from "../../styles/newsFeed/addques.module.css";
+import style from "../../styles/newsFeed/faq.module.css";
+import style1 from "../../styles/newsFeed/teachprac.module.css";
 
-const BackArrow = ({ heading }) => {
+const BackArrow = ({ heading, option, added }) => {
   return (
-    <h2 className={styles1.head}>
-      <FaArrowLeft
-        className={styles.icon}
-        style={{ color: "#4063D6", marginRight: "10px" }}
-      />{" "}
-      {heading}
-    </h2>
+    <div className={added ? `${style.ques}` : `${style.ques} ${styles.ques}`}>
+      <h2>
+        <FaArrowLeft
+          className={style1.icon}
+          style={{ color: "#4063D6", marginRight: "10px" }}
+        />{" "}
+        {heading}
+      </h2>
+      {option && (
+        <ul>
+          {option.map(({ main, Icon, color }) => {
+            return (
+              <li style={{ background: `${color}` }}>
+                {Icon && <Icon style={{ marginRight: "0.4em" }} />}
+                {main}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </div>
   );
 };
 

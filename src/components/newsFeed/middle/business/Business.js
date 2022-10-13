@@ -1,39 +1,24 @@
 import React from "react";
-import { FaArrowLeft, FaStar, FaToolbox } from "react-icons/fa";
-import styles from "../../../../styles/newsFeed/addques.module.css";
-import style from "../../../../styles/newsFeed/faq.module.css";
-import style1 from "../../../../styles/newsFeed/teachprac.module.css";
-import styles1 from "../../../../styles/newsFeed/index.module.css";
-import stylo from "../../../../styles/newsFeed/business.module.css";
+import { FaStar, FaToolbox } from "react-icons/fa";
+import style from "../../../../styles/newsFeed/index.module.css";
+import styles from "../../../../styles/newsFeed/business.module.css";
 import { business } from "../../database";
 import { AiTwotoneTag } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
+import BackArrow from "../../BackArrow";
 
 const Business = () => {
   const rate = [1, 2, 3, 4, 5];
-
+  const option = [{ main: "Add Business", Icon: FaToolbox, color: "#4063D6" }];
   return (
-    <section className={styles1.center}>
-      <div className={`${style.ques} ${styles.ques}`}>
-        <h2>
-          <FaArrowLeft
-            className={style1.icon}
-            style={{ color: "#4063D6", marginRight: "10px" }}
-          />{" "}
-          Business
-        </h2>
-        <ul>
-          <li style={{ background: "#4063D6" }}>
-            <FaToolbox style={{ marginRight: "0.4em" }} />
-            Add Business
-          </li>
-        </ul>
-      </div>
-      <article className={stylo.business}>
+    <section className={style.center}>
+      <BackArrow heading="Business" option={option} />
+
+      <article className={styles.business}>
         {business.map(({ image, name, phone, type, rating }) => {
           return (
             <article>
-              <div className={stylo.busCont}>
+              <div className={styles.busCont}>
                 <img src={image} alt={name} />
                 <div>
                   <p>{name}</p>

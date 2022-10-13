@@ -13,6 +13,7 @@ import Direction from "./middle/direction/Direction";
 import Faq from "./middle/faq/Faq";
 import Question from "./middle/faq/Question";
 import Business from "./middle/business/Business";
+import BusinessDeatails from "./middle/business/BusinessDeatails";
 
 const newsFeed = ({
   post,
@@ -27,6 +28,7 @@ const newsFeed = ({
   direction,
   myquestion,
   business,
+  businessDetails,
 }) => {
   return (
     <section className={styles.section}>
@@ -57,6 +59,8 @@ const newsFeed = ({
           <Question myquestion />
         ) : business ? (
           <Business />
+        ) : businessDetails ? (
+          <BusinessDeatails />
         ) : (
           <FeedCenter />
         )}

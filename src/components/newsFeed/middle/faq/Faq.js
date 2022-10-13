@@ -2,26 +2,17 @@ import React from "react";
 import styles from "../../../../styles/newsFeed/faq.module.css";
 import style from "../../../../styles/newsFeed/index.module.css";
 import BackArrow from "../../BackArrow";
-import style1 from "../../../../styles/newsFeed/teachprac.module.css";
-import { FaArrowLeft } from "react-icons/fa";
 import { faq } from "../../database";
 
 const Faq = () => {
+  const option = [
+    { main: "Add Question", color: "#039b2d" },
+    { main: "My Questions", color: "#4063d6" },
+  ];
+
   return (
     <section className={`${style.center} ${styles.center}`}>
-      <div className={styles.ques}>
-        <h2>
-          <FaArrowLeft
-            className={style1.icon}
-            style={{ color: "#4063D6", marginRight: "10px" }}
-          />{" "}
-          School Map{" "}
-        </h2>
-        <ul>
-          <li>Add Question</li>
-          <li>My Questions</li>
-        </ul>
-      </div>
+      <BackArrow heading={"My Questions"} option={option} added />
       <section className={styles.faq}>
         {faq.map(({ question, answer }) => {
           return (

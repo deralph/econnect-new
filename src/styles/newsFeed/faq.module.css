@@ -33,12 +33,6 @@
   border-radius: 0.4em;
   color: #fff;
 }
-.ques ul li:nth-child(1) {
-  background: #039b2d;
-}
-.ques ul li:nth-child(2) {
-  background: #4063d6;
-}
 .faq {
   background: #fff;
   padding: 1em;

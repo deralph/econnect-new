@@ -28,6 +28,10 @@ function App() {
           <Route path="/myquestion" element={<NewsFeed myquestion />} />
           <Route path="/business" element={<NewsFeed business />} />
           <Route
+            path="/business-details"
+            element={<NewsFeed businessDetails />}
+          />
+          <Route
             path="/academic-assistance"
             element={<NewsFeed assistance />}
           />
