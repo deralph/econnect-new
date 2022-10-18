@@ -34,4 +34,8 @@ textarea {
 input,
 textarea {
   outline: none;
+  border: none;
+}
+button {
+  border: none;
 }

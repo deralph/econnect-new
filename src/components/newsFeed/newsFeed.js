@@ -17,6 +17,7 @@ import BusinessDeatails from "./middle/business/BusinessDeatails";
 import Profile from "./middle/profile/Profile";
 import EditProfile from "./middle/profile/EditProfile";
 import Notification from "./middle/notification/Notification";
+import FRiends from "./middle/friends/FRiends";
 
 const newsFeed = ({
   post,
@@ -35,6 +36,7 @@ const newsFeed = ({
   profile,
   editProfile,
   notification,
+  friends,
 }) => {
   return (
     <section className={styles.section}>
@@ -73,10 +75,12 @@ const newsFeed = ({
           <EditProfile />
         ) : notification ? (
           <Notification />
+        ) : friends ? (
+          <FRiends />
         ) : (
           <FeedCenter />
         )}
-        <RightSide />
+        {notification ? <RightSide notification /> : <RightSide />}
       </div>
     </section>
   );

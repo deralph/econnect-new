@@ -5,9 +5,9 @@ import Notifications from "../../right/Notification";
 
 const Notification = () => {
   return (
-    <section className={style.center}>
+    <section className={style.center} style={{ overflow: "scroll" }}>
       <BackArrow heading={"Notification"} />
-      <article>{}</article>
+      <Notifications real />
     </section>
   );
 };

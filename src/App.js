@@ -30,6 +30,7 @@ function App() {
           <Route path="/profile" element={<NewsFeed profile />} />
           <Route path="/edit-profile" element={<NewsFeed editProfile />} />
           <Route path="/Notification" element={<NewsFeed notification />} />
+          <Route path="/friends" element={<NewsFeed friends />} />
           <Route
             path="/business-details"
             element={<NewsFeed businessDetails />}

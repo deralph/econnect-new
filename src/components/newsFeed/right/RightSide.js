@@ -3,12 +3,13 @@ import Search from "./Search";
 import styles from "../../../styles/newsFeed/index.module.css";
 import Notification from "./Notification";
 import Chat from "./Chat";
+import Friends from "./Friends";
 
-const RightSide = () => {
+const RightSide = ({ notification }) => {
   return (
     <div className={styles.right}>
       <Search />
-      <Notification />
+      {notification ? <Friends /> : <Notification />}
       <Chat />
     </div>
   );
