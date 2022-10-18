@@ -14,6 +14,9 @@ import Faq from "./middle/faq/Faq";
 import Question from "./middle/faq/Question";
 import Business from "./middle/business/Business";
 import BusinessDeatails from "./middle/business/BusinessDeatails";
+import Profile from "./middle/profile/Profile";
+import EditProfile from "./middle/profile/EditProfile";
+import Notification from "./middle/notification/Notification";
 
 const newsFeed = ({
   post,
@@ -29,6 +32,9 @@ const newsFeed = ({
   myquestion,
   business,
   businessDetails,
+  profile,
+  editProfile,
+  notification,
 }) => {
   return (
     <section className={styles.section}>
@@ -61,6 +67,12 @@ const newsFeed = ({
           <Business />
         ) : businessDetails ? (
           <BusinessDeatails />
+        ) : profile ? (
+          <Profile />
+        ) : editProfile ? (
+          <EditProfile />
+        ) : notification ? (
+          <Notification />
         ) : (
           <FeedCenter />
         )}

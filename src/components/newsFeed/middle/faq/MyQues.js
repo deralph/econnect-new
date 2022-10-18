@@ -1,27 +1,19 @@
 import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
 import styles from "../../../../styles/newsFeed/addques.module.css";
-import style from "../../../../styles/newsFeed/faq.module.css";
 import { myQuestion } from "../../database";
-import style1 from "../../../../styles/newsFeed/teachprac.module.css";
 import { MdDelete } from "react-icons/md";
+import BackArrow from "../../BackArrow";
 
 const MyQues = () => {
+  const option = [
+    { main: "Add Question", color: "#039B2D" },
+    { main: "My Question", color: "rgba(50, 50, 50, 0.2)" },
+  ];
+
   return (
     <>
-      <div className={`${style.ques} ${styles.ques}`}>
-        <h2>
-          <FaArrowLeft
-            className={style1.icon}
-            style={{ color: "#4063D6", marginRight: "10px" }}
-          />{" "}
-          Add Question
-        </h2>
-        <ul>
-          <li style={{ background: "rgba(50, 50, 50, 0.2)" }}>Add Question</li>
-          <li>My Questions</li>
-        </ul>
-      </div>
+      <BackArrow heading="Add Question" option={option} />
+
       <section className={styles.question}>
         {myQuestion.map(({ question, answer }) => {
           return (

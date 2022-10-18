@@ -27,6 +27,9 @@ function App() {
           <Route path="/addques" element={<NewsFeed addques />} />
           <Route path="/myquestion" element={<NewsFeed myquestion />} />
           <Route path="/business" element={<NewsFeed business />} />
+          <Route path="/profile" element={<NewsFeed profile />} />
+          <Route path="/edit-profile" element={<NewsFeed editProfile />} />
+          <Route path="/Notification" element={<NewsFeed notification />} />
           <Route
             path="/business-details"
             element={<NewsFeed businessDetails />}

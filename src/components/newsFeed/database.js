@@ -4,12 +4,14 @@ export const notificationArray = [
     name: "pablo josh",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
   {
     img: "/iconicUserPics.png",
     name: "kemi adesewa",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
   {
     img: "/iconicUserPics.png",
@@ -18,34 +20,40 @@ export const notificationArray = [
     follow: "",
   },
   {
-    img: "/iconicUserPics.png",
+ 
+ time: '11:42 am',   img: "/iconicUserPics.png",
     name: "kemi adetiba",
     message: "commented on your post",
     follow: "",
   },
   {
-    img: "/iconicUserPics.png",
+ 
+ time: '11:42 am',   img: "/iconicUserPics.png",
     name: "florence esther",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
   {
     img: "/iconicUserPics.png",
     name: "james samson",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
   {
     img: "/iconicUserPics.png",
     name: "james john",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
   {
     img: "/iconicUserPics.png",
     name: "onu blessing",
     message: "started following you",
     follow: "follow back",
+    time: '11:42 am',
   },
 ];
 export const chatArray = [
@@ -54,49 +62,56 @@ export const chatArray = [
     name: "folade josh",
     message: "where are you?",
     time: "11:42am",
-    seen: "true",
+    
+    time: '11:42 am',een: "true",
   },
   {
     img: "/iconicUserPics.png",
     name: "george george",
     message: "alright",
     time: "9:40am",
-    seen: "",
+    se
+    time: '11:42 am',en: "",
   },
   {
     img: "/iconicUserPics.png",
     name: "joke veronica",
     message: "hello sir",
     time: "8:12am",
-    seen: "",
+    se
+    time: '11:42 am',en: "",
   },
   {
     img: "/iconicUserPics.png",
     name: "bummi grace",
     message: "good morning",
     time: "11:30am",
-    seen: "true",
+    s
+    time: '11:42 am',een: "true",
   },
   {
     img: "/iconicUserPics.png",
     name: "name",
     message: "thanks sir",
     time: "12:11am",
-    seen: "true",
+    s
+    time: '11:42 am',een: "true",
   },
   {
     img: "/iconicUserPics.png",
     name: "adetunji oluwadailola",
     message: "seen the money bro",
     time: "7:20am",
-    seen: "",
+    se
+    time: '11:42 am',en: "",
   },
   {
     img: "/iconicUserPics.png",
     name: "michael jackson",
     message: "i've heard you",
     time: "8:08am",
-    seen: "true",
+    se
+    time: '11:42 am',en: "true",
   },
 ];
 export const newsFeed = [
@@ -195,7 +210,8 @@ export const comments = [
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+      "Lorem 
+      time: '11:42 am',ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
     time: "11:30am",
   },
   {
@@ -203,7 +219,8 @@ export const comments = [
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+      "Lorem 
+      time: '11:42 am',ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
     time: "11:30am",
   },
   {
@@ -211,7 +228,8 @@ export const comments = [
     name: "adetunji oluwadamilola",
     course: "education, computer education",
     comment:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
+      "Lorem 
+      time: '11:42 am',ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, quaerat? Neque odit corrupti quia iure tempore. Inventore aperiam asperiores rerum repellat porro?",
     time: "11:30am",
   },
 ];
@@ -406,5 +424,58 @@ export const business = [
     type: "Gift Cards & BTC",
     phone: "08000000001",
     rating: 3,
+  },
+];
+
+export const TimelinePosts = [
+  {
+    image: "/profilePics.png",
+    name: "Oluwadamilola Samuel",
+    course: "Science, Computer Science",
+    time: "1 day ago",
+    description:
+      "dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+    likes: 50,
+    comments: 50,
+  },
+  {
+    image: "/profilePics.png",
+    name: "Oluwadamilola Samuel",
+    course: "Science, Computer Science",
+    time: "1 day ago",
+    description:
+      "dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+    likes: 50,
+    comments: 50,
+  },
+  {
+    image: "/profilePics.png",
+    name: "Oluwadamilola Samuel",
+    course: "Science, Computer Science",
+    time: "1 day ago",
+    description:
+      "dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+    likes: 50,
+    comments: 50,
+  },
+  {
+    image: "/profilePics.png",
+    name: "Oluwadamilola Samuel",
+    course: "Science, Computer Science",
+    time: "1 day ago",
+    description:
+      "dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+    likes: 50,
+    comments: 50,
+  },
+  {
+    image: "/profilePics.png",
+    name: "Oluwadamilola Samuel",
+    course: "Science, Computer Science",
+    time: "1 day ago",
+    description:
+      "dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ",
+    likes: 50,
+    comments: 50,
   },
 ];
