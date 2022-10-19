@@ -15,10 +15,10 @@ const MyQues = () => {
       <BackArrow heading="Add Question" option={option} />
 
       <section className={styles.question}>
-        {myQuestion.map(({ question, answer }) => {
+        {myQuestion.map(({ question, answer }, index) => {
           return (
             <>
-              <div className={styles.quest}>
+              <div className={styles.quest} key={index}>
                 <p>{question}</p>
                 <MdDelete className={styles.icon} />
               </div>

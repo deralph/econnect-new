@@ -14,9 +14,9 @@ const Faq = () => {
     <section className={`${style.center} ${styles.center}`}>
       <BackArrow heading={"My Questions"} option={option} added />
       <section className={styles.faq}>
-        {faq.map(({ question, answer }) => {
+        {faq.map(({ question, answer }, index) => {
           return (
-            <div>
+            <div key={index}>
               <p className={styles.p1}>Question:</p>
               <p className={styles.p2}>{question}</p>
               <div className={styles.answer}>

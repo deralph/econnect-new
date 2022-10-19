@@ -7,7 +7,6 @@
   position: fixed;
   top: 0;
   z-index: 10;
-  /* background: #fff; */
 }
 .nav img {
   height: 2em;
@@ -44,22 +43,27 @@
 /* side nav */
 
 .sidenav {
-  /* position: fixed; */
-  /* top: 0; */
   left: 0;
   width: auto;
   background: #07174b;
   list-style: none;
-  padding: 10% 2em;
   height: 100vh;
+}
+.sidenav1 {
   flex-basis: 25%;
-  /* z-index: 1; */
+  padding: 10% 2em;
+}
+.side {
+  padding: 10% 0.8em;
+  flex-basis: 5%;
 }
 .sidenav li {
   border-bottom: 0.6px solid rgba(225, 225, 225, 0.5);
   color: #fff;
   font-size: 1em;
   padding: 20px 10px;
+  display: flex;
+  align-items: center;
 }
 
 .icon {

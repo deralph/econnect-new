@@ -5,12 +5,12 @@ import Notification from "./Notification";
 import Chat from "./Chat";
 import Friends from "./Friends";
 
-const RightSide = ({ notification }) => {
+const RightSide = ({ notification, chat }) => {
   return (
     <div className={styles.right}>
       <Search />
       {notification ? <Friends /> : <Notification />}
-      <Chat />
+      {chat ? <Friends /> : <Chat />}
     </div>
   );
 };

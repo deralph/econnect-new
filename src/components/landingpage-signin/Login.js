@@ -1,18 +1,11 @@
 import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
+import { handleInputs } from "../../extra/function";
 
 const Login = ({ forget, admin }) => {
   const [form, setForm] = useState({ email: "", password: "" });
-  const handleInputs = (e) => {
-    e.preventDefault();
-    const name = e.target.name;
-    const value = e.target.value;
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
+
   return (
     <section className={`${styles.section} ${styles.section1}`}>
       {" "}
@@ -37,7 +30,7 @@ const Login = ({ forget, admin }) => {
             E-mail
             <input
               type="text"
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
               value={form.email}
               name="email"
             />
@@ -48,7 +41,7 @@ const Login = ({ forget, admin }) => {
               Password
               <input
                 type="text"
-                onChange={handleInputs}
+                onChange={(e) => handleInputs(e, setForm, form)}
                 value={form.password}
                 name="password"
               />

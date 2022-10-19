@@ -32,7 +32,8 @@ textarea {
   resize: none;
 }
 input,
-textarea {
+textarea,
+select {
   outline: none;
   border: none;
 }

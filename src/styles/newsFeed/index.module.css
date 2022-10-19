@@ -51,9 +51,8 @@
 }
 .center {
   width: 50vw;
-  /* width: 100%; */
   margin: 12px 2px 7px 7px;
-
+  /* overflow: hidden; */
   margin-top: -60px;
   padding-top: 60px;
   height: 100vh;

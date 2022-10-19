@@ -2,6 +2,10 @@
   background: #fff;
   height: 100%;
   overflow: scroll;
+  position: relative;
+}
+.extra {
+  margin-top: 1em;
 }
 .profile p,
 .profile h1 {
@@ -203,4 +207,27 @@
   border-radius: 2px;
   border: none;
   min-height: 20vh;
+}
+.btns {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 1em 0 0 20%;
+}
+.btns button {
+  font-family: "Poppins";
+  padding: 0.6em 1.5em;
+  color: #ffffff;
+}
+.btns button:nth-child(1) {
+  background: #039b2d;
+  border-radius: 2.52px;
+  font-weight: 500;
+  font-size: 0.74em;
+}
+.btns button:nth-child(2) {
+  background: #4063d6;
+  border-radius: 2.52459px;
+  font-weight: 600;
+  font-size: 0.8em;
 }

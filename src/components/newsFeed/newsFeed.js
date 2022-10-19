@@ -37,6 +37,8 @@ const newsFeed = ({
   editProfile,
   notification,
   friends,
+  friendsProfile,
+  addFriends,
 }) => {
   return (
     <section className={styles.section}>
@@ -77,6 +79,10 @@ const newsFeed = ({
           <Notification />
         ) : friends ? (
           <FRiends />
+        ) : friendsProfile ? (
+          <Profile friendsProfile />
+        ) : addFriends ? (
+          <FRiends addFriends />
         ) : (
           <FeedCenter />
         )}

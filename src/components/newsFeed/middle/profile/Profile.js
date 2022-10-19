@@ -2,7 +2,7 @@ import React from "react";
 import style from "../../../../styles/newsFeed/index.module.css";
 import styles from "../../../../styles/newsFeed/profile.module.css";
 import BackArrow from "../../BackArrow";
-import { IoMdMail } from "react-icons/io";
+import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa";
 import { TimelinePosts } from "../../database";
@@ -11,7 +11,7 @@ import { AiFillLike } from "react-icons/ai";
 import { GoCommentDiscussion } from "react-icons/go";
 import { BiCommentDetail } from "react-icons/bi";
 
-const Profile = () => {
+const Profile = ({ friendsProfile, chat }) => {
   const option = [
     { main: "Logout", color: "#039B2D" },
     { main: "Edit Profile", color: "#4063D6" },
@@ -19,8 +19,16 @@ const Profile = () => {
 
   return (
     <section className={style.center}>
-      <BackArrow heading={"Profile"} option={option} />
-      <section className={styles.profile}>
+      {!friendsProfile ||
+        (!chat && <BackArrow heading={"Profile"} option={option} />)}
+      <section
+        className={
+          friendsProfile
+            ? `${styles.profile} ${styles.extra}`
+            : `${styles.profile}`
+        }
+      >
+        {friendsProfile || (chat && <BackArrow />)}
         <article className={styles.mainInfo}>
           <img src="/profilePics.png" alt="profile pics" />
           <div className={styles.userInfo}>
@@ -51,6 +59,14 @@ const Profile = () => {
                 <span>10</span>
               </p>
             </div>
+            {friendsProfile && (
+              <div className={styles.btns}>
+                <button>Message</button>
+                <button>
+                  Following <IoIosArrowDown />
+                </button>
+              </div>
+            )}
           </div>
         </article>
         <p className={styles.description}>
@@ -62,9 +78,12 @@ const Profile = () => {
         <article className={styles.timeline}>
           <p className={styles.head}>Timeline</p>
           {TimelinePosts.map(
-            ({ name, image, course, time, description, likes, comments }) => {
+            (
+              { name, image, course, time, description, likes, comments },
+              index
+            ) => {
               return (
-                <div className={styles.post}>
+                <div className={styles.post} key={index}>
                   <div className={styles.user}>
                     <img src={image} alt={name} />
                     <div className="">

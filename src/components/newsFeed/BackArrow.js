@@ -16,9 +16,13 @@ const BackArrow = ({ heading, option, added }) => {
       </h2>
       {option && (
         <ul>
-          {option.map(({ main, Icon, color }) => {
+          {option.map(({ main, Icon, color }, index) => {
             return (
-              <li style={{ background: `${color}` }}>
+              <li
+                key={index}
+                style={{ background: `${color}` }}
+                // onClick={onclick}
+              >
                 {Icon && <Icon style={{ marginRight: "0.4em" }} />}
                 {main}
               </li>

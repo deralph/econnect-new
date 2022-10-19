@@ -15,9 +15,9 @@ const Business = () => {
       <BackArrow heading="Business" option={option} />
 
       <article className={styles.business}>
-        {business.map(({ image, name, phone, type, rating }) => {
+        {business.map(({ image, name, phone, type, rating }, index) => {
           return (
-            <article>
+            <article key={index}>
               <div className={styles.busCont}>
                 <img src={image} alt={name} />
                 <div>
@@ -41,6 +41,7 @@ const Business = () => {
                 {rate.map((ok, index) => {
                   return (
                     <FaStar
+                      key={index}
                       style={{
                         color:
                           index < rating ? "#E59112" : "rgba(50, 50, 50, 0.3)",

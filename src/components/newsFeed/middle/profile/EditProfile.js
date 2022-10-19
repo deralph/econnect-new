@@ -1,11 +1,12 @@
 import React, { useState } from "react";
 import { BsCameraFill } from "react-icons/bs";
+import { handleInputs } from "../../../../extra/function";
 import style from "../../../../styles/newsFeed/index.module.css";
 import styles from "../../../../styles/newsFeed/profile.module.css";
 import BackArrow from "../../BackArrow";
 
 const EditProfile = () => {
-  const [inputs, setInputs] = useState({
+  const [form, setForm] = useState({
     fullname: "Oluwadamilola Samuel",
     email: "dameaze@gmail.com",
     phone: "08149800592",
@@ -14,13 +15,6 @@ const EditProfile = () => {
     profileDesc:
       "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, ",
   });
-
-  const handleInputs = (e) => {
-    e.preventDefault();
-    const value = e.target.value;
-    const name = e.target.name;
-    setInputs({ ...inputs, [name]: value });
-  };
 
   return (
     <section className={style.center}>
@@ -38,35 +32,35 @@ const EditProfile = () => {
             Fullname
             <input
               type="text"
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
               name="fullname"
-              value={inputs.fullname}
+              value={form.fullname}
             />
           </label>
           <label htmlFor="">
             E-Mail
             <input
               type="text"
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
               name="email"
-              value={inputs.email}
+              value={form.email}
             />
           </label>
           <label htmlFor="">
             Phone Number
             <input
               type="text"
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
               name="phone"
-              value={inputs.phone}
+              value={form.phone}
             />
           </label>
           <label htmlFor="">
             Faculty
             <select
               name="faculty"
-              value={inputs.faculty}
-              onChange={handleInputs}
+              value={form.faculty}
+              onChange={(e) => handleInputs(e, setForm, form)}
             >
               <option value="">Choose Faculty</option>
               <option value="science">Science</option>
@@ -78,9 +72,9 @@ const EditProfile = () => {
           <label htmlFor="">
             Department
             <select
-              name="faculty"
-              value={inputs.department}
-              onChange={handleInputs}
+              name="department"
+              value={form.department}
+              onChange={(e) => handleInputs(e, setForm, form)}
             >
               <option value="">Choose Department</option>
               <option value="science">English</option>
@@ -93,8 +87,8 @@ const EditProfile = () => {
             Profile Description
             <textarea
               name="proffileDesc"
-              onChange={handleInputs}
-              value={inputs.profileDesc}
+              onChange={(e) => handleInputs(e, setForm, form)}
+              value={form.profileDesc}
             />
           </label>
           <button>Update</button>

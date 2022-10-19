@@ -67,7 +67,7 @@ const BusinessDeatails = () => {
         </div>
         <div className={styles.images}>
           {images.map((img, index) => (
-            <img src={img} alt={`extra buiness images ${index}`} />
+            <img src={img} alt={`extra buiness images ${index}`} key={index} />
           ))}
         </div>
       </article>

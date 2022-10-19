@@ -1,3 +1,11 @@
+.notification1 {
+  flex-basis: 25%;
+}
+.line {
+  border-bottom: 0.5px solid rgba(50, 50, 50, 0.35);
+  width: 90%;
+  margin: auto;
+}
 .notification {
   background: #fff;
   border-radius: 5px;

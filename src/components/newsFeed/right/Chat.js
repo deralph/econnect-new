@@ -2,18 +2,40 @@ import React from "react";
 import { BsFillChatLeftTextFill } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
 import styles from "../../../styles/newsFeed/chat.module.css";
+import BackArrow from "../BackArrow";
 import { chatArray } from "../database";
 
-const Chat = () => {
+const Chat = ({ chat }) => {
+  const option = [
+    {
+      main: "New Chat",
+      color: "#4063D6",
+    },
+  ];
+
   return (
-    <article className={styles.notification}>
-      <div className={styles.top}>
-        <p>
-          <BsFillChatLeftTextFill className={styles.chat} />
-          Chats
-        </p>
-        <p>See All</p>
-      </div>
+    <article
+      className={
+        !chat
+          ? `${styles.notification}`
+          : `${styles.notification} ${styles.notification1}`
+      }
+    >
+      {!chat && (
+        <div className={styles.top}>
+          <p>
+            <BsFillChatLeftTextFill className={styles.chat} />
+            Chats
+          </p>
+          <p>See All</p>
+        </div>
+      )}
+      {chat && (
+        <>
+          <BackArrow heading={"Chats"} option={option} />
+          <div className={styles.line}></div>
+        </>
+      )}
       <div className={styles.container}>
         {chatArray.map(({ img, name, message, seen, time }, index) => {
           return (

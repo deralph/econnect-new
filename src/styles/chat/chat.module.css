@@ -1,0 +1,86 @@
+.chat {
+  display: flex;
+  justify-content: space-between;
+  background: #eee;
+}
+.chatSection {
+  flex-basis: 40%;
+  margin: 12px 2px 7px 7px;
+  background: #fff;
+  box-shadow: 0px 4.2171px 21.0855px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+}
+.part,
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head {
+  background: #092685;
+  padding: 1em 5%;
+}
+.part div {
+  margin-left: 1em;
+}
+.part p {
+  font-family: "Montserrat";
+}
+.part p {
+  font-weight: 600;
+  font-size: 1.12em;
+  line-height: 22px;
+  color: #ffffff;
+}
+.part p:nth-child(2) {
+  font-weight: 500;
+  font-size: 0.7em;
+  color: rgba(255, 255, 255, 0.8);
+}
+.icon {
+  color: #fff;
+  font-size: 1.5em;
+}
+.chatLog {
+  height: 60%;
+  background: #fff;
+}
+.text {
+  background: #eee;
+  padding: 1em 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.input {
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  width: 92%;
+  border: 0.5px solid rgba(0, 0, 0, 0.35);
+  border-radius: 50px;
+  padding: 1em;
+  justify-content: space-between;
+}
+.input textarea {
+  width: 92%;
+  background: transparent;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: rgba(0, 0, 0, 0.7);
+  height: auto;
+}
+.icon1 {
+  color: #323232;
+  font-size: 1em;
+}
+.icon2 {
+  background: #4063d6;
+  box-shadow: 0px 3.58333px 201px rgba(64, 99, 214, 0.4);
+  padding: 0.2em;
+  font-size: 2em;
+  color: #fff;
+  border-radius: 50%;
+}

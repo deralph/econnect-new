@@ -4,6 +4,7 @@ import Login from "./components/landingpage-signin/Login";
 import Register from "./components/landingpage-signin/Register";
 import NewsFeed from "./components/newsFeed/newsFeed";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Chat from "./components/chat/Chat";
 
 function App() {
   return (
@@ -31,6 +32,13 @@ function App() {
           <Route path="/edit-profile" element={<NewsFeed editProfile />} />
           <Route path="/Notification" element={<NewsFeed notification />} />
           <Route path="/friends" element={<NewsFeed friends />} />
+          <Route path="/add-friends" element={<NewsFeed addFriends />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/chat-profile" element={<Chat profile />} />
+          <Route
+            path="/friends-profile"
+            element={<NewsFeed friendsProfile />}
+          />
           <Route
             path="/business-details"
             element={<NewsFeed businessDetails />}

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
-import style from "../../styles/landingPage.module.css";
+import { handleInputs } from "../../extra/function";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -12,16 +12,6 @@ const Register = () => {
     password: "",
     repeatPass: "",
   });
-
-  const handleInputs = (e) => {
-    e.preventDefault();
-    const name = e.target.name;
-    const value = e.target.value;
-    setForm({
-      ...form,
-      [name]: value,
-    });
-  };
 
   return (
     <section className={styles.section}>
@@ -40,19 +30,23 @@ const Register = () => {
               type="text"
               name="fullName"
               value={form.fullName}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
           <div>
             <p>are you a student?</p>
-            <div className="radios" onChange={handleInputs} name="student">
+            <div
+              className="radios"
+              onChange={(e) => handleInputs(e, setForm, form)}
+              name="student"
+            >
               <label>
                 <input
                   id="student"
                   name="student"
                   type="radio"
                   value="yes"
-                  checked={form.student === "yes"}
+                  // checked={form.student === "yes"}
                 />
                 Yes
               </label>
@@ -62,7 +56,7 @@ const Register = () => {
                   name="student"
                   type="radio"
                   value="no"
-                  checked={form.student === "no"}
+                  // checked={form.student === "no"}
                 />
                 No
               </label>
@@ -74,7 +68,7 @@ const Register = () => {
               type="text"
               name="idNo"
               value={form.idNo}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
           <label htmlFor="email">
@@ -83,7 +77,7 @@ const Register = () => {
               type="text"
               name="email"
               value={form.email}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
           <label htmlFor="Phone Number">
@@ -92,7 +86,7 @@ const Register = () => {
               type="text"
               name="phoneNo"
               value={form.phoneNo}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
           <label htmlFor="password">
@@ -101,7 +95,7 @@ const Register = () => {
               type="text"
               name="password"
               value={form.password}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
           <label htmlFor="full name">
@@ -110,7 +104,7 @@ const Register = () => {
               type="text"
               name="repeatPass"
               value={form.repeatPass}
-              onChange={handleInputs}
+              onChange={(e) => handleInputs(e, setForm, form)}
             />
           </label>
 

@@ -15,9 +15,9 @@ const Direction = () => {
       </h2>
       <div className={styles.center}>
         <article className={styles.direction}>
-          {direction.map(({ image, direction, heading }) => {
+          {direction.map(({ image, direction, heading }, index) => {
             return (
-              <div className={styles.cont}>
+              <div className={styles.cont} key={index}>
                 <img src={image} alt={heading} />
                 <div>
                   <h3>{heading}</h3>
