@@ -3,6 +3,7 @@ import styles from "../../styles/chat/chat.module.css";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { TiArrowForward } from "react-icons/ti";
 import { GrAttachment } from "react-icons/gr";
+import { chat } from "../newsFeed/database";
 
 const ChatSite = () => {
   return (
@@ -17,23 +18,35 @@ const ChatSite = () => {
         </div>
         <BiDotsVerticalRounded className={styles.icon} />
       </article>
-      <div className={styles.chatLog}></div>
+      <section className={styles.chatLog}>
+        {chat.map(({ image, message, time }, index) => {
+          return (
+            <article key={index}>
+              <img src={image} alt={image} />
+              <div>
+                <p>{message}</p>
+                <p className={styles.time}>{time}</p>
+              </div>
+            </article>
+          );
+        })}
+      </section>
       <form className={styles.text}>
         <div className={styles.input}>
           <textarea type="text" placeholder="Type your message" />
           <GrAttachment className={styles.icon1} />
         </div>
-        {/* <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "auto",
-          }}
-        > */}
+
         <TiArrowForward className={styles.icon2} />
-        {/* </div> */}
       </form>
+    </section>
+  );
+};
+
+export const Non = () => {
+  return (
+    <section className={styles.non}>
+      <h1>Select a Chat to start conversation</h1>
     </section>
   );
 };

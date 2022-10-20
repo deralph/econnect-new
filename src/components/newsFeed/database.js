@@ -519,3 +519,137 @@ export const friends = [
     active: "true",
   },
 ];
+
+export const chat = [
+  {
+    image: "/iconicUserPics.png",
+    message:
+      "hi\n Good morning hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+  {
+    image: "/iconicUserPics.png",
+    message: "hi\n Good morning",
+    time: "9:20am",
+  },
+  {
+    image: "/profilePics.png",
+    message: "hello",
+    time: "9:20am",
+  },
+];

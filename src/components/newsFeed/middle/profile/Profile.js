@@ -10,6 +10,7 @@ import { BsClock } from "react-icons/bs";
 import { AiFillLike } from "react-icons/ai";
 import { GoCommentDiscussion } from "react-icons/go";
 import { BiCommentDetail } from "react-icons/bi";
+import style1 from "../../../../styles/chat/chat.module.css";
 
 const Profile = ({ friendsProfile, chat }) => {
   const option = [
@@ -18,7 +19,7 @@ const Profile = ({ friendsProfile, chat }) => {
   ];
 
   return (
-    <section className={style.center}>
+    <section className={chat ? `${style1.chatSection}` : `${style.center}`}>
       {!friendsProfile ||
         (!chat && <BackArrow heading={"Profile"} option={option} />)}
       <section
@@ -29,7 +30,13 @@ const Profile = ({ friendsProfile, chat }) => {
         }
       >
         {friendsProfile || (chat && <BackArrow />)}
-        <article className={styles.mainInfo}>
+        <article
+          className={
+            chat
+              ? `${styles.mainInfo} ${styles.mainInfo1}`
+              : `${styles.mainInfo}`
+          }
+        >
           <img src="/profilePics.png" alt="profile pics" />
           <div className={styles.userInfo}>
             <h1>Oluwadamilola Samuel</h1>
@@ -59,14 +66,19 @@ const Profile = ({ friendsProfile, chat }) => {
                 <span>10</span>
               </p>
             </div>
-            {friendsProfile && (
-              <div className={styles.btns}>
-                <button>Message</button>
-                <button>
-                  Following <IoIosArrowDown />
-                </button>
-              </div>
-            )}
+            {friendsProfile ||
+              (chat && (
+                <div
+                  className={
+                    chat ? `${styles.btns} ${styles.btns1}` : `${styles.btns}`
+                  }
+                >
+                  {!chat && <button>Message</button>}
+                  <button>
+                    Following <IoIosArrowDown />
+                  </button>
+                </div>
+              ))}
           </div>
         </article>
         <p className={styles.description}>

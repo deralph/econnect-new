@@ -13,14 +13,16 @@
   display: flex;
   align-items: center;
 }
+.mainInfo1 {
+  padding: 1em;
+}
 .mainInfo {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 3em 0;
 }
 .mainInfo img {
-  width: 18.9em;
+  width: 40%;
   border-radius: 50%;
 }
 .userInfo h1 {
@@ -214,6 +216,9 @@
   width: 80%;
   margin: 1em 0 0 20%;
 }
+.btns1 {
+  justify-content: end;
+}
 .btns button {
   font-family: "Poppins";
   padding: 0.6em 1.5em;
@@ -225,8 +230,9 @@
   font-weight: 500;
   font-size: 0.74em;
 }
+.btns1 button,
 .btns button:nth-child(2) {
-  background: #4063d6;
+  background: #4063d6 !important;
   border-radius: 2.52459px;
   font-weight: 600;
   font-size: 0.8em;

@@ -35,6 +35,7 @@ function App() {
           <Route path="/add-friends" element={<NewsFeed addFriends />} />
           <Route path="/chat" element={<Chat />} />
           <Route path="/chat-profile" element={<Chat profile />} />
+          <Route path="/no-chat" element={<Chat non />} />
           <Route
             path="/friends-profile"
             element={<NewsFeed friendsProfile />}
