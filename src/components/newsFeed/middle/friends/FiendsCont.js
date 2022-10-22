@@ -28,7 +28,7 @@ const FiendsCont = ({ addFriends, admin }) => {
             </div>
             <p className={styles.name}>{name}</p>
             <p className={styles.course}>{course}</p>
-            <p className={styles.role}>Master Admin</p>
+            {admin &&<p className={styles.role}>Master Admin</p>}
             <button
               style={{
                 background: `${addFriends || admin ? `#4063D6` : "auto"}`,
