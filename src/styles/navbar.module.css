@@ -69,3 +69,45 @@
 .icon {
   margin-right: 1em;
 }
+
+/* admin nav  */
+
+.adminNav {
+  width: 20%;
+  background: #07174b;
+  box-shadow: 0px 4.15135px 20.7568px rgba(0, 0, 0, 0.13);
+  border-radius: 10px;
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1em;
+  grid-gap: 1em;
+}
+.adminNav div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+.adminNav div:hover {
+  background: rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 0px 18.9026px rgba(0, 0, 0, 0.15);
+  border-radius: 19.6882px;
+}
+.adminNav div p {
+  font-family: "Poppins";
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  /* width: 60%; */
+}
+.logout {
+  background: #f00;
+  border-radius: 50%;
+  padding: 0.1em;
+  color: #07174b;
+}
+.icon1 {
+  font-size: 2em;
+}

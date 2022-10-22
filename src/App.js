@@ -5,6 +5,7 @@ import Register from "./components/landingpage-signin/Register";
 import NewsFeed from "./components/newsFeed/newsFeed";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chat from "./components/chat/Chat";
+import Admin from "./components/admin/Admin";
 
 function App() {
   return (
@@ -48,6 +49,10 @@ function App() {
             path="/academic-assistance"
             element={<NewsFeed assistance />}
           />
+
+          {/* admin pages */}
+
+          <Route path="/admin" element={<Admin />} />
         </Routes>
       </div>
     </BrowserRouter>

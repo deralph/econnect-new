@@ -4,14 +4,16 @@ import styles from "../../styles/newsFeed/addques.module.css";
 import style from "../../styles/newsFeed/faq.module.css";
 import style1 from "../../styles/newsFeed/teachprac.module.css";
 
-const BackArrow = ({ heading, option, added }) => {
+const BackArrow = ({ heading, option, added, noArr }) => {
   return (
     <div className={added ? `${style.ques}` : `${style.ques} ${styles.ques}`}>
       <h2>
-        <FaArrowLeft
-          className={style1.icon}
-          style={{ color: "#4063D6", marginRight: "10px" }}
-        />{" "}
+        {noArr || (
+          <FaArrowLeft
+            className={style1.icon}
+            style={{ color: "#4063D6", marginRight: "10px" }}
+          />
+        )}{" "}
         {heading}
       </h2>
       {option && (

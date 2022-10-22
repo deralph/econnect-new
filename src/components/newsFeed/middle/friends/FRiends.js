@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import style from "../../../../styles/newsFeed/index.module.css";
 import styles from "../../../../styles/newsFeed/friends.module.css";
 import BackArrow from "../../BackArrow";
-import { friends } from "../../database";
 import Category from "./Category";
 import { IoIosArrowForward } from "react-icons/io";
+import FiendsCont from "./FiendsCont";
 
 const FRiends = ({ addFriends }) => {
   const [form, setForm] = useState({
@@ -54,25 +54,7 @@ const FRiends = ({ addFriends }) => {
           )}
         </p>
       )}
-      <article className={styles.container}>
-        {friends.map(({ img, name, course, active }, index) => {
-          return (
-            <div className={styles.friend} key={index}>
-              <div className="">
-                <img src={img} alt={name} />
-                {active && <p style={{ background: "#039b2d" }}></p>}
-              </div>
-              <p className={styles.name}>{name}</p>
-              <p className={styles.course}>{course}</p>
-              <button
-                style={{ background: `${addFriends ? `#4063D6` : "auto"}` }}
-              >
-                {addFriends ? "Follow" : "Chat"}
-              </button>
-            </div>
-          );
-        })}
-      </article>
+      {addFriends ? <FiendsCont addFriends /> : <FiendsCont />}
     </section>
   );
 };
