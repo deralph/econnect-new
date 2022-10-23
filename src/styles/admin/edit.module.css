@@ -1,0 +1,111 @@
+.edit {
+  flex-basis: 80%;
+  padding: 1%;
+}
+.edit-cont {
+  display: flex;
+  padding: 5%;
+  background: #ffffff;
+  box-shadow: 0px 9.03488px 29.0734px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  position: relative;
+}
+.edit-img {
+  border-radius: 50%;
+  height: 15em;
+}
+.edit button,
+.edit p,
+.head {
+  font-family: "Poppins";
+  display: flex;
+  align-items: center;
+}
+.info button,
+.del {
+  font-weight: 500;
+  font-size: 0.8em;
+  color: #ffffff;
+  padding: 0.7em;
+  background: #4063d6;
+  border-radius: 7.34375px;
+  margin: 1em 0;
+}
+.del {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: #f00f0f;
+  box-shadow: 0px 1.6701px 20.8763px rgba(0, 0, 0, 0.1);
+  border-radius: 4.99216px;
+  font-weight: 400;
+  margin: 0;
+}
+.info {
+  margin-left: 2em;
+}
+.info p:first-child {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #000000;
+}
+.info p:last-child {
+  font-weight: 500;
+  font-size: 1.4em;
+  color: rgba(0, 0, 0, 0.7);
+}
+.head {
+  font-weight: 600;
+  font-size: 1.7em;
+  color: #4063d6;
+}
+.option {
+  margin-top: 1em;
+}
+.option li {
+  padding: 0.4em;
+  font-weight: 400;
+  font-size: 1em;
+  color: #000000;
+  border: 0.5px solid rgba(0, 0, 0, 0.35);
+  border-radius: 5px;
+  margin: 0.7em 0;
+}
+.check {
+  color: #4063d6;
+  margin-right: 0.5em;
+}
+.userStat {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.userStat div {
+  padding: 1em;
+  box-shadow: 0px 0px 18.4576px rgba(0, 0, 0, 0.15);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1em 1em 1em 0;
+  color: #fff !important;
+}
+.userStat div:first-child {
+  background: #4063d6;
+}
+.userStat div:nth-child(2) {
+  background: #039b2d;
+}
+.userStat div:last-child {
+  background: #f00;
+}
+.userStat div p {
+  font-size: 0.8em !important;
+  width: 50%;
+  text-align: center;
+  font-weight: 500;
+  color: #ffffff !important;
+  margin-top: 0.6em;
+}
+.icon1 {
+  font-size: 2em;
+}

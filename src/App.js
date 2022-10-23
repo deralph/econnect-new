@@ -53,6 +53,9 @@ function App() {
           {/* admin pages */}
 
           <Route path="/admin" element={<Admin />} />
+          <Route path="/edit-admin" element={<Admin edit />} />
+          <Route path="/users" element={<Admin user />} />
+          <Route path="/users-profile" element={<Admin userProfile />} />
         </Routes>
       </div>
     </BrowserRouter>

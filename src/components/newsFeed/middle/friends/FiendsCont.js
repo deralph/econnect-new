@@ -2,7 +2,8 @@ import React from "react";
 import styles from "../../../../styles/newsFeed/friends.module.css";
 import { friends } from "../../database";
 
-const FiendsCont = ({ addFriends, admin }) => {
+const FiendsCont = ({ addFriends, admin, user }) => {
+  const check = user && admin;
   return (
     <article
       className={
@@ -28,14 +29,16 @@ const FiendsCont = ({ addFriends, admin }) => {
             </div>
             <p className={styles.name}>{name}</p>
             <p className={styles.course}>{course}</p>
-            <p className={styles.role}>Master Admin</p>
-            <button
-              style={{
-                background: `${addFriends || admin ? `#4063D6` : "auto"}`,
-              }}
-            >
-              {addFriends ? "Follow" : admin ? "Edi Role" : "Chat"}
-            </button>
+            {check ? "" : admin && <p className={styles.role}>Master Admin</p>}
+            {!user && (
+              <button
+                style={{
+                  background: `${addFriends || admin ? `#4063D6` : "auto"}`,
+                }}
+              >
+                {addFriends ? "Follow" : admin ? "Edi Role" : "Chat"}
+              </button>
+            )}
           </div>
         );
       })}
