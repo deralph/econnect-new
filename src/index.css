@@ -13,6 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* overflow: hidden; */
+  background: #eee;
 }
 
 code {
@@ -39,4 +40,8 @@ select {
 }
 button {
   border: none;
+}
+.edit {
+  flex-basis: 80%;
+  padding: 1%;
 }

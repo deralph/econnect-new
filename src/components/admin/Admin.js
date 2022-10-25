@@ -5,13 +5,16 @@ import styles from "../../styles/chat/chat.module.css";
 import FiendsCont from "../newsFeed/middle/friends/FiendsCont";
 import EditRole from "./EditRole";
 import User from "./User";
-import UserProfile from "./UserProfile";
+import Verify from "./Verify";
+import PostNews from "./PostNews";
+import Update from "./Update";
+import Tp from "./Tp";
 
-const Admin = ({ edit, user, userProfile }) => {
+const Admin = ({ edit, tp, update, user, news, userProfile, verify }) => {
   return (
     <section>
       <AppNav />
-      <div className={styles.chat}>
+      <main className={styles.chat}>
         <AdminNav />
         {edit ? (
           <EditRole />
@@ -19,10 +22,18 @@ const Admin = ({ edit, user, userProfile }) => {
           <User />
         ) : userProfile ? (
           <EditRole profile />
+        ) : verify ? (
+          <Verify />
+        ) : news ? (
+          <PostNews />
+        ) : update ? (
+          <Update />
+        ) : tp ? (
+          <Tp />
         ) : (
           <FiendsCont admin />
         )}
-      </div>
+      </main>
     </section>
   );
 };

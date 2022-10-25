@@ -19,13 +19,8 @@ const FRiends = ({ addFriends }) => {
 
   const option = [
     {
-      main: addFriends
-        ? "Add in Category"
-        : // : category === false && form.faculty && form.department
-          // ? "Add in Category"
-          "Add Friends",
+      main: addFriends ? "Add in Category" : "Add Friends",
       color: "#4063D6",
-      // onclick: addFriends ? setcategory(true) : null,
     },
   ];
 

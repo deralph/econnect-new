@@ -56,6 +56,10 @@ function App() {
           <Route path="/edit-admin" element={<Admin edit />} />
           <Route path="/users" element={<Admin user />} />
           <Route path="/users-profile" element={<Admin userProfile />} />
+          <Route path="/verified-user" element={<Admin verify />} />
+          <Route path="/post-news" element={<Admin news />} />
+          <Route path="/updates" element={<Admin update />} />
+          <Route path="/upload-tp" element={<Admin tp />} />
         </Routes>
       </div>
     </BrowserRouter>

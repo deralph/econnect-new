@@ -43,7 +43,7 @@ const newsFeed = ({
   return (
     <section className={styles.section}>
       <AppNav />
-      <div className="" style={{ display: "flex", paddingTop: "55px" }}>
+      <main className="" style={{ display: "flex", paddingTop: "55px" }}>
         <SideNav />
         {post ? (
           <PostCenter />
@@ -87,7 +87,7 @@ const newsFeed = ({
           <FeedCenter />
         )}
         {notification ? <RightSide notification /> : <RightSide />}
-      </div>
+      </main>
     </section>
   );
 };

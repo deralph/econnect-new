@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../../../../styles/newsFeed/friends.module.css";
 import { friends } from "../../database";
 
-const FiendsCont = ({ addFriends, admin, user }) => {
+const FiendsCont = ({ addFriends, admin, user, verify }) => {
   const check = user && admin;
   return (
     <article
@@ -17,12 +17,13 @@ const FiendsCont = ({ addFriends, admin, user }) => {
         return (
           <div
             className={
-              admin
+              admin || verify
                 ? `${styles.friend} ${styles.friendAdd}`
                 : `${styles.friend}`
             }
             key={index}
           >
+            {verify && <button className={styles.verify}>Unerify</button>}{" "}
             <div className="">
               <img src={img} alt={name} />
               {active && <p style={{ background: "#039b2d" }}></p>}
@@ -30,7 +31,7 @@ const FiendsCont = ({ addFriends, admin, user }) => {
             <p className={styles.name}>{name}</p>
             <p className={styles.course}>{course}</p>
             {check ? "" : admin && <p className={styles.role}>Master Admin</p>}
-            {!user && (
+            {(!user || !verify) && (
               <button
                 style={{
                   background: `${addFriends || admin ? `#4063D6` : "auto"}`,

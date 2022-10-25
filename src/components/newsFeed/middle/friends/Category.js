@@ -76,7 +76,7 @@ const Category = ({ setcategory, form, setForm, setcategoryAdded }) => {
             />
             <p>Non Student</p>
           </label>
-          <p>{form.student}</p>
+          {/* <p>{form.student}</p> */}
           <button
             onClick={onCategoryChanged}
             disabled={

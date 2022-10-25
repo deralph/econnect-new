@@ -1,0 +1,73 @@
+.article {
+  /* background: #fff; */
+  /* height: 100%; */
+  display: flex;
+  justify-content: space-evenly;
+}
+.article form {
+  flex-basis: 47%;
+  background: #fff;
+}
+.article form {
+  padding: 3em 1.6em;
+}
+.student P,
+.labelText {
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1em;
+  color: #4063d6;
+}
+.article form input[type="text"],
+.article form textarea,
+.tags {
+  background: rgba(217, 217, 217, 0.16);
+  border: 0.611479px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2.10855px;
+  width: 100%;
+  margin: 0.2em 0 0.7em;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 0.7em;
+  color: rgba(0, 0, 0, 0.38);
+  padding: 0.7em 1em;
+}
+.article form textarea {
+  font-style: italic;
+  height: 15vh;
+}
+.tags {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 0.3em 0.5em !important; */
+}
+.tags div input {
+  background: red !important;
+  border: none !important;
+  /* width: 100% !important; */
+  font-size: 1em !important;
+  padding: 0 !important;
+}
+.student label {
+  display: flex;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 1.1em;
+  color: rgba(50, 50, 50, 0.6);
+}
+.file {
+  flex-basis: 47%;
+}
+.file div:nth-child(1) {
+  background: #fff;
+  /* width: 100%; */
+  padding: 10%;
+}
+.head {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 0.8em;
+  text-align: center;
+  color: #4063d6;
+}
