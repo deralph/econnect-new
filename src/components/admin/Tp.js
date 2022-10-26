@@ -2,39 +2,46 @@ import React from "react";
 import BackArrow from "../newsFeed/BackArrow";
 
 import styles from "../../styles/admin/tp.module.css";
-import { FaFile } from "react-icons/fa";
-const Tp = () => {
+import { BsFillFileEarmarkTextFill } from "react-icons/bs";
+const Tp = ({ nysc }) => {
   return (
     <section className="edit">
-      <BackArrow noArr heading={"Upload Teaching Practice"} />
+      <BackArrow
+        noArr
+        heading={nysc ? "NYSC Senate List Upload" : "Upload Teaching Practice"}
+      />
       <article className={styles.article}>
         <div className={styles.image}>
-          <img src="/teachingPractice.png" alt="teaching Practice" />
-          <p>ONLY FOR FACULTY OF EDUCATION</p>
+          <img
+            src={nysc ? "nysc.png" : "/teachingPractice.png"}
+            alt="teaching Practice"
+          />
+          <p>{nysc ? "GRADUATES ONLY" : "ONLY FOR FACULTY OF EDUCATION"}</p>
         </div>
         <div className={styles.info}>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias quis
-            commodi quas nihil odio sunt
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam
-            animi totam aliquid sapiente quam, voluptatibus nam nemo distinctio!
-            Facilis, tempora?
+            Upload Document for Teaching Practice List arranged in the following
+            order of fields:
+            <span>
+              RN | S/N | MATRIC NO | SURNAME | OTHER NAMES | GENDER | ORIGIN |
+              GRADE | PHONE NO | STUDY MODE | JAMN NO | DATE OF BIRTH
+            </span>
           </p>
           <div>
-            <FaFile style={{ fontSize: "2em", textAlign: "center" }} />
-            <p>Attach file</p>
+            <BsFillFileEarmarkTextFill
+              style={{ fontSize: "4em", color: "#4063d6" }}
+            />
+            <p>Upload Document</p>
           </div>
           <label htmlFor="">
-            select type
+            <p>Document Format</p>
             <select name="" id="">
-              <option value="pdf">pdf</option>
-              <option value="png">png</option>
-              <option value="jpeg">jpeg</option>
+              <option value="pdf">PDF</option>
+              <option value="png">PNG</option>
+              <option value="jpeg">TPEG</option>
             </select>
           </label>
-          <button>upload now</button>
+          <button>Upload </button>
         </div>
       </article>
     </section>

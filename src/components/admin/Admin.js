@@ -9,8 +9,19 @@ import Verify from "./Verify";
 import PostNews from "./PostNews";
 import Update from "./Update";
 import Tp from "./Tp";
+import Business from "./business/Business";
 
-const Admin = ({ edit, tp, update, user, news, userProfile, verify }) => {
+const Admin = ({
+  edit,
+  business,
+  nysc,
+  tp,
+  update,
+  user,
+  news,
+  userProfile,
+  verify,
+}) => {
   return (
     <section>
       <AppNav />
@@ -30,6 +41,10 @@ const Admin = ({ edit, tp, update, user, news, userProfile, verify }) => {
           <Update />
         ) : tp ? (
           <Tp />
+        ) : nysc ? (
+          <Tp nysc />
+        ) : business ? (
+          <Business adminDisable />
         ) : (
           <FiendsCont admin />
         )}
