@@ -72,7 +72,7 @@ const newsFeed = ({
         ) : businessDetails ? (
           <BusinessDeatails />
         ) : profile ? (
-          <Profile />
+          <Profile pro />
         ) : editProfile ? (
           <EditProfile />
         ) : notification ? (

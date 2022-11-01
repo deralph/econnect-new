@@ -7,8 +7,13 @@ import { MdLocationPin } from "react-icons/md";
 import { RiMailFill } from "react-icons/ri";
 import { BsFillTelephoneFill, BsGlobe } from "react-icons/bs";
 
-const BusinessDeatails = () => {
-  const option = [{ main: "Report", color: "#4063D6" }];
+const BusinessDeatails = ({ disable, approve }) => {
+  const option = [
+    {
+      main: `${disable ? "Disable" : approve ? "Approve" : "Report"}`,
+      color: `${disable ? "#f00" : approve ? "#08B839" : "#4063D6"}`,
+    },
+  ];
   const images = [
     "/businessdp.png",
     "/businessdp.png",
@@ -17,7 +22,7 @@ const BusinessDeatails = () => {
     "/businessdp.png",
   ];
   return (
-    <section className={style.center}>
+    <section className={`${style.center} ${style.center1}`}>
       <BackArrow heading={"Voltage Services"} option={option} />
       <article className={styles.section}>
         <div className={styles.businessDp}>

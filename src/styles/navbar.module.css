@@ -111,3 +111,23 @@
 .icon1 {
   font-size: 2em;
 }
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .sidenav {
+    flex-basis: 35%;
+  }
+  .side {
+    flex-basis: 5%;
+  }
+  .adminNav {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .sidenav {
+    display: none;
+  }
+}

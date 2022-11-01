@@ -74,7 +74,7 @@
   display: flex;
 }
 .part p {
-  font-family: "Poppins";
+  font-family: "Poppins" !important;
 }
 .name {
   font-weight: 600;
@@ -83,6 +83,7 @@
   font-size: 12px;
   text-transform: capitalize;
   text-align: left;
+  font-family: "Poppins";
 }
 .name1 {
   font-family: "Poppins";
@@ -139,4 +140,17 @@
   font-size: 6.33278px;
   line-height: 9px;
   color: rgba(0, 0, 0, 0.7);
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .notification1 {
+    flex-basis: 35%;
+  }
+}
+@media (max-width: 550px) {
+  .notification1 {
+    display: none;
+  }
 }

@@ -46,3 +46,9 @@
 .search {
   color: #4063d6;
 }
+
+@media (max-width: 1000px) {
+  .top {
+    margin: auto;
+  }
+}

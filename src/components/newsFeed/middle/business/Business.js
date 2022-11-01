@@ -7,14 +7,21 @@ import { AiTwotoneTag } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import BackArrow from "../../BackArrow";
 
-const Business = () => {
+const Business = ({ admin, small }) => {
   const rate = [1, 2, 3, 4, 5];
   const option = [{ main: "Add Business", Icon: FaToolbox, color: "#4063D6" }];
   return (
-    <section className={style.center}>
-      <BackArrow heading="Business" option={option} />
+    <section className={small ? `${styles.center1} ` : `${style.center}`}>
+      {!admin && <BackArrow heading="Business" option={option} />}
 
-      <article className={styles.business}>
+      <article
+        className={
+          admin
+            ? `${styles.business} ${styles.business1} `
+            : `${styles.business}`
+        }
+        style={{ background: "#fff" }}
+      >
         {business.map(({ image, name, phone, type, rating }, index) => {
           return (
             <article key={index}>
@@ -37,19 +44,24 @@ const Business = () => {
                   </p>
                 </div>
               </div>
-              <div>
-                {rate.map((ok, index) => {
-                  return (
-                    <FaStar
-                      key={index}
-                      style={{
-                        color:
-                          index < rating ? "#E59112" : "rgba(50, 50, 50, 0.3)",
-                      }}
-                    />
-                  );
-                })}
-              </div>
+              {!small && (
+                <div>
+                  {rate.map((ok, index) => {
+                    return (
+                      <FaStar
+                        key={index}
+                        style={{
+                          color:
+                            index < rating
+                              ? "#E59112"
+                              : "rgba(50, 50, 50, 0.3)",
+                        }}
+                      />
+                    );
+                  })}
+                </div>
+              )}
+              {small && <button>Approve</button>}
             </article>
           );
         })}

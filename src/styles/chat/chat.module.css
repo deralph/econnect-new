@@ -146,3 +146,18 @@
   color: #fff;
   border-radius: 50%;
 }
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .chatSection,
+  .non {
+    flex-basis: 55%;
+  }
+}
+@media (max-width: 550px) {
+  .chatSection,
+  .non {
+    flex-basis: 100%;
+  }
+}

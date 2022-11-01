@@ -20,6 +20,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
 }
 .ques ul {
   display: flex;
@@ -69,4 +70,9 @@
   font-weight: 400;
   font-size: 0.9em;
   color: #000000;
+}
+@media (max-width: 550px) {
+  .ques h2 {
+    /* font-size: 0.7em !important; */
+  }
 }

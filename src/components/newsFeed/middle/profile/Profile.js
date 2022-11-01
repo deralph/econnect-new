@@ -8,16 +8,20 @@ import { FaGraduationCap } from "react-icons/fa";
 import style1 from "../../../../styles/chat/chat.module.css";
 import TimelinePost from "./TimelinePost";
 
-const Profile = ({ friendsProfile, chat }) => {
+const Profile = ({ pro, friendsProfile, chat }) => {
   const option = [
-    { main: "Logout", color: "#039B2D" },
-    { main: "Edit Profile", color: "#4063D6" },
+    {
+      main: friendsProfile ? "" : "Logout",
+      color: friendsProfile ? "" : "#039B2D",
+    },
+    { main: friendsProfile ? "Message" : "Edit Profile", color: "#4063D6" },
   ];
 
   return (
     <section className={chat ? `${style1.chatSection}` : `${style.center}`}>
       {!friendsProfile ||
         (!chat && <BackArrow heading={"Profile"} option={option} />)}
+      {pro && <BackArrow heading={"Profile"} option={option} />}
       <section
         className={
           friendsProfile

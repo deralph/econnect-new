@@ -3,6 +3,7 @@
   height: 100%;
   overflow: scroll;
   position: relative;
+  padding-top: 1em;
 }
 .extra {
   margin-top: 1em;
@@ -236,4 +237,18 @@
   border-radius: 2.52459px;
   font-weight: 600;
   font-size: 0.8em;
+}
+
+/* media queries */
+
+@media (max-width: 1000px) {
+  .mainInfo1 {
+    align-items: flex-start;
+  }
+  .mainInfo1 .userInfo h1 {
+    font-size: 1.2em;
+  }
+  .mainInfo1 .userInfo p {
+    font-size: 0.9em;
+  }
 }

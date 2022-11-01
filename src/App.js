@@ -6,7 +6,6 @@ import NewsFeed from "./components/newsFeed/newsFeed";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chat from "./components/chat/Chat";
 import Admin from "./components/admin/Admin";
-import Business from "./components/admin/business/Business";
 
 function App() {
   return (
@@ -62,7 +61,11 @@ function App() {
           <Route path="/updates" element={<Admin update />} />
           <Route path="/upload-tp" element={<Admin tp />} />
           <Route path="/upload-nysc" element={<Admin nysc />} />
+          <Route path="/approve-Business" element={<Admin approve />} />
+          <Route path="/disable-Business" element={<Admin disable />} />
+          <Route path="/sub" element={<Admin sub />} />
           <Route path="/admin-Business" element={<Admin business />} />
+          <Route path="/admin-faq" element={<Admin faq />} />
         </Routes>
       </div>
     </BrowserRouter>

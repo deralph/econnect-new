@@ -1,6 +1,13 @@
 .ques {
   padding: 1.3em !important;
 }
+
+.ques1 {
+  padding: 0 !important;
+}
+.ques1 h2 {
+  font-weight: 700 !important;
+}
 .question {
   background: #fff;
   height: calc(100% - 2.5em);

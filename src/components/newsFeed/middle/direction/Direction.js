@@ -3,16 +3,12 @@ import style from "../../../../styles/newsFeed/index.module.css";
 import styles from "../../../../styles/newsFeed/direction.module.css";
 import { direction } from "../../database";
 import BackArrow from "../../BackArrow";
-import { FaArrowLeft } from "react-icons/fa";
 
 const Direction = () => {
   return (
     <section className={`${style.center} ${styles.section} `}>
-      {/* <BackArrow heading="Directions" /> */}
-      <h2>
-        <FaArrowLeft style={{ color: "#4063D6", marginRight: "10px" }} />{" "}
-        Directions
-      </h2>
+      <BackArrow heading="Directions" noAdd />
+
       <div className={styles.center}>
         <article className={styles.direction}>
           {direction.map(({ image, direction, heading }, index) => {

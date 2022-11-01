@@ -1,19 +1,16 @@
 import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
 import styles from "../../../../styles/newsFeed/teachprac.module.css";
 import style from "../../../../styles/newsFeed/index.module.css";
 import style1 from "../../../../styles/newsFeed/acad.module.css";
+import BackArrow from "../../BackArrow";
 
 const TeachPrac = ({ nysc }) => {
   return (
     <section className={`${style.center} ${style1.center}`}>
-      <h2 className={style1.head}>
-        <FaArrowLeft
-          className={styles.icon}
-          style={{ color: "#4063D6", marginRight: "10px" }}
-        />{" "}
-        {nysc ? "NYSC Senate Lists " : "Teaching Practice"}
-      </h2>
+      <BackArrow
+        heading={nysc ? "NYSC Senate Lists " : "Teaching Practice"}
+        noAdd
+      />
       <div
         className={nysc ? `${styles.info} ${styles.nysc}` : `${styles.info}`}
       >

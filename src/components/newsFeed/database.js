@@ -653,3 +653,26 @@ export const chat = [
     time: "9:20am",
   },
 ];
+export const subscriptionPlan = [
+  {
+    plan: "BASIC PLAN",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet velit at dignissim tellus enim. Purus non non viverra et in ornare sit. ",
+    monthly: "N2000",
+    yearly: "N2000",
+  },
+  {
+    plan: "BUSINESS PLAN",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet velit at dignissim tellus enim. Purus non non viverra et in ornare sit. ",
+    monthly: "N2000",
+    yearly: "N2000",
+  },
+  {
+    plan: "CORPORATE PLAN",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquet velit at dignissim tellus enim. Purus non non viverra et in ornare sit. ",
+    monthly: "N2000",
+    yearly: "N2000",
+  },
+];

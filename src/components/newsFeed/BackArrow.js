@@ -4,9 +4,17 @@ import styles from "../../styles/newsFeed/addques.module.css";
 import style from "../../styles/newsFeed/faq.module.css";
 import style1 from "../../styles/newsFeed/teachprac.module.css";
 
-const BackArrow = ({ heading, option, added, noArr }) => {
+const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   return (
-    <div className={added ? `${style.ques}` : `${style.ques} ${styles.ques}`}>
+    <div
+      className={
+        added
+          ? `${style.ques}`
+          : noAdd
+          ? `${style.ques} ${styles.ques1}`
+          : `${style.ques} ${styles.ques}`
+      }
+    >
       <h2>
         {noArr || (
           <FaArrowLeft

@@ -109,3 +109,10 @@
 .icon1 {
   font-size: 2em;
 }
+
+@media (max-width: 1000px) {
+  .edit {
+    flex-basis: 100%;
+    padding: 1%;
+  }
+}

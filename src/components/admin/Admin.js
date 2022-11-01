@@ -9,11 +9,15 @@ import Verify from "./Verify";
 import PostNews from "./PostNews";
 import Update from "./Update";
 import Tp from "./Tp";
-import Business from "./business/Business";
+import BusinessDeatails from "./business/BusinessDetails";
+import SubPackage from "./business/SubPackage";
+import Businesses from "./business/Businesses";
+import Faq from "./faq/Faq";
 
 const Admin = ({
   edit,
-  business,
+  disable,
+  approve,
   nysc,
   tp,
   update,
@@ -21,6 +25,9 @@ const Admin = ({
   news,
   userProfile,
   verify,
+  sub,
+  business,
+  faq,
 }) => {
   return (
     <section>
@@ -43,8 +50,16 @@ const Admin = ({
           <Tp />
         ) : nysc ? (
           <Tp nysc />
+        ) : disable ? (
+          <BusinessDeatails disable />
+        ) : approve ? (
+          <BusinessDeatails approve />
+        ) : sub ? (
+          <SubPackage />
         ) : business ? (
-          <Business adminDisable />
+          <Businesses />
+        ) : faq ? (
+          <Faq />
         ) : (
           <FiendsCont admin />
         )}

@@ -50,13 +50,15 @@
   color: rgba(0, 0, 0, 0.2);
 }
 .center {
-  width: 50vw;
+  flex-basis: 50%;
   margin: 12px 2px 7px 7px;
-  /* overflow: hidden; */
   margin-top: -60px;
   padding-top: 60px;
   height: 100vh;
   position: relative;
+}
+.center {
+  width: 50%;
 }
 .mind {
   background: #fff;
@@ -102,4 +104,20 @@
   font-size: 1.2em;
 }
 
-/* feed post */
+/* media queries */
+
+@media (max-width: 1000px) {
+  .right {
+    display: none;
+  }
+  .center,
+  .center1 {
+    flex-basis: 63%;
+  }
+}
+@media (max-width: 550px) {
+  .center,
+  .center1 {
+    flex-basis: 100%;
+  }
+}
