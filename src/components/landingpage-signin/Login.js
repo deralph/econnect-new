@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
 import { AiOutlineArrowLeft } from "react-icons/ai";
 import { handleInputs } from "../../extra/function";
+import BackArrow from "../newsFeed/BackArrow";
 
 const Login = ({ forget, admin }) => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -16,10 +17,17 @@ const Login = ({ forget, admin }) => {
       />
       <article className={styles.container}>
         <form action="">
-          {admin && <AiOutlineArrowLeft className={styles.icon} />}
-          <h1>
+          {/* {admin && <AiOutlineArrowLeft className={styles.icon} />} */}
+          {/* <h1>
             {forget ? "Forgot password" : admin ? "Admin Login" : "Login"}
-          </h1>
+          </h1> */}
+          {forget ? (
+            <BackArrow heading={"Forgot password"} noArr />
+          ) : admin ? (
+            <BackArrow heading={"Admin Login"} />
+          ) : (
+            <BackArrow heading={"Login"} noArr />
+          )}
           {forget && (
             <p className={styles.forget}>
               Enter your registered email address to get a password reset link

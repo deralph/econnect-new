@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import AppNav from "../navbars/AppNav";
 import SideNav from "../navbars/SideNav";
 import styles from "../../styles/newsFeed/index.module.css";
@@ -18,8 +18,9 @@ import Profile from "./middle/profile/Profile";
 import EditProfile from "./middle/profile/EditProfile";
 import Notification from "./middle/notification/Notification";
 import FRiends from "./middle/friends/FRiends";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-const newsFeed = ({
+const NewsFeed = ({
   post,
   faq,
   schoolMap,
@@ -40,9 +41,16 @@ const newsFeed = ({
   friendsProfile,
   addFriends,
 }) => {
+  const nav = useRef();
+
+  // const click = () => {
+  // nav.current.display = "block";
+  // };
+
   return (
     <section className={styles.section}>
       <AppNav />
+      <GiHamburgerMenu className={styles.burger} />
       <main className="" style={{ display: "flex", paddingTop: "55px" }}>
         <SideNav />
         {post ? (
@@ -92,4 +100,4 @@ const newsFeed = ({
   );
 };
 
-export default newsFeed;
+export default NewsFeed;

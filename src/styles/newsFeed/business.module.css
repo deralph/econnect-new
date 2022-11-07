@@ -1,6 +1,9 @@
 .center1 {
   flex-basis: 30% !important;
 }
+.center {
+  flex-basis: 100% !important;
+}
 
 .busCont {
   display: flex;
@@ -44,7 +47,7 @@
   font-size: 1.05em;
   color: rgba(0, 0, 0, 0.7);
 }
-.business article {
+.business a {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -52,7 +55,7 @@
   box-shadow: 0px 0px 45px rgba(0, 0, 0, 0.13);
   border-radius: 5.18651px;
 }
-.business1 article {
+.business1 a {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.13) !important;
   margin-top: 1em;
   /* width: 20vw !important; */

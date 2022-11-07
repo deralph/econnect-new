@@ -82,15 +82,17 @@
 
 .package {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background: #fff;
   padding: 2em;
   box-shadow: 0px 4.2171px 21.0855px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
+  flex-wrap: wrap;
 }
 .each {
-  flex-basis: 31%;
+  flex-basis: 32%;
   border: 0.5px solid rgba(0, 0, 0, 0.45);
+  margin-top: 1em;
 }
 .head {
   padding: 1em 0;
@@ -194,4 +196,24 @@
   width: 90%;
   margin: auto;
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.45);
+}
+
+@media (max-width: 800px) {
+  .subBox {
+    display: none;
+  }
+  .business {
+    width: 100% !important;
+  }
+  .smallBus:first-child {
+    flex-basis: 100%;
+  }
+  .smallBus:last-child {
+    display: none;
+  }
+}
+@media (max-width: 720px) {
+  .package {
+    flex-direction: column;
+  }
 }

@@ -7,7 +7,7 @@ const Verify = () => {
   return (
     <sestion className={style.edit}>
       <BackArrow heading={"Verified User"} noArr />
-      <FiendsCont verify />
+      <FiendsCont admin verify />
     </sestion>
   );
 };

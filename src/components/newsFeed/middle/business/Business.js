@@ -6,12 +6,21 @@ import { business } from "../../database";
 import { AiTwotoneTag } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import BackArrow from "../../BackArrow";
+import { Link } from "react-router-dom";
 
 const Business = ({ admin, small }) => {
   const rate = [1, 2, 3, 4, 5];
   const option = [{ main: "Add Business", Icon: FaToolbox, color: "#4063D6" }];
   return (
-    <section className={small ? `${styles.center1} ` : `${style.center}`}>
+    <section
+      className={
+        small
+          ? `${styles.center1} `
+          : admin
+          ? `${styles.center}`
+          : `${style.center}`
+      }
+    >
       {!admin && <BackArrow heading="Business" option={option} />}
 
       <article
@@ -24,7 +33,7 @@ const Business = ({ admin, small }) => {
       >
         {business.map(({ image, name, phone, type, rating }, index) => {
           return (
-            <article key={index}>
+            <Link to="/business-details" key={index}>
               <div className={styles.busCont}>
                 <img src={image} alt={name} />
                 <div>
@@ -62,7 +71,7 @@ const Business = ({ admin, small }) => {
                 </div>
               )}
               {small && <button>Approve</button>}
-            </article>
+            </Link>
           );
         })}
       </article>

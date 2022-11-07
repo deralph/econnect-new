@@ -149,7 +149,7 @@
     flex-basis: 35%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .notification1 {
     display: none;
   }

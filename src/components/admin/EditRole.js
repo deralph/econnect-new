@@ -13,6 +13,7 @@ const EditRole = ({ profile }) => {
       <BackArrow heading={profile ? "Adetunji Oluwadamilola" : "Admins"} />
       <article className={styles["edit-cont"]}>
         <img
+          // style={{ borderRadius: "50%" }}
           className={styles["edit-img"]}
           src="/profilePics.png"
           alt="username"

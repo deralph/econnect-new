@@ -103,6 +103,12 @@
   margin-right: 10px;
   font-size: 1.2em;
 }
+.burger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
 
 /* media queries */
 
@@ -115,7 +121,7 @@
     flex-basis: 63%;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .center,
   .center1 {
     flex-basis: 100%;

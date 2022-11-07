@@ -83,9 +83,8 @@
   padding: 1em;
   box-shadow: 0px 0px 18.4576px rgba(0, 0, 0, 0.15);
   border-radius: 1em;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-content: center;
   margin: 1em 1em 1em 0;
   color: #fff !important;
 }
@@ -100,19 +99,36 @@
 }
 .userStat div p {
   font-size: 0.8em !important;
-  width: 50%;
   text-align: center;
   font-weight: 500;
   color: #ffffff !important;
+  margin: auto;
   margin-top: 0.6em;
 }
 .icon1 {
   font-size: 2em;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
   .edit {
     flex-basis: 100%;
     padding: 1%;
+  }
+}
+@media (max-width: 600px) {
+  .edit-cont {
+    flex-direction: column;
+  }
+  /* .edit-img { */
+  /* border-radius: 50%; */
+  /* } */
+}
+@media (max-width: 575px) {
+  .del {
+    /* bottom: 1em !important; */
+    /* left: 1em !important; */
+    /* position: relative; */
+    /* display: none !important; */
   }
 }

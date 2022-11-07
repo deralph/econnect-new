@@ -84,3 +84,34 @@
   /* font-size: 1em; */
   font-weight: 600;
 }
+@media (max-width: 850px) {
+  .article {
+    flex-direction: column;
+  }
+  .image {
+    min-height: 200px;
+    height: 30vh;
+    background: url("../../../public/nysc.png");
+    background-size: 100% 100%;
+    position: relative;
+    display: grid;
+    place-content: center;
+  }
+  .image::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    background: #00000030;
+  }
+  .image p {
+    color: #fff;
+    z-index: 10;
+    font-size: 1.5em;
+  }
+  .image img {
+    display: none;
+  }
+}

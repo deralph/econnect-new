@@ -17,14 +17,7 @@
   font-weight: 900;
   color: #4063d6;
 }
-/* .admin form, */
-.section1 form {
-  /* position: absolute; */
-  /* top: 50%; */
-  /* transform: translateY(-50%); */
-}
 .container {
-  /* background: red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -33,12 +26,9 @@
 .phone {
   height: 90vh;
   flex-basis: 60%;
-  /* background: blue; */
 }
 .section form {
-  /* padding: 8% 0 5% 7%; */
   flex-basis: 26%;
-  /* background: yellow; */
 }
 .section input {
   display: block;
@@ -112,19 +102,30 @@
   display: inline-flex;
   align-items: baseline;
   justify-content: center;
-  /* outline: none; */
   width: auto !important;
   color: black !important;
   margin-right: 10px;
   padding: 0 !important;
-  /* margin-right: 10px !important; */
 }
 .section div p {
   padding: 0;
 }
-/* .section input */
-/* .section div input {
-  background: black !important;
-  /* padding: 0; *
-  padding-right: 10px;
-} */
+
+@media (max-width: 1000px) {
+  .phone {
+    display: none;
+  }
+  .container {
+    /* height: 100vh; */
+    min-height: 800px;
+  }
+  .section form {
+    flex-basis: 98%;
+    background: rgba(242, 238, 238, 0.7);
+    margin: auto !important;
+    padding: 1em;
+    border-radius: 0.6em;
+    max-width: 600px;
+    box-shadow: 5px 3px 48px rgba(0, 0, 0, 0.3);
+  }
+}

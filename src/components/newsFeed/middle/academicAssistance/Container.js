@@ -12,12 +12,37 @@ const Container = () => {
     <section className={`${style.center} ${styles.center}`}>
       <h1 className={styles.head}>Academic Assistance</h1>
       <div className={styles.container}>
-        <Card name="e-Portal" Icon={FaUserCircle} color="#210E09" />
-        <Card name="Results" Icon={AiOutlineUnorderedList} color="#224BD2" />
-        <Card name="Teaching Practice" Icon={BiBuildings} color="#563708" />
-        <Card name="NYSC Approval" Icon={FaUserCheck} color="#12692B" />
-        <Card name="Directions" Icon={RiDirectionFill} color="#07174B" />
-        <Card name="FAQs" Icon={FaQuestionCircle} color="#290756" />
+        <Card
+          name="e-Portal"
+          Icon={FaUserCircle}
+          color="#210E09"
+          link="e-portal"
+        />
+        <Card
+          name="Results"
+          Icon={AiOutlineUnorderedList}
+          color="#224BD2"
+          link="results"
+        />
+        <Card
+          name="Teaching Practice"
+          Icon={BiBuildings}
+          color="#563708"
+          link="teaching-practice"
+        />
+        <Card
+          name="NYSC Approval"
+          Icon={FaUserCheck}
+          color="#12692B"
+          link="nysc-list"
+        />
+        <Card
+          name="Directions"
+          Icon={RiDirectionFill}
+          color="#07174B"
+          link="direction"
+        />
+        <Card name="FAQs" Icon={FaQuestionCircle} color="#290756" link="faq" />
       </div>
     </section>
   );

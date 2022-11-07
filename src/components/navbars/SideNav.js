@@ -1,38 +1,92 @@
 import React from "react";
 import styles from "../../styles/navbar.module.css";
 import { AiFillHome } from "react-icons/ai";
-import { FaToolbox, FaUserAlt, FaGraduationCap } from "react-icons/fa";
+import {
+  FaToolbox,
+  FaUserAlt,
+  FaGraduationCap,
+  FaUserFriends,
+  FaBell,
+  FaPowerOff,
+} from "react-icons/fa";
+import { BsFillChatLeftTextFill } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const SideNav = ({ chat }) => {
   return (
-    <ul
+    <div
       className={
         chat
           ? `${styles.sidenav} ${styles.side}`
           : `${styles.sidenav} ${styles.sidenav1}`
       }
     >
-      <NavContent
-        Icon={AiFillHome}
-        title="Home"
-        chat={chat ? "true" : "false"}
-      />
-      <NavContent
-        Icon={FaGraduationCap}
-        title="Academic Assistance"
-        chat={chat ? "true" : "false"}
-      />
-      <NavContent
-        Icon={FaToolbox}
-        title="Business"
-        chat={chat ? "true" : "false"}
-      />
-      <NavContent
-        Icon={FaUserAlt}
-        title="Profile"
-        chat={chat ? "true" : "false"}
-      />
-    </ul>
+      <ul>
+        <li>
+          <Link to={"/news-feed"}>
+            <AiFillHome className={styles.icon} />
+            {!chat && "Home"}
+          </Link>
+        </li>
+
+        <li>
+          <Link to={"/academic-assistance"}>
+            <FaGraduationCap className={styles.icon} />
+            {!chat && "Academic Assistance"}
+          </Link>
+        </li>
+
+        <li>
+          <Link to={"/business"}>
+            <FaToolbox className={styles.icon} />
+            {!chat && "Business"}
+          </Link>
+        </li>
+
+        <li>
+          <Link to={"/profile"}>
+            <FaUserAlt className={styles.icon} />
+            {!chat && "Profile"}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/login"}>
+            <FaPowerOff className={styles.icon} />
+            {!chat && "Logout"}
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        {" "}
+        <li>
+          <Link to={"/chat"}>
+            <BsFillChatLeftTextFill className={styles.icon} />
+            {!chat && "Chat"}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/friends"}>
+            <FaUserFriends className={styles.icon} />
+            {!chat && "Friends"}
+          </Link>
+        </li>
+        <li>
+          <Link to={"/notification"}>
+            <FaBell className={styles.icon} />
+            {!chat && "Notification"}
+          </Link>
+        </li>
+      </ul>
+      <ul>
+        <li>Download Now</li>
+        <li>
+          <img src="/appstore.png" alt="" />
+        </li>
+        <li>
+          <img src="/googleplaystore.png" alt="" />
+        </li>
+      </ul>
+    </div>
   );
 };
 

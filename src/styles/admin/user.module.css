@@ -51,4 +51,7 @@
   .top {
     margin: auto;
   }
+  .top form {
+    width: 60%;
+  }
 }

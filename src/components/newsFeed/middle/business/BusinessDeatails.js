@@ -22,7 +22,13 @@ const BusinessDeatails = ({ disable, approve }) => {
     "/businessdp.png",
   ];
   return (
-    <section className={`${style.center} ${style.center1}`}>
+    <section
+      className={
+        approve || disable
+          ? `${style.center} ${style.center1}  ${styles.center2}`
+          : `${style.center} ${style.center1}`
+      }
+    >
       <BackArrow heading={"Voltage Services"} option={option} />
       <article className={styles.section}>
         <div className={styles.businessDp}>

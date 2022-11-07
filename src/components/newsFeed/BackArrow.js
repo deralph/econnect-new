@@ -1,10 +1,12 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 import styles from "../../styles/newsFeed/addques.module.css";
 import style from "../../styles/newsFeed/faq.module.css";
 import style1 from "../../styles/newsFeed/teachprac.module.css";
 
 const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
+  const navigate = useNavigate();
   return (
     <div
       className={
@@ -18,6 +20,7 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
       <h2>
         {noArr || (
           <FaArrowLeft
+            onClick={() => navigate(-1)}
             className={style1.icon}
             style={{ color: "#4063D6", marginRight: "10px" }}
           />
