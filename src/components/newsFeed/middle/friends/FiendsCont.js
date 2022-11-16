@@ -31,13 +31,13 @@ const FiendsCont = ({ addFriends, admin, user, verify }) => {
             <p className={styles.name}>{name}</p>
             <p className={styles.course}>{course}</p>
             {check ? "" : admin && <p className={styles.role}>Master Admin</p>}
-            {(!user || !verify) && (
+            {!user && (!(user && admin) || !verify) && (
               <button
                 style={{
                   background: `${addFriends || admin ? `#4063D6` : "auto"}`,
                 }}
               >
-                {addFriends ? "Follow" : admin ? "Edi Role" : "Chat"}
+                {addFriends ? "Follow" : admin ? "Edit Role" : "Chat"}
               </button>
             )}
           </div>

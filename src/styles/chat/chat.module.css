@@ -147,8 +147,11 @@
   border-radius: 50%;
 }
 
-/* media queries */
-
+@media (max-width: 1151px) {
+  .chatSection {
+    flex-basis: 48%;
+  }
+}
 @media (max-width: 1000px) {
   .chatSection,
   .non {

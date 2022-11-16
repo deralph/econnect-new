@@ -25,6 +25,9 @@
 .ques ul {
   display: flex;
 }
+.ques ul li a {
+  color: #fff;
+}
 .ques ul li {
   margin-left: 1.3em;
   font-size: 0.8em;
@@ -32,8 +35,9 @@
   font-family: poppins;
   padding: 0.8em;
   border-radius: 0.4em;
-  color: #fff;
+  cursor: pointer;
 }
+
 .faq {
   background: #fff;
   padding: 1em;
@@ -70,9 +74,4 @@
   font-weight: 400;
   font-size: 0.9em;
   color: #000000;
-}
-@media (max-width: 550px) {
-  .ques h2 {
-    /* font-size: 0.7em !important; */
-  }
 }

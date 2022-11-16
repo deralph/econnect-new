@@ -12,7 +12,7 @@ const MyQues = () => {
 
   return (
     <>
-      <BackArrow heading="Add Question" option={option} />
+      <BackArrow heading="My Question" option={option} />
 
       <section className={styles.question}>
         {myQuestion.map(({ question, answer }, index) => {

@@ -676,3 +676,15 @@ export const subscriptionPlan = [
     yearly: "N2000",
   },
 ];
+
+export const breakdown = [
+  { name: "Chats", user: "1000", time: "100hrs", color: "#08B839" },
+  {
+    name: "Academic Assistant",
+    user: "1000",
+    time: "100hrs",
+    color: "#8C1228",
+  },
+  { name: "Home", user: "1000", time: "100hrs", color: "#4063D6" },
+  { name: "Business Searches", user: "1000", time: "100hrs", color: "#E59112" },
+];

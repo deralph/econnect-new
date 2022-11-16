@@ -49,9 +49,7 @@ function App() {
             path="/academic-assistance"
             element={<NewsFeed assistance />}
           />
-
           {/* admin pages */}
-
           <Route path="/admin" element={<Admin />} />
           <Route path="/edit-admin" element={<Admin edit />} />
           <Route path="/users" element={<Admin user />} />
@@ -59,13 +57,15 @@ function App() {
           <Route path="/verified-user" element={<Admin verify />} />
           <Route path="/post-news" element={<Admin news />} />
           <Route path="/updates" element={<Admin update />} />
-          <Route path="/upload-tp" element={<Admin tp />} />
+          <Route path=" /upload-tp" element={<Admin tp />} />
           <Route path="/upload-nysc" element={<Admin nysc />} />
           <Route path="/approve-Business" element={<Admin approve />} />
           <Route path="/disable-Business" element={<Admin disable />} />
           <Route path="/sub" element={<Admin sub />} />
           <Route path="/admin-Business" element={<Admin business />} />
           <Route path="/admin-faq" element={<Admin faq />} />
+          <Route path="/user-stats" element={<Admin userStats />} />{" "}
+          <Route path="/in-user-stats" element={<Admin inuserStats />} />
         </Routes>
       </div>
     </BrowserRouter>

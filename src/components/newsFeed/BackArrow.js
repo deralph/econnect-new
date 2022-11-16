@@ -1,12 +1,21 @@
 import React from "react";
 import { FaArrowLeft } from "react-icons/fa";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "../../styles/newsFeed/addques.module.css";
 import style from "../../styles/newsFeed/faq.module.css";
 import style1 from "../../styles/newsFeed/teachprac.module.css";
 
 const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   const navigate = useNavigate();
+  const onclick = (param) => {
+    if (param === "Add Question") {
+      return navigate("/addques");
+    }
+    if (param === "My Questions") {
+      return navigate("/myquestion");
+    }
+    return;
+  };
   return (
     <div
       className={
@@ -34,10 +43,30 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
               <li
                 key={index}
                 style={{ background: `${color}` }}
-                // onClick={onclick}
+                // onClick={onclick(main)}
               >
-                {Icon && <Icon style={{ marginRight: "0.4em" }} />}
-                {main}
+                <Link
+                  to={
+                    main === "Add Question"
+                      ? "/addques"
+                      : main === "My Questions"
+                      ? "/myquestion"
+                      : main === "Post Update"
+                      ? "/post-news"
+                      : main === "View Posted Updates"
+                      ? "/updates"
+                      : main === "Add Friends"
+                      ? "/add-friends"
+                      : main === "Edit Profile"
+                      ? "/edit-Profile"
+                      : main === "Message"
+                      ? "/chat"
+                      : ""
+                  }
+                >
+                  {Icon && <Icon style={{ marginRight: "0.4em" }} />}
+                  {main}
+                </Link>
               </li>
             );
           })}

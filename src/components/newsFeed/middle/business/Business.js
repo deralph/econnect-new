@@ -32,6 +32,7 @@ const Business = ({ admin, small }) => {
         style={{ background: "#fff" }}
       >
         {business.map(({ image, name, phone, type, rating }, index) => {
+          // const arr  = info
           return (
             <Link to="/business-details" key={index}>
               <div className={styles.busCont}>

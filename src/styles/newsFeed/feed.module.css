@@ -1,5 +1,6 @@
 .feed {
-  /* overflow: hidden; */
+  overflow: scroll;
+  position: relative;
 }
 .top1 {
   display: flex;
@@ -8,10 +9,12 @@
   padding: 10px;
   background: #fff !important;
   z-index: 100;
+  /* position: fixed; */
+  /* width: 100%; */
   /* height: auto; */
 }
 .top1 p {
-  /* background: #fff; */
+  background: #fff !important;
   width: 100%;
   text-align: center;
   color: rgba(50, 50, 50, 0.45);
@@ -109,7 +112,9 @@
 }
 .container {
   overflow: scroll;
+  /* height: 100%; */
   height: 100vh;
   margin-top: -220px;
   padding-top: 220px;
+  z-index: 1;
 }

@@ -5,7 +5,8 @@ import styles from "../../styles/navbar.module.css";
 const AppNav = () => {
   return (
     <nav className={styles.nav} style={{ background: "#fff" }}>
-      {/* <GiHamburgerMenu className={styles.burger} /> */}
+      <GiHamburgerMenu className="burger" />
+
       <img src="/econnectLogo.png" alt="" />
       <ul className={styles.signapp}>
         <li className={styles.navtext}>Download Now</li>

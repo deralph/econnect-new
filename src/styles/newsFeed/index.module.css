@@ -11,6 +11,7 @@
   display: flex;
   flex-direction: column;
   padding: 5px;
+  justify-content: space-evenly;
   /* margin-bottom: 10px; */
 }
 .search {
@@ -20,6 +21,7 @@
   position: relative;
   margin: 5px 0px;
   padding: 20px;
+  max-height: 10%;
 }
 .search input {
   padding: 10px 15px;
@@ -52,9 +54,9 @@
 .center {
   flex-basis: 50%;
   margin: 12px 2px 7px 7px;
-  margin-top: -60px;
-  padding-top: 60px;
-  height: 100vh;
+  /* margin-top: -60px; */
+  /* padding-top: 60px; */
+  /* height: 100vh; */
   position: relative;
 }
 .center {
@@ -105,9 +107,20 @@
 }
 .burger {
   position: absolute;
-  top: 0;
+  top: -10px;
   left: 0;
   z-index: 1000;
+}
+.check {
+  display: block;
+}
+
+/* media queries */
+
+@media (max-width: 1151px) {
+  .check {
+    display: none;
+  }
 }
 
 /* media queries */

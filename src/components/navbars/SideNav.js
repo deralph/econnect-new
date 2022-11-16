@@ -8,6 +8,7 @@ import {
   FaUserFriends,
   FaBell,
   FaPowerOff,
+  FaTimes,
 } from "react-icons/fa";
 import { BsFillChatLeftTextFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
@@ -58,6 +59,7 @@ const SideNav = ({ chat }) => {
       </ul>
       <ul>
         {" "}
+        <FaTimes />
         <li>
           <Link to={"/chat"}>
             <BsFillChatLeftTextFill className={styles.icon} />

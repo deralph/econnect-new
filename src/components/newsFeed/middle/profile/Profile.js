@@ -10,10 +10,6 @@ import TimelinePost from "./TimelinePost";
 
 const Profile = ({ pro, friendsProfile, chat }) => {
   const option = [
-    // {
-    //   main: friendsProfile ? "" : "Logout",
-    //   color: friendsProfile ? "" : "#039B2D",
-    // },
     { main: friendsProfile ? "Message" : "Edit Profile", color: "#4063D6" },
   ];
 

@@ -5,6 +5,7 @@ import { BiCommentDetail } from "react-icons/bi";
 import { GoCommentDiscussion } from "react-icons/go";
 import styles from "../../../../styles/newsFeed/feed.module.css";
 import { newsFeed } from "../../database";
+import { Link } from "react-router-dom";
 
 const Feed = () => {
   return (
@@ -23,7 +24,7 @@ const Feed = () => {
             index
           ) => {
             return (
-              <article className={styles.posts} key={index}>
+              <Link to="/post/2" className={styles.posts} key={index}>
                 <img src={src} alt="" />
                 <div className={styles.postContent}>
                   <p className={styles.save}>{save && "save"}</p>
@@ -59,7 +60,7 @@ const Feed = () => {
                     </p>
                   </div>
                 </div>
-              </article>
+              </Link>
             );
           }
         )}

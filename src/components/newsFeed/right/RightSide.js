@@ -7,7 +7,9 @@ import Friends from "./Friends";
 
 const RightSide = ({ notification, chat }) => {
   return (
-    <div className={styles.right}>
+    <div
+      className={chat ? `${styles.right} ${styles.check}` : `${styles.right}`}
+    >
       <Search />
       {notification ? <Friends /> : <Notification />}
       {chat ? <Friends /> : <Chat />}
