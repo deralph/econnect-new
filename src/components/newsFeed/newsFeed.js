@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import AppNav from "../navbars/AppNav";
 import SideNav from "../navbars/SideNav";
 import styles from "../../styles/newsFeed/index.module.css";
@@ -41,7 +41,7 @@ const NewsFeed = ({
   friendsProfile,
   addFriends,
 }) => {
-  const nav = useRef();
+  // const nav = useRef();
 
   // const click = () => {
   // nav.current.display = "block";

@@ -9,7 +9,7 @@ const Businesses = () => {
 
   const fetcher = useCallback(async () => {
     try {
-      const { data } = await axios.get("business");
+      const { data } = await axios.get("businesses");
       setAllBusiness(data);
       // setAllBusiness(business);
     } catch (error) {
@@ -22,30 +22,35 @@ const Businesses = () => {
   }, [fetcher]);
   return (
     <section className="edit">
-      {/* {allBusiness ? (
-        <h4>LOADING ...</h4>
-      ) : ( */}
-      <>
-        <div className={styles.bus}>
-          <h2>Business</h2>
-          <div>
-            <input type="text" placeholder="Search business" />
-            <FaSearch className={styles.search} />
+      {allBusiness ? (
+        <>
+          <h4>LOADING ...</h4>
+          <h1 className="text-5xl text-blue-400 font-bold underline">
+            Hello world!
+          </h1>
+        </>
+      ) : (
+        <>
+          <div className={styles.bus}>
+            <h2>Business</h2>
+            <div>
+              <input type="text" placeholder="Search business" />
+              <FaSearch className={styles.search} />
+            </div>
           </div>
-        </div>
-        <article className={styles.main}>
-          <div className={styles.smallBus}>
-            {/* <Business admin info={allBusiness} /> */}
-            <Business admin />
-          </div>{" "}
-          <div className={styles.smallBus}>
-            <p className={styles.smallBusP}>Approval Request (21)</p>
-            {/* <Business admin small info={allBusiness} /> */}
-            <Business admin small />
-          </div>
-        </article>
-      </>
-      {/* )} */}
+          <article className={styles.main}>
+            <div className={styles.smallBus}>
+              <Business admin info={allBusiness} />
+              {/* <Business admin /> */}
+            </div>{" "}
+            <div className={styles.smallBus}>
+              <p className={styles.smallBusP}>Approval Request (21)</p>
+              <Business admin small info={allBusiness} />
+              {/* <Business admin small /> */}
+            </div>
+          </article>
+        </>
+      )}
     </section>
   );
 };

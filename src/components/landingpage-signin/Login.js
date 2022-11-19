@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
-import { AiOutlineArrowLeft } from "react-icons/ai";
 import { handleInputs } from "../../extra/function";
 import BackArrow from "../newsFeed/BackArrow";
 

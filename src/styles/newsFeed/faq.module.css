@@ -37,7 +37,11 @@
   border-radius: 0.4em;
   cursor: pointer;
 }
-
+.ques h2 {
+  display: flex;
+  align-items: center;
+  /* font-size: ; */
+}
 .faq {
   background: #fff;
   padding: 1em;
