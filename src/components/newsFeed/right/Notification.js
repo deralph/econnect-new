@@ -5,28 +5,40 @@ import { notificationArray } from "../database";
 
 const Notification = ({ real }) => {
   return (
-    <article className={styles.notification}>
+    <article className="basis-[43%] bg-white rounded relative my=[5px] overflow-scroll  shadow-[10px_10px_10px_black-100)]">
       {real || (
-        <div className={styles.top}>
-          <p>
-            <FaBell
-              className={styles.bell}
-              style={{ color: "red", rotate: "-24.16deg", marginRight: "10px" }}
-            />
+        <div className=" flex justify-between items-center font-medium text-[0.8em] p-5 border-b-[0.58px] border-solid border-b-black-100">
+          <p className=" flex items-center font-secondary font-medium text-sm text-primary">
+            <FaBell className="text-red-500 text-base mr-[10px] rotate-[-24.16deg]" />
             Notifications
           </p>
-          <p>See All</p>
+          <p className="font-secondary font-medium text-sm text-primary">
+            See All
+          </p>
         </div>
       )}
-      <div className={styles.container}>
+      <div className="px-4">
         {notificationArray.map(
           ({ img, follow, name, message, time }, index) => {
             return (
-              <div className={styles.box} key={index}>
-                <div className={styles.part}>
-                  <img src={img} alt={name} />
+              <div
+                className="flex py-3 justify-between items-center border-b-[0.58px] border-solid border-b-black-100"
+                key={index}
+              >
+                <div className="flex">
+                  <img
+                    src={img}
+                    alt={name}
+                    className="h-12 w-12 mr-3 rounded-[50%]"
+                  />
                   <div>
-                    <p className={real ? `${styles.name1}` : `${styles.name}`}>
+                    <p
+                      className={
+                        real
+                          ? `font-medium  text-primary text-xl capitalize font-primary`
+                          : `font-semibold  text-secondary text-xs capitalize text-left font-primary`
+                      }
+                    >
                       {real
                         ? `${name}`
                         : name.length > 14
@@ -35,7 +47,9 @@ const Notification = ({ real }) => {
                     </p>
                     <p
                       className={
-                        real ? `${styles.message1}` : `${styles.message}`
+                        real
+                          ? `italic font-primary font-normal text-base text-[#323232]`
+                          : `mt-1 italic text-[10px] text-left`
                       }
                     >
                       {real
@@ -46,9 +60,17 @@ const Notification = ({ real }) => {
                     </p>
                   </div>
                 </div>
-                <div className={styles.time}>
-                  {real && <p>{time}</p>}
-                  {follow && <button>{follow}</button>}
+                <div className="flex justify-between flex-col">
+                  {real && (
+                    <p className="font-primary font-medium text-xs text-right mb-4 text-#32323260">
+                      {time}
+                    </p>
+                  )}
+                  {follow && (
+                    <button className="text-[0.6em] bg-primary text-white p-[5px] rounded">
+                      {follow}
+                    </button>
+                  )}
                 </div>
               </div>
             );

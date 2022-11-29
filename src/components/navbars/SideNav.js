@@ -18,73 +18,97 @@ const SideNav = ({ chat }) => {
     <div
       className={
         chat
-          ? `${styles.sidenav} ${styles.side}`
-          : `${styles.sidenav} ${styles.sidenav1}`
+          ? `left-0 w-auto bg-secondary h-screen basis-[5%] py-[10%] px-[0.8em]`
+          : `left-0 w-auto bg-secondary h-screen basis-1/4 py-[10%] px-8`
       }
     >
       <ul>
         <li>
-          <Link to={"/news-feed"}>
-            <AiFillHome className={styles.icon} />
+          <Link
+            to={"/news-feed"}
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+          >
+            <AiFillHome className="mr-4" />
             {!chat && "Home"}
           </Link>
         </li>
 
         <li>
-          <Link to={"/academic-assistance"}>
-            <FaGraduationCap className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/academic-assistance"}
+          >
+            <FaGraduationCap className="mr-4" />
             {!chat && "Academic Assistance"}
           </Link>
         </li>
 
         <li>
-          <Link to={"/business"}>
-            <FaToolbox className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/business"}
+          >
+            <FaToolbox className="mr-4" />
             {!chat && "Business"}
           </Link>
         </li>
 
         <li>
-          <Link to={"/profile"}>
-            <FaUserAlt className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/profile"}
+          >
+            <FaUserAlt className="mr-4" />
             {!chat && "Profile"}
           </Link>
         </li>
         <li>
-          <Link to={"/login"}>
-            <FaPowerOff className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/login"}
+          >
+            <FaPowerOff className="mr-4" />
             {!chat && "Logout"}
           </Link>
         </li>
       </ul>
-      <ul>
+      <ul className="hidden">
         {" "}
         <FaTimes />
         <li>
-          <Link to={"/chat"}>
-            <BsFillChatLeftTextFill className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/chat"}
+          >
+            <BsFillChatLeftTextFill className="mr-4" />
             {!chat && "Chat"}
           </Link>
         </li>
         <li>
-          <Link to={"/friends"}>
-            <FaUserFriends className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] border-b-[0.6px] border-solid border-white "
+            to={"/friends"}
+          >
+            <FaUserFriends className="mr-4" />
             {!chat && "Friends"}
           </Link>
         </li>
         <li>
-          <Link to={"/notification"}>
-            <FaBell className={styles.icon} />
+          <Link
+            className="text-white text-init flex items-center py-[20px] px-[10px] "
+            to={"/notification"}
+          >
+            <FaBell className="mr-4" />
             {!chat && "Notification"}
           </Link>
         </li>
       </ul>
-      <ul>
-        <li>Download Now</li>
-        <li>
-          <img src="/appstore.png" alt="" />
+      <ul className="mt-8 hidden">
+        <li className="py-[7px] px-[10px]">Download Now</li>
+        <li className="py-[7px] px-[10px]">
+          <img src="/appstore.png" className="h" alt="" />
         </li>
-        <li>
+        <li className="py-[7px] px-[10px]">
           <img src="/googleplaystore.png" alt="" />
         </li>
       </ul>
@@ -95,7 +119,7 @@ const SideNav = ({ chat }) => {
 export const NavContent = ({ Icon, title, chat }) => {
   return (
     <li>
-      <Icon className={styles.icon} />
+      <Icon className="mr-4" />
       {chat !== "true" && title}
     </li>
   );

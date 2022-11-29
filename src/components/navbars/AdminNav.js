@@ -16,54 +16,61 @@ import { Link } from "react-router-dom";
 
 const AdminNav = () => {
   return (
-    <section className={styles.adminNav}>
-      <Link to="/admin">
-        <FaUserEdit className={styles.icon1} />
-        <p>Admins</p>
+    // <section className={styles.adminNav}>
+    <section className="w-1/4 bg-secondary rounded-xl shadow-[0px_4.15135px_20.7568px_rgba(0, 0, 0, 0.13)] h-screen grid grid-cols-2 gap-init p-init">
+      <Link to="/admin" className="admin-link ">
+        <FaUserEdit className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Admins</p>
       </Link>
-      <Link to="/users">
-        <FaUserFriends className={styles.icon1} />
-        <p>Users</p>
+      <Link className="admin-link " to="/users">
+        <FaUserFriends className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em]  ">Users</p>
       </Link>
-      <Link to="/verified-user">
-        <MdVerifiedUser className={styles.icon1} />
-        <p>Verified Users</p>
+      <Link className="admin-link " to="/verified-user">
+        <MdVerifiedUser className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Verified Users</p>
       </Link>
-      <Link to="/admin-business">
-        <FaToolbox className={styles.icon1} />
-        <p>Business</p>
+      <Link className="admin-link " to="/admin-business">
+        <FaToolbox className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Business</p>
       </Link>
-      <Link to="/post-news">
-        <GiNotebook className={styles.icon1} />
-        <p>Post News / Broadcast</p>
+      <Link className="admin-link " to="/post-news">
+        <GiNotebook className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">
+          Post News / Broadcast
+        </p>
       </Link>
-      <Link to="/upload-tp">
-        <GiNotebook className={styles.icon1} />
-        <p>Upload TP List</p>
+      <Link className="admin-link " to="/upload-tp">
+        <GiNotebook className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Upload TP List</p>
       </Link>
-      <Link to="/upload-nysc">
-        <FaUserGraduate className={styles.icon1} />
-        <p>Upload NYSC Senate List</p>
+      <Link className="admin-link " to="/upload-nysc">
+        <FaUserGraduate className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">
+          Upload NYSC Senate List
+        </p>
       </Link>
-      <Link to="">
-        <MdEmail className={styles.icon1} />
-        <p>Send E-mail Message</p>
+      <Link className="admin-link " to="">
+        <MdEmail className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">
+          Send E-mail Message
+        </p>
       </Link>
-      <Link to="/admin-faq">
-        <FaQuestionCircle className={styles.icon1} />
-        <p>FAQs</p>
+      <Link className="admin-link " to="/admin-faq">
+        <FaQuestionCircle className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">FAQs</p>
       </Link>
-      <Link to="">
-        <FaPoll className={styles.icon1} />
-        <p>Polls</p>
+      <Link className="admin-link " to="">
+        <FaPoll className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Polls</p>
       </Link>
-      <Link to="">
-        <BiStats className={styles.icon1} />
-        <p>Usage Statistics</p>
+      <Link className="admin-link " to="">
+        <BiStats className="text-3xl" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Usage Statistics</p>
       </Link>
-      <Link to="/admin-login">
-        <FaPowerOff className={`${styles.icon1} ${styles.logout}`} />
-        <p>Log Out</p>
+      <Link className="admin-link " to="/admin-login">
+        <FaPowerOff className="text-3xl bg-red-800 rounded-[50%] p-1 text-secondary" />
+        <p className="font-primary w-4/5 mt-2 text-[.8em] ">Log Out</p>
       </Link>
     </section>
   );

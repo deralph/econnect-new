@@ -1,10 +1,14 @@
 .notification1 {
   flex-basis: 25%;
+
+  /* done  */
 }
 .line {
   border-bottom: 0.5px solid rgba(50, 50, 50, 0.35);
   width: 90%;
   margin: auto;
+
+  /* done  */
 }
 .notification {
   background: #fff;
@@ -14,6 +18,8 @@
   margin: 5px 0px;
   overflow: scroll;
   flex-basis: 43%;
+
+  /* done  */
 }
 .container p {
   display: flex;
@@ -28,6 +34,8 @@
   border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
   font-size: 0.8em;
+
+  /* done  */
 }
 .top p {
   font-family: "Montserrat";
@@ -36,6 +44,8 @@
   font-size: 14px;
   line-height: 17px;
   color: #4063d6;
+
+  /* done  */
 }
 
 .chat {
@@ -45,6 +55,8 @@
 }
 .container {
   padding: 0 15px;
+
+  /* done  */
 }
 
 .box {
@@ -53,12 +65,16 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.58px solid rgba(0, 0, 0, 0.1);
+
+  /* done  */
 }
 .box img {
   border-radius: 50%;
   height: 3em;
   width: 3em;
   margin-right: 0.7em;
+
+  /* done  */
 }
 .box button {
   font-size: 0.6em;
@@ -70,12 +86,18 @@
 .part div {
   flex-direction: column;
   justify-content: space-between;
+
+  /* done  */
 }
 .part {
   display: flex;
+
+  /* done  */
 }
 .part p {
   font-family: "Poppins" !important;
+
+  /* done  */
 }
 .name {
   font-weight: 600;
@@ -85,6 +107,8 @@
   text-transform: capitalize;
   text-align: left;
   font-family: "Poppins";
+
+  /* done */
 }
 .name1 {
   font-family: "Poppins";
@@ -93,12 +117,16 @@
   line-height: 31px;
   color: #4063d6;
   text-transform: capitalize;
+
+  /* done  */
 }
 .message {
   margin-top: 5px;
   font-style: italic;
   font-size: 10px;
   text-align: left;
+
+  /* done  */
 }
 .message1 {
   font-family: "Poppins";
@@ -107,14 +135,20 @@
   font-size: 1.05em;
   line-height: 24px;
   color: #323232;
+
+  /* done  */
 }
 .tick {
   color: rgba(0, 0, 0, 0.2);
+
+  /* done  */
 }
 .time {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+
+  /* done  */
 }
 .time p {
   font-family: "Poppins";

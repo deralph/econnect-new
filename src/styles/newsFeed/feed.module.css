@@ -1,6 +1,7 @@
 .feed {
   overflow: scroll;
   position: relative;
+  /* done  */
 }
 .top1 {
   display: flex;
@@ -12,6 +13,8 @@
   /* position: fixed; */
   /* width: 100%; */
   /* height: auto; */
+
+  /* done  */
 }
 .top1 p {
   background: #fff !important;
@@ -20,11 +23,13 @@
   color: rgba(50, 50, 50, 0.45);
   font-weight: 700;
   padding: 10px 10px 15px;
+  /* done  */
 }
 .top1 p:nth-child(1) {
   border-right: 1px solid rgba(0, 0, 0, 0.1);
   color: #4063d6;
   position: relative;
+  /* done  */
 }
 .top1 p:nth-child(1)::after {
   position: absolute;
@@ -117,4 +122,5 @@
   margin-top: -220px;
   padding-top: 220px;
   z-index: 1;
+  /* done  */
 }

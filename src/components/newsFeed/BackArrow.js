@@ -18,34 +18,31 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   };
   return (
     <div
-      className={
-        added
-          ? `${style.ques}`
-          : noAdd
-          ? `${style.ques} ${styles.ques1}`
-          : `${style.ques} ${styles.ques}`
-      }
+      className={`  flex justify=between items-center w-full
+        ${added ? `pt-[5em] ` : noAdd ? ` p-[1.3em]` : ` p-[0]`}
+        `}
     >
-      <h2>
+      <h2 className={`flex items-center ${!noAdd && `font-bold`}`}>
         {noArr || (
           <FaArrowLeft
             onClick={() => navigate(-1)}
-            className={style1.icon}
-            style={{ color: "#4063D6", marginRight: "10px" }}
+            className="text-primary mr-[10px]"
           />
         )}{" "}
         {heading}
       </h2>
       {option && (
-        <ul>
+        <ul className="flex ">
           {option.map(({ main, Icon, color }, index) => {
             return (
               <li
+                className="ml-[1.3em] text-[0.6em] font-bold font-primary p-[0.8em] rounded-[0.4em] cursor-pointer"
                 key={index}
                 style={{ background: `${color}` }}
                 // onClick={onclick(main)}
               >
                 <Link
+                  className="text-white"
                   to={
                     main === "Add Question"
                       ? "/addques"
@@ -64,7 +61,7 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
                       : ""
                   }
                 >
-                  {Icon && <Icon style={{ marginRight: "0.4em" }} />}
+                  {Icon && <Icon className="mr-[0.4em]" />}
                   {main}
                 </Link>
               </li>
