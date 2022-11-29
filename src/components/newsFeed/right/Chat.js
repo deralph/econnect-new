@@ -20,7 +20,7 @@ const Chat = ({ chat }) => {
       }`}
     >
       {!chat && (
-        <div className="flex justify-between items-center font-medium text-[0.8em] p-5 border-b-[0.58px] border-solid border-b-black-100">
+        <div className="top">
           <p className=" flex items-center font-secondary font-medium text-sm text-primary">
             <BsFillChatLeftTextFill className={styles.chat} />
             Chats

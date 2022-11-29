@@ -8,7 +8,9 @@ import Friends from "./Friends";
 const RightSide = ({ notification, chat }) => {
   return (
     <div
-      className={chat ? `${styles.right} ${styles.check}` : `${styles.right}`}
+      className={`basis-1/4 right-0 h-screen  flex flex-col p-[5px] justify-evenly ${
+        chat && `block`
+      }`}
     >
       <Search />
       {notification ? <Friends /> : <Notification />}

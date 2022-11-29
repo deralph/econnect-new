@@ -13,6 +13,8 @@
   padding: 5px;
   justify-content: space-evenly;
   /* margin-bottom: 10px; */
+
+  /* done  */
 }
 .search {
   background: #fff;
@@ -22,6 +24,8 @@
   margin: 5px 0px;
   padding: 20px;
   max-height: 10%;
+
+  /* done  */
 }
 .search input {
   padding: 10px 15px;
@@ -39,6 +43,8 @@
   transform: translateY(-50%);
   right: 30px;
   color: #4063d6;
+
+  /* done  */
 }
 .chat {
   color: green;
@@ -58,6 +64,8 @@
   /* padding-top: 60px; */
   /* height: 100vh; */
   position: relative;
+
+  /* done  */
 }
 .center {
   width: 50%;
@@ -66,15 +74,21 @@
   background: #fff;
   display: flex;
   padding: 1.4em;
+
+  /* done  */
 }
 .mind img {
   height: 5em;
   width: 5em;
   border-radius: 50%;
   margin-right: 20px;
+
+  /* done  */
 }
 .post {
   width: 100%;
+
+  /* done */
 }
 .mind textarea {
   background: rgba(0, 0, 0, 0.1);
@@ -83,11 +97,15 @@
   height: 5em;
   width: 100%;
   padding: 1.3em;
+
+  /* done  */
 }
 .photo {
   border-top: 1px solid rgba(50, 50, 50, 0.48);
   display: flex;
   margin-top: 1em;
+
+  /* done  */
 }
 .photo p {
   flex-basis: 50%;
@@ -97,6 +115,8 @@
   justify-content: center;
   color: #323232;
   font-size: 1em;
+
+  /* done  */
 }
 .photo p:first-child {
   border-right: 0.7px solid rgba(50, 50, 50, 0.25);
@@ -104,6 +124,8 @@
 .photo .icons {
   margin-right: 10px;
   font-size: 1.2em;
+
+  /* done  */
 }
 .burger {
   position: absolute;

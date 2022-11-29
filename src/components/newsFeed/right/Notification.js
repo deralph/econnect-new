@@ -7,24 +7,19 @@ const Notification = ({ real }) => {
   return (
     <article className="basis-[43%] bg-white rounded relative my=[5px] overflow-scroll  shadow-[10px_10px_10px_black-100)]">
       {real || (
-        <div className=" flex justify-between items-center font-medium text-[0.8em] p-5 border-b-[0.58px] border-solid border-b-black-100">
-          <p className=" flex items-center font-secondary font-medium text-sm text-primary">
+        <div className=" top">
+          <p className=" top-head">
             <FaBell className="text-red-500 text-base mr-[10px] rotate-[-24.16deg]" />
             Notifications
           </p>
-          <p className="font-secondary font-medium text-sm text-primary">
-            See All
-          </p>
+          <p className="top-p">See All</p>
         </div>
       )}
       <div className="px-4">
         {notificationArray.map(
           ({ img, follow, name, message, time }, index) => {
             return (
-              <div
-                className="flex py-3 justify-between items-center border-b-[0.58px] border-solid border-b-black-100"
-                key={index}
-              >
+              <div className="box" key={index}>
                 <div className="flex">
                   <img
                     src={img}

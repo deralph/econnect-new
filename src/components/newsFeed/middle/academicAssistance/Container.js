@@ -9,9 +9,11 @@ import Card from "./Card";
 
 const Container = () => {
   return (
-    <section className={`${style.center} ${styles.center}`}>
-      <h1 className={styles.head}>Academic Assistance</h1>
-      <div className={styles.container}>
+    <section className={`center my-auto mx-0 p-5`}>
+      <h1 className="text-secondary text-3xl font-medium my-5 mx-0">
+        Academic Assistance
+      </h1>
+      <div className="flex justify-between flex-wrap">
         <Card
           name="e-Portal"
           Icon={FaUserCircle}
