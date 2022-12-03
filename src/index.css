@@ -11,7 +11,7 @@
 }
 
 .center {
-  @apply basis-1/2 relative mt-3 mr-1 mb-2 ml-2;
+  @apply basis-1/2 relative mt-1 mr-1 mb-2 ml-2;
 }
 .admin-link {
   @apply flex items-center justify-center flex-col text-center text-white hover:shadow-2xl hover:rounded-3xl hover:bg-[#00000066];

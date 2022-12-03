@@ -19,7 +19,7 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   return (
     <div
       className={`  flex justify-between items-center w-full p-2 
-        ${added ? `pt-[5em] ` : noAdd ? ` p-[1.3em]` : ` `}
+        ${added ? ` ` : noAdd ? ` p-[1.3em]` : ` `}
         `}
     >
       <h2 className={`flex items-center text-xl ${!noAdd && `font-semibold`}`}>

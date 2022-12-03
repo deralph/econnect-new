@@ -11,17 +11,20 @@ const Faq = () => {
   ];
 
   return (
-    <section className={`${style.center} ${styles.center}`}>
+    // <section className={`${style.center} ${styles.center}`}>
+    <section className="center font-primary">
       <BackArrow heading={"My Questions"} option={option} added />
-      <section className={styles.faq}>
+      <section className="bg-white p-4 overflow-scroll mt-5 h-[calc(100vh-80px)] ">
         {faq.map(({ question, answer }, index) => {
           return (
             <div key={index}>
-              <p className={styles.p1}>Question:</p>
-              <p className={styles.p2}>{question}</p>
-              <div className={styles.answer}>
-                <p className={styles.p3}>Answer:</p>
-                <p className={styles.p4}>{answer}</p>
+              <p className="font-medium text-base text-black py-1">Question:</p>
+              <p className="font-medium text-base text-primary">{question}</p>
+              <div className="rounded p-6 mt-2 mx-0 mb-4 bg-[rgba(64, 99, 214, 0.1)]">
+                <p className="italic font-normal p-6 pb-1">Answer:</p>
+                <p className="italic font-normal text-[0.9em] text-black">
+                  {answer}
+                </p>
               </div>
             </div>
           );

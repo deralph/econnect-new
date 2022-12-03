@@ -13,13 +13,18 @@ const AddQues = () => {
   ];
   return (
     <>
-      <div className={`${style.ques} ${styles.ques}`}>
+      {/* <div className={`${style.ques} ${styles.ques}`}> */}
+      <div className="flex justify-between items-center w-full ">
         <BackArrow heading={"Add Question"} option={option} noAdd />
       </div>
-      <div className={styles.question}>
-        <p className={styles.p}>Your Question</p>
-        <textarea />
-        <button>post now</button>
+      <div className="bg-white p-6 overflow-scroll">
+        <p className="font-primary font-medium text-base text-primary py-4">
+          Your Question
+        </p>
+        <textarea className="h-[30vh] w-[90%] bg-[rgba(217, 217, 217, 0.16)] border border-solid border-[rgba(0, 0, 0, 0.1)] p-3" />
+        <button className="bg-primary rounded font-primary font-medium mt-6 text-white p-3 text-[0.8em]">
+          post now
+        </button>
       </div>
     </>
   );

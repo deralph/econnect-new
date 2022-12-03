@@ -5,7 +5,7 @@ import MyQues from "./MyQues";
 
 const Question = ({ myquestion }) => {
   return (
-    <section className={styles1.center}>
+    <section className="center">
       {myquestion ? <MyQues /> : <AddQues />}
     </section>
   );

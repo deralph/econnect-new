@@ -5,9 +5,9 @@ import BackArrow from "../../BackArrow";
 
 const Eportal = ({ results }) => {
   return (
-    <section className={`${style.center} ${styles.section}`}>
+    <section className="center p-6">
       <BackArrow noAdd heading={results ? "Results" : "E-Portal"} />
-      <div className={styles.article}>
+      <div className="bg-secondary text-white grid place-content-centerh-[90%]">
         {results ? "RESULTS PAGE" : "E-PORTAL PAGE"}
       </div>
     </section>
