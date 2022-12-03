@@ -48,7 +48,7 @@ const NewsFeed = ({
   // };
 
   return (
-    <section className={styles.section}>
+    <section className="bg-[#eee] relative h-auto">
       <AppNav />
       <GiHamburgerMenu className={styles.burger} />
       <main className="" style={{ display: "flex", paddingTop: "55px" }}>

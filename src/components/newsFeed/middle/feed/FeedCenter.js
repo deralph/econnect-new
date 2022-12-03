@@ -5,7 +5,7 @@ import Feed from "./Feed";
 
 const Center = () => {
   return (
-    <div className={styles.center}>
+    <div className="center">
       <Mind />
       <Feed />
     </div>

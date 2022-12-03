@@ -25,7 +25,7 @@ const FRiends = ({ addFriends }) => {
   ];
 
   return (
-    <section className={style.center}>
+    <section className="center">
       {addFriends && category && (
         <Category
           setcategory={setcategory}
@@ -39,7 +39,7 @@ const FRiends = ({ addFriends }) => {
         option={option}
       />
       {categoryAdded && (
-        <p className={styles.added}>
+        <p className="flex items-center font-primary text-xl  ml-[5%] font-normal text-primary">
           {categoryAdded.faculty}
           {categoryAdded.department && (
             <>
