@@ -8,30 +8,33 @@ import { GoCommentDiscussion } from "react-icons/go";
 import Comment from "./Comment";
 const Post = () => {
   return (
-    <section className={styles.postContent}>
-      <h2>
+    // <section className={styles.postContent}>
+    <section className="bg-white p-6 h-full overflow-scroll">
+      <h2 className="text-secondary text-lg py-5 font-primary">
         Admission into the Pre-Degree Programmes for the 2022/2023 Academic
         Session{" "}
       </h2>
-      <img src="/largePostPics.png" alt="post pics" />
-      <div className={styles.postDetails}>
-        <p className={style.date}>
-          <BsClock style={{ marginRight: "5px" }} />1 day ago
+      <img
+        src="/largePostPics.png"
+        alt="post pics"
+        className="max-h-[60vh] w-full"
+      />
+      <div className="flex justify-between">
+        <p className="text-[0.7em] text-left my-1 flex items-center text-[(rgba(0,0,0,0.5))]">
+          <BsClock className="mr-1" />1 day ago
         </p>
-        <div className={style.likes}>
-          <p>
-            <AiFillLike style={{ color: "#4063D6", marginRight: "5px" }} />
+        <div className="flex items-center text-xs my-2 text-[rgba(50, 50, 50, 0.78)]">
+          <p className="flex items-center ml-4">
+            <AiFillLike className="mr-1 text-primary" />
             50
           </p>
-          <p>
-            <GoCommentDiscussion
-              style={{ color: "#07174B", marginRight: "5px" }}
-            />
+          <p className="flex items-center ml-4">
+            <GoCommentDiscussion className="mr-1 text-secondary" />
             50
           </p>
         </div>
       </div>
-      <p className={styles.description}>
+      <p className="text-[#000000e5] text-base py-4">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ut in
         molestie neque libero turpis. Faucibus ultrices quisque quis a sit in
         arcu. Odio gravida consectetur eget nullam proin metus, penatibus massa
@@ -44,14 +47,14 @@ const Post = () => {
         amet. Porttitor aliquam tellus eget purus est accumsan nunc, hac. Lacus
         cras.
       </p>
-      <div className={style.comment}>
+      <div className="py-2 morder-t border-solid border-[rgba(50, 50, 50, 0.48)] flex text-xs text-[rgba(0, 0, 0, 0.45)]">
         <p>
           {" "}
-          <AiFillLike style={{ marginRight: "5px" }} />
+          <AiFillLike className="mr-1" />
           like
         </p>
         <p>
-          <BiCommentDetail style={{ marginRight: "5px" }} />
+          <BiCommentDetail className="mr-1" />
           comment
         </p>
       </div>

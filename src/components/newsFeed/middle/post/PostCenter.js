@@ -8,8 +8,8 @@ import Post from "./Post";
 
 const PostCenter = () => {
   return (
-    <section className="center">
-      <BackArrow noArr />
+    <section className="center h-[calc(100vh-10px)] overflow-scroll">
+      <BackArrow />
       <Post />
     </section>
   );

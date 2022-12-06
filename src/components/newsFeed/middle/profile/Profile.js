@@ -14,7 +14,7 @@ const Profile = ({ pro, friendsProfile, chat }) => {
   ];
 
   return (
-    <section className={chat ? `${style1.chatSection}` : `${style.center}`}>
+    <section className={chat ? `${style1.chatSection}` : `center`}>
       {!friendsProfile ||
         (!chat && <BackArrow heading={"Profile"} option={option} />)}
       {pro && <BackArrow heading={"Profile"} option={option} />}

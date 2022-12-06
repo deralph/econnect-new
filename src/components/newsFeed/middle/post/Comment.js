@@ -7,7 +7,9 @@ import { comments } from "../../database";
 const Comment = () => {
   return (
     <section className={styles.comment}>
-      <h3>Comments</h3>
+      <h3 className="text-primary text-xl py-4 font-medium border-solid border-b border-[rgba(0,0,0,0.2)]">
+        Comments
+      </h3>
       <div className={styles.commentBox}>
         {comments.map(({ time, img, name, comment, course }, index) => {
           return (

@@ -4,6 +4,8 @@
   overflow: scroll;
   position: relative;
   padding-top: 1em;
+
+  /* done  */
 }
 .extra {
   margin-top: 1em;
@@ -146,10 +148,14 @@
   display: grid;
   place-content: center;
   min-height: 40vh;
+
+  /* done  */
 }
 .dp img {
   width: 12em;
   border-radius: 50%;
+
+  /* done  */
 }
 .dp button,
 .profile form button {
@@ -164,6 +170,8 @@
   align-items: center;
   justify-content: center;
   margin-top: 1em;
+
+  /* done  */
 }
 .profile form {
   width: 70%;
@@ -191,6 +199,8 @@
   padding: 1em;
   line-height: 121.5%;
   color: rgba(0, 0, 0, 0.8);
+
+  /* done  */
 }
 
 .profile form button {
