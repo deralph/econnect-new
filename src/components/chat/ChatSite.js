@@ -49,11 +49,15 @@ const ChatSite = () => {
       </section>
       <form className="bg-[#eee] justify-between items-centerflex py-4 px-[3%]">
         <div className="items-center bg-white flex w-[92%] rounded-[50px] p-4 justify-between border-[0.5px] border-solid border-[rgba(0,0,0,0.3)]">
-          <textarea type="text" placeholder="Type your message" />
-          <GrAttachment className={styles.icon1} />
+          <textarea
+            type="text"
+            placeholder="Type your message"
+            className="w-[92%] bg-transparent font-secondary font-medium text-xs h-auto text-[rgba(0,0,0,0.7)]"
+          />
+          <GrAttachment className="text-[#323232] text-base" />
         </div>
 
-        <TiArrowForward className={styles.icon2} />
+        <TiArrowForward className="bg-primary p-1 text-[2em] text-white rounded-[50%] shadow-[0_3.5px_201px_rgba(64,99,214,0.4)]" />
       </form>
     </section>
   );

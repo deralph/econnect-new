@@ -161,10 +161,14 @@
   line-height: 15px;
   color: rgba(0, 0, 0, 0.7);
   height: auto;
+
+  /* done  */
 }
 .icon1 {
   color: #323232;
   font-size: 1em;
+
+  /* done  */
 }
 .icon2 {
   background: #4063d6;
@@ -173,6 +177,8 @@
   font-size: 2em;
   color: #fff;
   border-radius: 50%;
+
+  /* done  */
 }
 
 @media (max-width: 1151px) {
