@@ -47,8 +47,8 @@ const ChatSite = () => {
           );
         })}
       </section>
-      <form className={styles.text}>
-        <div className={styles.input}>
+      <form className="bg-[#eee] justify-between items-centerflex py-4 px-[3%]">
+        <div className="items-center bg-white flex w-[92%] rounded-[50px] p-4 justify-between border-[0.5px] border-solid border-[rgba(0,0,0,0.3)]">
           <textarea type="text" placeholder="Type your message" />
           <GrAttachment className={styles.icon1} />
         </div>

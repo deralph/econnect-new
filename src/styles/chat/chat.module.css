@@ -4,6 +4,8 @@
   background: #eee;
   height: 100vh;
   margin-top: 60px;
+
+  /* done  */
 }
 .chatSection,
 .non {
@@ -14,6 +16,8 @@
   box-shadow: 0px 4.2171px 21.0855px rgba(0, 0, 0, 0.13);
   border-radius: 5px;
   overflow: scroll;
+
+  /* done  */
 }
 .non {
   display: grid;
@@ -38,6 +42,8 @@
 .head {
   background: #092685;
   padding: 1em 5%;
+
+  /* done  */
 }
 .part div {
   margin-left: 1em;
@@ -59,6 +65,8 @@
 .icon {
   color: #fff;
   font-size: 1.5em;
+
+  /* done  */
 }
 .chatLog {
   height: auto;
@@ -66,32 +74,46 @@
   background: #fff;
   width: 90%;
   margin: 1em auto;
+
+  /* done  */
 }
 .chatLog div {
   display: flex;
   flex-direction: column;
   max-width: 70%;
+
+  /* done  */
 }
 .time {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 0.7em;
   color: #323232;
+
+  /* done  */
 }
 .chatLog article {
   display: flex;
   margin: 0.5em 0;
+
+  /* done  */
 }
 .chatLog img {
   height: 2.5em;
   border-radius: 50%;
+
+  /* done  */
 }
 
 .chatLog article:nth-child(even) p:first-child {
   background: rgba(112, 112, 112, 0.88);
+
+  /* done  */
 }
 .chatLog article:nth-child(odd) p:first-child {
   background: #4063d6;
+
+  /* done  */
 }
 .chatLog article p:first-child {
   border-radius: 50px;
@@ -102,6 +124,8 @@
   color: #ffffff;
   line-break: anywhere;
   min-width: 100px;
+
+  /* done  */
 }
 .chatLog article:nth-child(even) {
   justify-content: end;
@@ -113,6 +137,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* done  */
 }
 .input {
   align-items: center;
@@ -123,6 +149,8 @@
   border-radius: 50px;
   padding: 1em;
   justify-content: space-between;
+
+  /* done  */
 }
 .input textarea {
   width: 92%;
