@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        landback: "url('/../../public/Background.jpg')",
+      },
       colors: {
         primary: "#4063d6",
         secondary: "#07174b",

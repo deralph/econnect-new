@@ -10,10 +10,10 @@ import Profile from "../newsFeed/middle/profile/Profile";
 
 const Chat = ({ profile, non }) => {
   return (
-    <section className={style.section}>
+    <section className="auto relative bg-[#eee]">
       <AppNav />{" "}
       <div
-        className={styles.chat}
+        className="flex justify-between bg-[#eee] h-screen mt-14"
         // style={{ display: "flex", paddingTop: "55px" }}
       >
         <SideNav chat />

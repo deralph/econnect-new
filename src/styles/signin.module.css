@@ -22,13 +22,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 8% 5% 5% 7%;
+
+  /* done  */
 }
 .phone {
   height: 90vh;
   flex-basis: 60%;
+
+  /* done  */
 }
 .section form {
   flex-basis: 26%;
+
+  /* done  */
 }
 .section input {
   display: block;
@@ -39,6 +45,8 @@
   margin-top: 5px;
   margin-bottom: 15px;
   outline: none;
+
+  /* done  */
 }
 .section h1 {
   color: #07174b;
@@ -61,42 +69,58 @@
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
+
+  /* done  */
 }
 .section span {
   font-weight: 700;
   color: #4063d6;
   text-transform: capitalize;
+
+  /* done  */
 }
 .foot {
   font-size: 0.9em;
   font-weight: 500;
   margin-top: 20px;
   margin-right: 10px;
+
+  /* done  */
 }
 .action {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* done  */
 }
 .action .forgot {
   color: #9e1c33 !important;
   font-weight: 600;
+
+  /* done  */
 }
 .action .login {
   font-weight: 700;
   font-size: 0.8em;
   color: black;
   text-transform: lowercase;
+
+  /* done  */
 }
 .forget {
   font-size: 0.8em;
   color: #323232;
   padding: 12px 0;
+
+  /* done  */
 }
 .logo {
   position: absolute;
   top: 20px;
   left: 5%;
+
+  /* done  */
 }
 .section div label {
   display: inline-flex;

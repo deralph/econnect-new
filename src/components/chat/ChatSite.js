@@ -7,25 +7,41 @@ import { chat } from "../newsFeed/database";
 
 const ChatSite = () => {
   return (
-    <section className={styles.chatSection}>
-      <article className={styles.head}>
+    // <section className={styles.chatSection}>
+    <section className="h-[calc(100vh-1.5em)] basis-2/5 bg-white rounded overflow-scroll mt-3 mr-[2px] mb-2 ml-2 shadow-[0_4px_21_rgba(0,0,0,0.13)]">
+      <article className="bg-[#092685] py-4 px-[5%]">
         <div className={styles.part}>
           <img src="/iconicUserPics.png" alt="user" />
-          <div>
-            <p className={styles.name}>Adetunji Oluwadamilola </p>
-            <p className={styles.message}>last seen today, 11:37am </p>
+          <div className="ml-4">
+            <p className="font-semibold italic text-secondary text-xs capitalize text-leftfont-primary">
+              Adetunji Oluwadamilola{" "}
+            </p>
+            <p className="mt-1 italic text-[10px] text-left">
+              last seen today, 11:37am{" "}
+            </p>
           </div>
         </div>
-        <BiDotsVerticalRounded className={styles.icon} />
+        <BiDotsVerticalRounded className="text-white text-2xl" />
       </article>
-      <section className={styles.chatLog}>
+      <section className="h-auto overflow-scroll bg-white my-4 mx-auto w-[90%]">
         {chat.map(({ image, message, time }, index) => {
           return (
-            <article key={index}>
-              <img src={image} alt={image} />
-              <div>
-                <p>{message}</p>
-                <p className={styles.time}>{time}</p>
+            <article
+              key={index}
+              className={`flex my-2 ${
+                index % 2
+                  ? "justify-end flex-row-reverse bg-[rgba(112,112,112,0.88)]"
+                  : "bg-primary"
+              }`}
+            >
+              <img src={image} alt={image} className="h-10 rounded-[50%]" />
+              <div className="flex flex-col max-w-[70%]">
+                <p className="rounded-[50px] font-secondary font-semibold py-6 px-4 text-white min-w[100px] text-[0.8em]">
+                  {message}
+                </p>
+                <p className="font-secondary font-medium text-[#323232] text-[0.7em]">
+                  {time}
+                </p>
               </div>
             </article>
           );

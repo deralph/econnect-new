@@ -15,40 +15,46 @@ const TimelinePost = () => {
           index
         ) => {
           return (
-            <div className={styles.post} key={index}>
-              <div className={styles.user}>
-                <img src={image} alt={name} />
+            // post
+            <div
+              className="bg-white rounded-[2]px  mt-4 p-5 shadow-[0_4_23_rgba(0,0,0,0.1)]"
+              key={index}
+            >
+              <div className="flex items-center">
+                <img
+                  src={image}
+                  alt={name}
+                  className="w-16 rounded-[50%] mr-4"
+                />
                 <div className="">
-                  <p>{name}</p>
-                  <p>{course}</p>
-                  <p style={{ display: "flex", alignItems: "center" }}>
+                  <p className="font-medium text-xl text-primary">{name}</p>
+                  <p className="italic font-normal text-[0.83em] text-[rgba(0,0,0,0.45)]">
+                    {course}
+                  </p>
+                  <p className="flex items-center font-medium text-[0.67em] text-[rgba(0,0,0,0.5)]">
                     {" "}
-                    <BsClock style={{ marginRight: "1em" }} />
+                    <BsClock className="mr-4" />
                     {time}
                   </p>
                 </div>
               </div>
-              <p className={styles.postDescription}>{description}</p>
-              <div className="">
-                <p>
-                  <AiFillLike
-                    style={{ color: "#4063D6", marginRight: ".4em" }}
-                  />{" "}
-                  50
+              <p className="font-normal text-[0.8em] mt-8 text-[#323232]">
+                {description}
+              </p>
+              <div className=" flex mt-4 justify-end pb-4 border-b-[0.65px] border-solid border-[50,50,50,0.48]">
+                <p className="ml-4 font-medium text-xs flex items-center text-[rgba(50,50,50,0.78)]">
+                  <AiFillLike className="text-primary mr-2" /> 50
                 </p>
-                <p>
-                  <GoCommentDiscussion
-                    style={{ color: "##07174B", marginRight: ".4em" }}
-                  />{" "}
-                  50
+                <p className="ml-4 font-medium text-xs flex items-center text-[rgba(50,50,50,0.78)]">
+                  <GoCommentDiscussion className="text-secondary mr-2" /> 50
                 </p>
               </div>
-              <div className="">
-                <p>
-                  <AiFillLike style={{ marginRight: ".4em" }} /> Like
+              <div className="flex justify-evenly items-center pt-4">
+                <p className="text-[rgba(50,50,50,0.78)] flex items-center">
+                  <AiFillLike className="mr-2" /> Like
                 </p>
-                <p>
-                  <BiCommentDetail style={{ marginRight: ".4em" }} /> Comment
+                <p className="text-[rgba{50,50,50,0.78}] flex items-center">
+                  <BiCommentDetail className="mr-2" /> Comment
                 </p>
               </div>
             </div>
