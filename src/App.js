@@ -5,7 +5,7 @@ import Register from "./components/landingpage-signin/Register";
 import NewsFeed from "./components/newsFeed/newsFeed";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Chat from "./components/chat/Chat";
-import Admin from "./components/admin/Admin";
+// import Admin from "./components/admin/Admin";
 
 function App() {
   return (
@@ -49,7 +49,7 @@ function App() {
             path="/academic-assistance"
             element={<NewsFeed assistance />}
           />
-          {/* admin pages */}
+          {/* admin pages
           <Route path="/admin" element={<Admin />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/edit-admin" element={<Admin edit />} />
@@ -66,7 +66,7 @@ function App() {
           <Route path="/admin-Business" element={<Admin business />} />
           <Route path="/admin-faq" element={<Admin faq />} />
           <Route path="/user-stats" element={<Admin userStats />} />{" "}
-          <Route path="/in-user-stats" element={<Admin inuserStats />} />
+          <Route path="/in-user-stats" element={<Admin inuserStats />} /> */}
         </Routes>
       </div>
     </BrowserRouter>
