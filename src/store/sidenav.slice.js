@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const sidenav = createSlice({
   name: "sidenav",
   initialState: {
-    chat: true,
+    chat: false,
     main: false,
   },
   reducers: {

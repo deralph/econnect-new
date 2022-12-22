@@ -1,6 +1,6 @@
 import React from "react";
 import { FaUserAlt } from "react-icons/fa";
-import MenuListComposition from "./MuiMenu";
+import FadeMenu from "./FadeMenu";
 
 const LandingNav = () => {
   return (
@@ -15,7 +15,7 @@ const LandingNav = () => {
         </li>
       </ul>
       <FaUserAlt className="text-white sm:block hidden" />
-      {/* <MenuListComposition /> */}
+      <FadeMenu />
     </nav>
   );
 };

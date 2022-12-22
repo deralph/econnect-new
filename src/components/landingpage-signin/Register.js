@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
 import { handleInputs } from "../../extra/function";
+import { Link } from "react-router-dom";
 
 const Register = () => {
   const [form, setForm] = useState({
@@ -142,7 +143,9 @@ const Register = () => {
           />
           <p className="font-medium mt-5 mr-3 text-[0.9em]">
             Do you have an account?{" "}
-            <span className="text-primary font-bold">LOGIN</span>
+            <span className="text-primary font-bold">
+              <Link to="/login">LOGIN</Link>
+            </span>
           </p>
           {/* <p>{form.student}</p> */}
           {/* <p>{form.idNo}</p> */}

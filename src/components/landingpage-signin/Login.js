@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "../../styles/signin.module.css";
 import { handleInputs } from "../../extra/function";
 import BackArrow from "../newsFeed/BackArrow";
+import { Link } from "react-router-dom";
 
 const Login = ({ forget, admin }) => {
   const [form, setForm] = useState({ email: "", password: "" });
@@ -15,16 +16,11 @@ const Login = ({ forget, admin }) => {
         alt="econnect logo"
         className="absolute top-5 left-[5%] "
       />
-      {/* <article className={styles.container}> */}
       <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%] lg:min-h-screen lg:mt-[5%]">
         <form
           action=""
           className="basis-[30%] lg:basis-[96%] lg:m-auto lg:p-4 rounded lg:max-w-[600px] lg:shadow lg:bg-slate-400"
         >
-          {/* {admin && <AiOutlineArrowLeft className={styles.icon} />} */}
-          {/* <h1>
-            {forget ? "Forgot password" : admin ? "Admin Login" : "Login"}
-          </h1> */}
           {forget ? (
             <BackArrow heading={"Forgot password"} noArr />
           ) : admin ? (
@@ -81,11 +77,15 @@ const Login = ({ forget, admin }) => {
           </div>
           <p className="font-medium mt-5 mr-3 text-sm">
             Do you have an account?{" "}
-            <span className="font-bold text-primary ">REGISTER</span>
+            <span className="font-bold text-primary ">
+              <Link to="/register">REGISTER</Link>
+            </span>
           </p>
           {!forget && (
             <p className="font-medium mt-5 mr-3 text-sm">
-              <span className="font-bold text-primary capitalize">Login</span>{" "}
+              <span className="font-bold text-primary capitalize">
+                <Link>Login</Link>{" "}
+              </span>{" "}
               as the admin
             </p>
           )}

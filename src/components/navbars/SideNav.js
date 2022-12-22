@@ -10,18 +10,24 @@ import {
   FaTimes,
 } from "react-icons/fa";
 import { BsFillChatLeftTextFill } from "react-icons/bs";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { navActions } from "../../store/sidenav.slice";
+import { logout } from "../../store/auth-action";
 
 const SideNav = ({ chat }) => {
   const dispatch = useDispatch();
   const navValue = useSelector((state) => state.nav);
   const { chat: chat_, main } = navValue;
 
+  const navigate = useNavigate();
+
+  const logOut = () => {
+    dispatch(logout());
+    navigate("/login");
+  };
+
   return (
-    //   main ? "sml:block absolute top-0 z-10" : "sml:hidden"
-    // }`
     <div
       className={`transition-transform overflow-scroll left-0 w-auto bg-secondary h-screen  ${
         chat
@@ -40,18 +46,16 @@ const SideNav = ({ chat }) => {
         onClick={() => dispatch(navActions.main_())}
       />
       <ul className="mt-6">
-        <li>
-          <Link
-            className={`text-red-500 text-init flex items-center py-[20px] px-[10px] lg:p-4 ${
-              chat && "justify-center "
-            }`}
-            to={"/login"}
-          >
-            <FaPowerOff
-              className={`mr-4 ${chat && "text-[2.5em]"}text-red-500`}
-            />
-            {!chat && "Logout"}
-          </Link>
+        <li
+          className={`text-red-500 text-init flex items-center py-[20px] px-[10px] lg:p-4 ${
+            chat && "justify-center "
+          }`}
+          onClick={() => logOut()}
+        >
+          <FaPowerOff
+            className={`mr-4 ${chat && "text-[2.5em]"}text-red-500`}
+          />
+          {!chat && "Logout"}
         </li>
         <li>
           <Link

@@ -18,12 +18,13 @@ export const Login = (form, type) => {
 
 export const logout = () => {
   return async (dispatch) => {
-    const { data } = await axios.post("auth/logout");
-    dispatch(authActions.logout);
     try {
+      const { data } = await axios.post("auth/logout");
+      dispatch(authActions.logout());
+      console.log(data);
     } catch (error) {
       console.log(error);
-      dispatch(authActions.logout);
+      dispatch(authActions.logout());
     }
   };
 };
