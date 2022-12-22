@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/post.module.css";
-import style from "../../../../styles/newsFeed/feed.module.css";
 import { AiFillLike } from "react-icons/ai";
 import { BsClock } from "react-icons/bs";
 import { BiCommentDetail } from "react-icons/bi";

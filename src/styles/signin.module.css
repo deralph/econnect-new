@@ -52,6 +52,8 @@
   color: #07174b;
   font-size: 1.3em;
   margin-bottom: 15px;
+
+  /* done  */
 }
 .section div p,
 .section label {
@@ -135,13 +137,17 @@
   padding: 0;
 }
 
-@media (max-width: 1000px) {
+/* @media (max-width: 1000px) {
   .phone {
     display: none;
+
+    /* done  *
   }
   .container {
-    /* height: 100vh; */
+    /* height: 100vh; *
     min-height: 800px;
+
+    /* done  *
   }
   .section form {
     flex-basis: 98%;
@@ -152,4 +158,4 @@
     max-width: 600px;
     box-shadow: 5px 3px 48px rgba(0, 0, 0, 0.3);
   }
-}
+} */

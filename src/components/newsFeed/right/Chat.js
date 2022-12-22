@@ -1,7 +1,6 @@
 import React from "react";
 import { BsFillChatLeftTextFill } from "react-icons/bs";
 import { TiTick } from "react-icons/ti";
-import styles from "../../../styles/newsFeed/chat.module.css";
 import BackArrow from "../BackArrow";
 import { chatArray } from "../database";
 
@@ -16,13 +15,13 @@ const Chat = ({ chat }) => {
   return (
     <article
       className={`bg-white rounded relative my=[5px] overflow-scroll  shadow-[10px_10px_10px_black-100)] ${
-        !chat ? `basis-[43%]` : `basis-1/4`
+        !chat ? `basis-[43%]` : `basis-1/4 lg:basis-[28%] md:hidden`
       }`}
     >
       {!chat && (
         <div className="top">
           <p className=" flex items-center font-secondary font-medium text-sm text-primary">
-            <BsFillChatLeftTextFill className={styles.chat} />
+            <BsFillChatLeftTextFill className="text-base mr-3" />
             Chats
           </p>
           <p className="font-secondary font-medium text-sm text-primary">

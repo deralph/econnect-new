@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../../styles/newsFeed/chat.module.css";
 import { FaBell } from "react-icons/fa";
 import { notificationArray } from "../database";
 

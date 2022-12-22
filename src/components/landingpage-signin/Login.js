@@ -7,30 +7,30 @@ const Login = ({ forget, admin }) => {
   const [form, setForm] = useState({ email: "", password: "" });
 
   return (
-    <section className={`${styles.section} ${styles.section1}`}>
-      {/* <section> */}{" "}
+    // <section className={`${styles.section} ${styles.section1}`}>
+    <section>
+      {" "}
       <img
         src="/econnectLogo.png"
         alt="econnect logo"
-        className="absolute top-5 left-[5%]"
+        className="absolute top-5 left-[5%] "
       />
       {/* <article className={styles.container}> */}
-      <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%]">
-        <form action="" className="basis-[26%]">
+      <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%] lg:min-h-screen lg:mt-[5%]">
+        <form
+          action=""
+          className="basis-[30%] lg:basis-[96%] lg:m-auto lg:p-4 rounded lg:max-w-[600px] lg:shadow lg:bg-slate-400"
+        >
           {/* {admin && <AiOutlineArrowLeft className={styles.icon} />} */}
           {/* <h1>
             {forget ? "Forgot password" : admin ? "Admin Login" : "Login"}
           </h1> */}
           {forget ? (
-            <BackArrow
-              heading={"Forgot password"}
-              noArr
-              className="text-primary"
-            />
+            <BackArrow heading={"Forgot password"} noArr />
           ) : admin ? (
             <BackArrow heading={"Admin Login"} />
           ) : (
-            <BackArrow heading={"Login"} noArr className="text-primary" />
+            <BackArrow heading={"Login"} noArr />
           )}
           {forget && (
             <p className="text-[#323232] text-xs py-3 px-0">
@@ -93,7 +93,7 @@ const Login = ({ forget, admin }) => {
         <img
           src={admin ? "/adminloginlock.png" : "/login&registerpagephone.png"}
           alt="admin login lock"
-          className="h-[90vh] basis-3/5"
+          className="h-[90vh] basis-2/5 lg:hidden"
         />
       </article>
     </section>

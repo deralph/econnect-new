@@ -17,13 +17,12 @@ const Register = () => {
     // <section className={styles.section}>
     <section>
       {" "}
-      <img
-        src="/econnectLogo.png"
-        alt="econnect logo"
-        className="absolute top-5 left-[5%]"
-      />
-      <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%]">
-        <form action="">
+      <img src="/econnectLogo.png" alt="econnect logo" className="p-4 " />
+      <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%] lg:min-h-screen ">
+        <form
+          action=""
+          className="basis-[30%] lg:basis-[96%] lg:m-auto  lg:p-4 rounded lg:max-w-[600px] lg:shadow lg:bg-[#f2eeee]"
+        >
           <h1 className="text-secondary text-xl mb-4">Register</h1>
           <label
             className="pt-5 text-primary text-[0.8em] capitalize"
@@ -151,7 +150,7 @@ const Register = () => {
         <img
           src="/login&registerpagephone.png"
           alt="login & register page phone"
-          className="h-[90vh] basis-3/5"
+          className="h-[90vh] basis-2/5 lg:hidden"
         />
       </article>
     </section>

@@ -1,7 +1,6 @@
 import React from "react";
 import AppNav from "../navbars/AppNav";
 import SideNav from "../navbars/SideNav";
-import styles from "../../styles/newsFeed/index.module.css";
 import RightSide from "./right/RightSide";
 import FeedCenter from "../newsFeed/middle/feed/FeedCenter";
 import PostCenter from "./middle/post/PostCenter";
@@ -50,8 +49,7 @@ const NewsFeed = ({
   return (
     <section className="bg-[#eee] relative h-auto">
       <AppNav />
-      <GiHamburgerMenu className={styles.burger} />
-      <main className="" style={{ display: "flex", paddingTop: "55px" }}>
+      <main className="flex pt-[55px]">
         <SideNav />
         {post ? (
           <PostCenter />

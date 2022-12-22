@@ -1,6 +1,4 @@
 import React from "react";
-import style from "../../../../styles/newsFeed/index.module.css";
-import styles from "../../../../styles/newsFeed/direction.module.css";
 import { direction } from "../../database";
 import BackArrow from "../../BackArrow";
 
@@ -10,7 +8,7 @@ const Direction = () => {
     <section className="center relative overflow-hidden px-4 pb-2 ">
       <BackArrow heading="Directions" noAdd />
 
-      <div className="flex justify-evenly">
+      <div className="flex justify-evenly lg:flex-col-reverse">
         <article className="bg-white basis-[47%] p-4 overflow-scroll h-[calc(100vh-100px)]">
           {direction.map(({ image, direction, heading }, index) => {
             return (
@@ -32,7 +30,7 @@ const Direction = () => {
             );
           })}
         </article>
-        <div className="basis-[47%]">
+        <div className="basis-[47%] lg:mb-8">
           <div className="w-full grid place-content-center h-[45vh] bg-white text-[#4063d64d] uppercase mb-4">
             directions appear here
           </div>

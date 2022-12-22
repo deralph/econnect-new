@@ -1,16 +1,17 @@
 import React from "react";
 import { AiFillLike } from "react-icons/ai";
 import { FaGraduationCap } from "react-icons/fa";
-import styles from "../../../../styles/newsFeed/post.module.css";
 import { comments } from "../../database";
 
 const Comment = () => {
   return (
-    <section className={styles.comment}>
+    <section className="">
+      {/* <section className={styles.comment}> */}
       <h3 className="text-primary text-xl py-4 font-medium border-solid border-b border-[rgba(0,0,0,0.2)]">
         Comments
       </h3>
-      <div className={styles.commentBox}>
+      <div className="">
+        {/* <div className={styles.commentBox}> */}
         {comments.map(({ time, img, name, comment, course }, index) => {
           return (
             <article

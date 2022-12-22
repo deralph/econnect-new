@@ -152,12 +152,18 @@
   .sidenav ul:nth-child(3),
   .sidenav ul:nth-child(2) {
     display: block;
+
+    /* done  */
   }
   .sidenav {
     flex-basis: 35%;
+
+    /* done  */
   }
   .side {
     flex-basis: 5%;
+
+    /* done  */
   }
   .adminNav {
     display: none;

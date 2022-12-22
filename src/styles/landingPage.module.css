@@ -11,10 +11,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 5% 10% 0;
+
+  /* done  */
 }
 .phone {
   height: 90vh;
   width: 30vw;
+
+  /* done  */
 }
 .article p {
   color: #07174b;
@@ -23,26 +27,36 @@
   text-align: Left;
   width: 328px;
   line-height: 50px;
+
+  /* done  */
 }
 .article span {
   display: block;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1.8em;
+
+  /* done  */
 }
 .download {
   margin-top: 30px;
+
+  /* done  */
 }
 .download p {
   color: #1e1e1e;
   font-size: 0.9em;
   font-weight: 500;
   text-transform: capitalize;
+
+  /* done  */
 }
 .download-images {
   width: 280px;
   display: flex;
   justify-content: space-between;
+
+  /* done  */
 }
 
 @media (max-width: 580px) {
@@ -52,9 +66,13 @@
     height: 100vh;
     min-height: 500px;
     width: 100vw;
+
+    /* done  */
   }
 
   .phone {
     display: none;
+
+    /* done  */
   }
 }

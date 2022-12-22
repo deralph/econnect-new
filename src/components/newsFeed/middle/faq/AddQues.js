@@ -1,6 +1,4 @@
 import React from "react";
-import style from "../../../../styles/newsFeed/faq.module.css";
-import styles from "../../../../styles/newsFeed/addques.module.css";
 import BackArrow from "../../BackArrow";
 
 const AddQues = () => {

@@ -1,15 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
-import styles from "../../styles/navbar.module.css";
+import { useDispatch, useSelector } from "react-redux";
+import { navActions } from "../../store/sidenav.slice";
 
-const AppNav = () => {
+const AppNav = ({ chats, mains }) => {
+  const dispatch = useDispatch();
+  const navValue = useSelector((state) => state.nav);
+  console.log(navValue);
+
+  const [nav, setNav] = useState({ chat: false, app: false });
+
+  const { chat, main } = navValue;
+
+  // const main_ = () => dispatch(navActions.main());
+  const chats_ = () => {
+    console.log("in");
+    dispatch(navActions.chat());
+  };
+
+  const handlenav = () => {
+    if (chats) {
+      setNav({ ...nav, chat: true });
+    } else {
+      setNav({ ...nav, app: true });
+    }
+  };
+
   return (
-    // <nav className={styles.nav} style={{ background: "#fff" }}>
     <nav className="bg-white flex justify-between items-center w-screen fixed top-0 py-2 px-[5%] z-10">
-      <GiHamburgerMenu className="burger" />
+      <div className="flex items-center">
+        <GiHamburgerMenu
+          className="burger "
+          onClick={
+            chats
+              ? () => dispatch(navActions.chat())
+              : () => dispatch(navActions.main())
+          }
+          // onClick={handlenav}
+          // onClick={chats ? chats_() : main_()}
+        />
+        <img src="/econnectLogo.png" alt="" className="h-8 sm:h-6" />
+      </div>
 
-      <img src="/econnectLogo.png" alt="" className="h-8" />
-      <ul className="flex items-center">
+      <ul className="flex items-center lg:hidden">
         <li className="text-secondary italic font-bold">Download Now</li>
         <li>
           <img

@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/addques.module.css";
 import { myQuestion } from "../../database";
 import { MdDelete } from "react-icons/md";
 import BackArrow from "../../BackArrow";

@@ -1,6 +1,4 @@
 import React from "react";
-import style from "../../../../styles/newsFeed/index.module.css";
-import styles from "../../../../styles/newsFeed/businessDetails.module.css";
 import BackArrow from "../../BackArrow";
 import { AiTwotoneTag } from "react-icons/ai";
 import { MdLocationPin } from "react-icons/md";

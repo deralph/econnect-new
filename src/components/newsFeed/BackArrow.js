@@ -1,9 +1,6 @@
 import React from "react";
-import { FaArrowLeft } from "react-icons/fa";
+import { FaArrowLeft, FaArrowUp } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import styles from "../../styles/newsFeed/addques.module.css";
-import style from "../../styles/newsFeed/faq.module.css";
-import style1 from "../../styles/newsFeed/teachprac.module.css";
 
 const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   const navigate = useNavigate();
@@ -22,7 +19,11 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
         ${added ? ` ` : noAdd ? ` p-[1.3em]` : ` `}
         `}
     >
-      <h2 className={`flex items-center text-xl ${!noAdd && `font-semibold`}`}>
+      <h2
+        className={`flex items-center text-xl sm:text-sm ${
+          !noAdd && `font-semibold`
+        }`}
+      >
         {noArr || (
           <FaArrowLeft
             onClick={() => navigate(-1)}
@@ -31,12 +32,13 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
         )}{" "}
         {heading}
       </h2>
+      <FaArrowUp className="hidden sm:block" />
       {option && (
-        <ul className="flex ">
+        <ul className="flex sm:hidden ">
           {option.map(({ main, Icon, color }, index) => {
             return (
               <li
-                className="flex items-center ml-[1.3em] text-xs font-medium font-primary p-[0.8em] rounded-[0.4em] cursor-pointer"
+                className="flex items-center ml-[1.3em] text-xs font-medium font-primary p-[0.8em] rounded-[0.4em] cursor-pointer sm:text-sm sm:mb-2"
                 key={index}
                 style={{ background: `${color}` }}
                 // onClick={onclick(main)}

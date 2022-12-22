@@ -1,11 +1,8 @@
 import React from "react";
-import style from "../../../../styles/newsFeed/index.module.css";
-import styles from "../../../../styles/newsFeed/profile.module.css";
 import BackArrow from "../../BackArrow";
 import { IoIosArrowDown, IoMdMail } from "react-icons/io";
 import { FiUser } from "react-icons/fi";
 import { FaGraduationCap } from "react-icons/fa";
-import style1 from "../../../../styles/chat/chat.module.css";
 import TimelinePost from "./TimelinePost";
 
 const Profile = ({ pro, friendsProfile, chat }) => {
@@ -18,7 +15,7 @@ const Profile = ({ pro, friendsProfile, chat }) => {
     <section
       className={
         chat
-          ? `h-[calc(100%-1.5em)] basis-2/5 mt-3 mb-2 ml-2 mr-[2px] bg-white rounded overflow-scroll shadow-[0px_l4px_21.px_rgba(0, 0, 0, 0.13)]`
+          ? `h-[calc(100%-1.5em)] basis-2/5 mt-3 mb-2 ml-2 mr-[2px] bg-white rounded overflow-scroll shadow-[0px_l4px_21.px_rgba(0, 0, 0, 0.13)] lg:basis-3/5 md:basis-[80%] sml:basis-full`
           : `center`
       }
     >
@@ -39,7 +36,7 @@ const Profile = ({ pro, friendsProfile, chat }) => {
             alt="profile pics"
             className="w-2/5 rounded-[50%]"
           />
-          <div className={styles.userInfo}>
+          <div className="">
             <h1 className="font-medium text-2xl text-primary">
               Oluwadamilola Samuel
             </h1>

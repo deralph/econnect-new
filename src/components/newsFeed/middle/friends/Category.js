@@ -1,6 +1,5 @@
 import React from "react";
 import { handleInputs } from "../../../../extra/function";
-import styles from "../../../../styles/newsFeed/friends.module.css";
 
 const Category = ({ setcategory, form, setForm, setcategoryAdded }) => {
   const onCategoryChanged = (e) => {
@@ -18,7 +17,7 @@ const Category = ({ setcategory, form, setForm, setcategoryAdded }) => {
 
   return (
     // <section className={styles.category}>
-    <section className="absolute w-full h-full grid bg-black-300">
+    <section className="absolute w-full h-full grid bg-[#000000cc] z-20">
       <div className="bg-white w-3/5 h-auto m-auto z-20 py-[7%] px-[5%]">
         <p className="font-primary font-medium text-2xl text-primary pb-1 border-solid border-b-[0.5px] border-black-600">
           Select Category

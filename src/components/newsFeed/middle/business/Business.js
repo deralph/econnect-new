@@ -1,7 +1,5 @@
 import React from "react";
 import { FaStar, FaToolbox } from "react-icons/fa";
-import style from "../../../../styles/newsFeed/index.module.css";
-import styles from "../../../../styles/newsFeed/business.module.css";
 import { business } from "../../database";
 import { AiTwotoneTag } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";

@@ -3,7 +3,6 @@ import { AiFillLike } from "react-icons/ai";
 import { BsClock } from "react-icons/bs";
 import { BiCommentDetail } from "react-icons/bi";
 import { GoCommentDiscussion } from "react-icons/go";
-import styles from "../../../../styles/newsFeed/feed.module.css";
 import { newsFeed } from "../../database";
 import { Link } from "react-router-dom";
 
@@ -11,7 +10,7 @@ const Feed = () => {
   return (
     <section
       // classname={styles.feed}
-      classname="overflow-hidden relative bg-white mt-[10px]  "
+      className="overflow-hidden relative bg-white mt-[10px]  "
       // style={{ background: "#fff", marginTop: "10px", overflow: "hidden" }}
     >
       {/* <div className={styles.top1}> */}
@@ -57,7 +56,7 @@ const Feed = () => {
                   </p>
                   <div className="flex items-center text-[.8em] my-[7px] text-[#323232C7]">
                     <p className="flex items-center mr-4">
-                      <AiFillLike className="mr-[20px] text-primary mr-[5px]" />
+                      <AiFillLike className="mr-[20px] text-primary " />
                       {totalLike}
                     </p>
                     <p className="flex  items-center mr-4">

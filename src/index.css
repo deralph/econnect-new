@@ -11,7 +11,7 @@
 }
 
 .center {
-  @apply basis-1/2 relative mt-1 mr-1 mb-2 ml-2;
+  @apply basis-1/2 relative mt-1 mr-1 mb-2 ml-2 lg:basis-[63%] sml:basis-full;
 }
 .admin-link {
   @apply flex items-center justify-center flex-col text-center text-white hover:shadow-2xl hover:rounded-3xl hover:bg-[#00000066];
@@ -73,19 +73,11 @@ button {
   overflow: scroll;
 }
 .burger {
-  display: none;
+  @apply hidden sml:block mr-4;
 }
 
 @media (max-width: 1000px) {
   .edit {
     flex-basis: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .burger {
-    top: 0;
-    left: 2%;
-    /* position: absolute; */
-    display: block;
   }
 }

@@ -3,8 +3,6 @@ import { AiOutlineUnorderedList } from "react-icons/ai";
 import { BiBuildings } from "react-icons/bi";
 import { RiDirectionFill } from "react-icons/ri";
 import { FaQuestionCircle, FaUserCheck, FaUserCircle } from "react-icons/fa";
-import styles from "../../../../styles/newsFeed/acad.module.css";
-import style from "../../../../styles/newsFeed/index.module.css";
 import Card from "./Card";
 
 const Container = () => {

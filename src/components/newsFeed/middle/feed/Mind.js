@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/index.module.css";
 import { BsFillPlayCircleFill, BsCameraFill } from "react-icons/bs";
 
 const Mind = () => {

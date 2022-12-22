@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/friends.module.css";
 import { friends } from "../../database";
 
 const FiendsCont = ({ addFriends, admin, user, verify }) => {
@@ -36,7 +35,11 @@ const FiendsCont = ({ addFriends, admin, user, verify }) => {
             <p className="font-medium text-[10px] text-center py-3 text-[rgba(0, 0, 0, 0.7)]">
               {course}
             </p>
-            {check ? "" : admin && <p className={styles.role}>Master Admin</p>}
+            {check
+              ? ""
+              : admin && (
+                  <p className="text-red-500 font-medium">Master Admin</p>
+                )}
             {!user && (!(user && admin) || !verify) && (
               <button
                 style={{

@@ -1,7 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/teachprac.module.css";
-import style from "../../../../styles/newsFeed/index.module.css";
-import style1 from "../../../../styles/newsFeed/acad.module.css";
 import BackArrow from "../../BackArrow";
 
 const TeachPrac = ({ nysc }) => {
@@ -12,7 +9,8 @@ const TeachPrac = ({ nysc }) => {
         noAdd
       />
       <div
-        className={nysc ? `${styles.info} ${styles.nysc}` : `${styles.info}`}
+        className={nysc ? `` : ``}
+        // className={nysc ? `${styles.info} ${styles.nysc}` : `${styles.info}`}
       >
         <div className="w-[880%] my-0 mx-auto text-center z-10">
           <h3 className="text-[1.7em] ">

@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import style from "../../../../styles/newsFeed/index.module.css";
-import styles from "../../../../styles/newsFeed/friends.module.css";
 import BackArrow from "../../BackArrow";
 import Category from "./Category";
 import { IoIosArrowForward } from "react-icons/io";
@@ -26,20 +24,22 @@ const FRiends = ({ addFriends }) => {
 
   return (
     <section className="center">
-      {addFriends && category && (
+      {addFriends && category ? (
         <Category
           setcategory={setcategory}
           form={form}
           setForm={setForm}
           setcategoryAdded={setcategoryAdded}
         />
+      ) : (
+        ""
       )}
       <BackArrow
         heading={addFriends ? "Add Friends" : "Friends"}
         option={option}
       />
       {categoryAdded && (
-        <p className="flex items-center font-primary text-xl  ml-[5%] font-normal text-primary">
+        <p className="flex items-center font-primary text-xl  ml-[5%] font-normal text-primary ">
           {categoryAdded.faculty}
           {categoryAdded.department && (
             <>

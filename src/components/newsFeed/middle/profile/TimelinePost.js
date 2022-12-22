@@ -4,7 +4,6 @@ import { AiFillLike } from "react-icons/ai";
 import { GoCommentDiscussion } from "react-icons/go";
 import { BiCommentDetail } from "react-icons/bi";
 import { TimelinePosts } from "../../database";
-import styles from "../../../../styles/newsFeed/profile.module.css";
 
 const TimelinePost = () => {
   return (

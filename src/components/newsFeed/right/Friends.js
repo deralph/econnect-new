@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../../../styles/newsFeed/chat.module.css";
 import { friends } from "../database";
 import { FaGraduationCap, FaUserFriends } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
@@ -7,7 +6,8 @@ import { FiUser } from "react-icons/fi";
 const Friends = () => {
   return (
     <section className="basis-[43%] bg-white rounded relative my=[5px] overflow-scroll  shadow-[10px_10px_10px_black-100)]">
-      <div className={styles.container}>
+      {/* <div className={styles.container}> */}
+      <div className="">
         <div className="top">
           <p className="top-head">
             <FaUserFriends className="mr-2 text-2xl" />

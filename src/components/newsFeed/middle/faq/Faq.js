@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "../../../../styles/newsFeed/faq.module.css";
-import style from "../../../../styles/newsFeed/index.module.css";
 import BackArrow from "../../BackArrow";
 import { faq } from "../../database";
 
