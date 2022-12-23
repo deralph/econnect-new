@@ -15,9 +15,7 @@ const Register = () => {
   });
 
   return (
-    // <section className={styles.section}>
-    <section>
-      {" "}
+    <section className={styles.section}>
       <img src="/econnectLogo.png" alt="econnect logo" className="p-4 " />
       <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%] lg:min-h-screen ">
         <form

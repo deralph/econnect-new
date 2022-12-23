@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaStar, FaToolbox } from "react-icons/fa";
 import { business } from "../../database";
 import { AiTwotoneTag } from "react-icons/ai";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import BackArrow from "../../BackArrow";
 import { Link } from "react-router-dom";
+import AddBusiness from "./AddBusiness";
+import { useSelector } from "react-redux";
 
 const Business = ({ admin, small }) => {
   const rate = [1, 2, 3, 4, 5];
   const option = [{ main: "Add Business", Icon: FaToolbox, color: "#4063D6" }];
+
+  const addbusiness = useSelector((state) => state.business.addBusiness);
+
   return (
     <section
       className={
@@ -21,10 +26,12 @@ const Business = ({ admin, small }) => {
           : `center`
       }
     >
+      {addbusiness && <AddBusiness />}
+
       {!admin && <BackArrow heading="Business" option={option} />}
 
       <article
-        className="bg-white overflow-scroll h-full p-2 h-[calc(100vh-80px)]"
+        className="bg-white overflow-scroll p-2 h-[calc(100vh-80px)]"
         // admin
         //   ? `${styles.business} ${styles.business1} `
         // : `${styles.business}`

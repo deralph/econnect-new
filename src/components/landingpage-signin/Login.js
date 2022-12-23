@@ -8,9 +8,7 @@ const Login = ({ forget, admin }) => {
   const [form, setForm] = useState({ email: "", password: "" });
 
   return (
-    // <section className={`${styles.section} ${styles.section1}`}>
-    <section>
-      {" "}
+    <section className={`${styles.section} ${styles.section1}`}>
       <img
         src="/econnectLogo.png"
         alt="econnect logo"

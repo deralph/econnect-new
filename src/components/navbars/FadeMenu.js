@@ -1,17 +1,29 @@
-import * as React from "react";
+import React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import Fade from "@mui/material/Fade";
+import { FaUserAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowUp } from "react-icons/md";
+import { useDispatch } from "react-redux";
+import { businessAction } from "../../store/business.slice";
 
-export default function FadeMenu() {
+export default function FadeMenu({ option, nav }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const dispatch = useDispatch();
+
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-  const handleClose = () => {
+
+  const handleClose = (main) => {
     setAnchorEl(null);
+    if (main === "Add Business") {
+      return dispatch(businessAction.add());
+    }
+    return;
   };
 
   return (
@@ -23,7 +35,12 @@ export default function FadeMenu() {
         aria-expanded={open ? "true" : undefined}
         onClick={handleClick}
       >
-        Dashboard
+        {" "}
+        {nav ? (
+          <FaUserAlt className="text-white sm:block hidden" />
+        ) : (
+          <MdOutlineKeyboardArrowUp className="text-primary text-3xl sm:block hidden" />
+        )}
       </Button>
       <Menu
         id="fade-menu"
@@ -35,9 +52,37 @@ export default function FadeMenu() {
         onClose={handleClose}
         TransitionComponent={Fade}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
-        <MenuItem onClick={handleClose}>Logout</MenuItem>
+        {option.map(({ main, Icon, color }) => {
+          return (
+            <MenuItem onClick={handleClose("Add Business")} key={main}>
+              <Link
+                to={
+                  main === "Add Question"
+                    ? "/addques"
+                    : main === "My Questions"
+                    ? "/myquestion"
+                    : main === "Post Update"
+                    ? "/post-news"
+                    : main === "View Posted Updates"
+                    ? "/updates"
+                    : main === "Add Friends"
+                    ? "/add-friends"
+                    : main === "Edit Profile"
+                    ? "/edit-Profile"
+                    : main === "Message"
+                    ? "/chat"
+                    : main === "login"
+                    ? "/login"
+                    : main === "register"
+                    ? "/register"
+                    : ""
+                }
+              >
+                {Icon && <Icon className="mr-[0.4em] float-left" />} {main}
+              </Link>
+            </MenuItem>
+          );
+        })}
       </Menu>
     </div>
   );

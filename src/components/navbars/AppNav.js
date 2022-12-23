@@ -27,7 +27,7 @@ const AppNav = ({ chats, mains }) => {
   };
 
   return (
-    <nav className="bg-white flex justify-between items-center w-screen fixed top-0 py-2 px-[5%] z-10">
+    <nav className="bg-white flex justify-between items-center w-screen fixed top-0 py-2 px-[5%] z-30">
       <div className="flex items-center">
         <GiHamburgerMenu
           className="burger "
@@ -36,7 +36,6 @@ const AppNav = ({ chats, mains }) => {
               ? () => dispatch(navActions.chat())
               : () => dispatch(navActions.main())
           }
-          // onClick={handlenav}
           // onClick={chats ? chats_() : main_()}
         />
         <img src="/econnectLogo.png" alt="" className="h-8 sm:h-6" />
