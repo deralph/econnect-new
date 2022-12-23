@@ -24,6 +24,7 @@ const SideNav = ({ chat }) => {
 
   const logOut = () => {
     dispatch(logout());
+    dispatch(navActions.main_());
     navigate("/login");
   };
 
@@ -32,11 +33,11 @@ const SideNav = ({ chat }) => {
       className={`transition-transform overflow-scroll left-0 w-auto bg-secondary h-screen  ${
         chat
           ? ` basis-[8%] lg:basis-[12%] md:basis-[18%] py-[10%] px-[0.8em] ${
-              chat_ ? "sml:block absolute top-[-55px] z-10" : "sml:hidden"
+              chat_ ? "sml:block absolute top-[-55px] z-40" : "sml:hidden"
             }`
           : ` basis-1/4 py-[10%] px-8 lg:basis-[35%] ${
               main
-                ? "sml:block absolute top-0 z-10 h-full w-screen"
+                ? "sml:block absolute top-0 z-40 h-full w-screen"
                 : "sml:hidden"
             }`
       } `}
@@ -57,7 +58,7 @@ const SideNav = ({ chat }) => {
           />
           {!chat && "Logout"}
         </li>
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             to={"/news-feed"}
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 border-b-[0.6px] border-solid border-white ${
@@ -69,7 +70,7 @@ const SideNav = ({ chat }) => {
           </Link>
         </li>
 
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 border-b-[0.6px] border-solid border-white ${
               chat && "justify-center"
@@ -81,7 +82,7 @@ const SideNav = ({ chat }) => {
           </Link>
         </li>
 
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 border-b-[0.6px] border-solid border-white ${
               chat && "justify-center"
@@ -93,7 +94,7 @@ const SideNav = ({ chat }) => {
           </Link>
         </li>
 
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 border-b-[0.6px] border-solid border-white ${
               chat && "justify-center"
@@ -120,7 +121,7 @@ const SideNav = ({ chat }) => {
             {!chat && "Chat"}
           </Link>
         </li>
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 border-b-[0.6px] border-solid border-white ${
               chat && "justify-center"
@@ -131,7 +132,7 @@ const SideNav = ({ chat }) => {
             {!chat && "Friends"}
           </Link>
         </li>
-        <li>
+        <li onClick={() => dispatch(navActions.main_())}>
           <Link
             className={`text-white text-init flex items-center py-[20px] px-[10px] lg:p-4 ${
               chat && "justify-center"

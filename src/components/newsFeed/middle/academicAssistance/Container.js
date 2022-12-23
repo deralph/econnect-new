@@ -7,11 +7,11 @@ import Card from "./Card";
 
 const Container = () => {
   return (
-    <section className={`center my-auto mx-0 p-5`}>
+    <section className={`center my-auto mx-0 p-5 overflow-scroll h-screen`}>
       <h1 className="text-secondary text-3xl font-medium my-5 mx-0">
         Academic Assistance
       </h1>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-between flex-wrap ">
         <Card
           name="e-Portal"
           Icon={FaUserCircle}
