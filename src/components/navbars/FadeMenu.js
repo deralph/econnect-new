@@ -18,12 +18,15 @@ export default function FadeMenu({ option, nav }) {
     setAnchorEl(event.currentTarget);
   };
 
-  const handleClose = (main) => {
-    setAnchorEl(null);
+  const business = (main) => {
     if (main === "Add Business") {
       return dispatch(businessAction.add());
     }
     return;
+  };
+
+  const handleClose = (main) => {
+    setAnchorEl(null);
   };
 
   return (
@@ -54,7 +57,13 @@ export default function FadeMenu({ option, nav }) {
       >
         {option.map(({ main, Icon, color }) => {
           return (
-            <MenuItem onClick={handleClose("Add Business")} key={main}>
+            <MenuItem
+              onClick={() => {
+                handleClose();
+                business(main);
+              }}
+              key={main}
+            >
               <Link
                 to={
                   main === "Add Question"

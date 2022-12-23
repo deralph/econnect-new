@@ -8,15 +8,6 @@ import FadeMenu from "../navbars/FadeMenu";
 const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const onclick = (param) => {
-    if (param === "Add Question") {
-      return navigate("/addques");
-    }
-    if (param === "My Questions") {
-      return navigate("/myquestion");
-    }
-    return;
-  };
 
   const handleBusiness = (main) => {
     if (main === "Add Business") {

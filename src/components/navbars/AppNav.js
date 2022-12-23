@@ -6,25 +6,7 @@ import { navActions } from "../../store/sidenav.slice";
 const AppNav = ({ chats, mains }) => {
   const dispatch = useDispatch();
   const navValue = useSelector((state) => state.nav);
-  console.log(navValue);
-
-  const [nav, setNav] = useState({ chat: false, app: false });
-
-  const { chat, main } = navValue;
-
-  // const main_ = () => dispatch(navActions.main());
-  const chats_ = () => {
-    console.log("in");
-    dispatch(navActions.chat());
-  };
-
-  const handlenav = () => {
-    if (chats) {
-      setNav({ ...nav, chat: true });
-    } else {
-      setNav({ ...nav, app: true });
-    }
-  };
+  // console.log(navValue);
 
   return (
     <nav className="bg-white flex justify-between items-center w-screen fixed top-0 py-2 px-[5%] z-30">

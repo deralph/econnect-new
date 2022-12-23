@@ -36,7 +36,7 @@ const AddBusiness = () => {
     if (name && email && phoneNo) {
       setStep({ ...step, name: true });
     } else {
-      console.log(step);
+      // console.log(step);
       console.log("all inputs are required");
     }
   };
@@ -46,7 +46,7 @@ const AddBusiness = () => {
     if (name && email && phoneNo && description && address) {
       setStep({ ...step, description: true });
     } else {
-      console.log(step);
+      // console.log(step);
       console.log("all inputs are required");
     }
   };
@@ -94,7 +94,7 @@ const AddBusiness = () => {
             </p>
             <label
               htmlFor=""
-              className="bg-[#00000080] my-6 p-8 grid place-content-center"
+              className="bg-[#00000080] my-6 p-8 cur grid place-content-center"
             >
               <AiFillFileImage className="text-3xl" />
               <input
