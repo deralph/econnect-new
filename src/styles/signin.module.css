@@ -1,10 +1,6 @@
-.section {
-  width: 100vw;
-  min-height: 100vh;
-  height: auto;
+.section2 {
   background: url(../../public/Background_cleanup.jpg);
   background-size: 100% 100%;
-  position: relative;
 }
 .section1 {
   background: url(../../public/Background.jpg);

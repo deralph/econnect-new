@@ -15,12 +15,14 @@ const Register = () => {
   });
 
   return (
-    <section className={styles.section}>
+    <section
+      className={`w-screen min-h-screen h-auto relative ${styles.section2}`}
+    >
       <img src="/econnectLogo.png" alt="econnect logo" className="p-4 " />
       <article className="flex justify-between items-center pt-[8%] pr-[5%] pb-[5%] pl-[7%] lg:min-h-screen ">
         <form
           action=""
-          className="basis-[30%] lg:basis-[96%] lg:m-auto  lg:p-4 rounded lg:max-w-[600px] lg:shadow lg:bg-[#f2eeee]"
+          className="basis-[30%] lg:basis-[96%] lg:m-auto  lg:p-4 rounded lg:max-w-[600px] lg:shadow lg:bg-slate-400"
         >
           <h1 className="text-secondary text-xl mb-4">Register</h1>
           <label

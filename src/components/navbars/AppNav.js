@@ -20,7 +20,7 @@ const AppNav = ({ chats, mains }) => {
           }
           // onClick={chats ? chats_() : main_()}
         />
-        <img src="/econnectLogo.png" alt="" className="h-8 sm:h-6" />
+        <img src="/econnectLogo.png" alt="" className="h-8 sm:h-7" />
       </div>
 
       <ul className="flex items-center lg:hidden">

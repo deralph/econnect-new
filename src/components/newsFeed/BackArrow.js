@@ -23,7 +23,7 @@ const BackArrow = ({ heading, option, added, noArr, noAdd }) => {
         `}
     >
       <h2
-        className={`flex items-center text-xl sm:text-sm ${
+        className={`flex items-center text-xl sm:text-lg ${
           !noAdd && `font-semibold`
         }`}
       >

@@ -21,8 +21,7 @@ const Business = ({ admin, small }) => {
           ? // ? `${styles.center1} `
             `basis-[30%] `
           : admin
-          ? // ? `${styles.center}`
-            `basis-full`
+          ? `basis-full`
           : `center`
       }
     >
@@ -30,14 +29,8 @@ const Business = ({ admin, small }) => {
 
       {!admin && <BackArrow heading="Business" option={option} />}
 
-      <article
-        className="bg-white overflow-scroll p-2 h-[calc(100vh-80px)]"
-        // admin
-        //   ? `${styles.business} ${styles.business1} `
-        // : `${styles.business}`
-      >
+      <article className="bg-white overflow-scroll p-2 h-[calc(100vh-80px)]">
         {business.map(({ image, name, phone, type, rating }, index) => {
-          // const arr  = info
           return (
             <Link
               to="/business-details"

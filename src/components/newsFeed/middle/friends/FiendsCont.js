@@ -13,7 +13,7 @@ const FiendsCont = ({ addFriends, admin, user, verify }) => {
         // cousre in the above becomes post when dealing withadmin
         return (
           <div
-            className={`bg-white flex items-center justify-center flex-col basis-[32%] h-auto relative mt-4 mb-0 mx-0 p-6 rounded-2xl shadow-[0_8.5_27.6_black-100]  ${
+            className={`min-w-[150px] basis-[31%] lg:basis-[46%] bg-white flex items-center justify-center flex-col  h-auto relative mt-4 mb-0 mx-0 p-6 rounded-2xl shadow-[0_8.5_27.6_black-100]  ${
               admin || verify ? ` basis-[23%] h-auto` : ``
             }`}
             key={index}

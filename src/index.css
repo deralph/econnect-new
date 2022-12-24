@@ -51,6 +51,9 @@
 .phone {
   @apply absolute bottom-0 right-0 bg-[#039b2d] font-primary font-medium text-white p-2 text-xs;
 }
+.burger {
+  @apply hidden sml:block mr-4 text-2xl;
+}
 
 body {
   height: 100vh;
@@ -77,18 +80,4 @@ select {
 }
 button {
   border: none;
-}
-.edit {
-  flex-basis: 80%;
-  padding: 1%;
-  overflow: scroll;
-}
-.burger {
-  @apply hidden sml:block mr-4;
-}
-
-@media (max-width: 1000px) {
-  .edit {
-    flex-basis: 100%;
-  }
 }
